@@ -1,41 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>New on Ellie&#39;s website</title>
+    <title>New on Ellie&#39;s Blog</title>
     <link>https://ellielife.github.io/tags/new/</link>
-    <description>Recent content in New on Ellie&#39;s website</description>
+    <description>Recent content in New on Ellie&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Tue, 29 Oct 2019 10:07:47 +0600</lastBuildDate>
     <atom:link href="https://ellielife.github.io/tags/new/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://ellielife.github.io/blog/post-1/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/post-1/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://ellielife.github.io/blog/post-10/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/post-10/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://ellielife.github.io/blog/post-11/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/post-11/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://ellielife.github.io/blog/post-12/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/post-12/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
     <item>
       <title>How To Use Checklists To Improve Your UX</title>
       <link>https://ellielife.github.io/blog/post-13/</link>
@@ -44,60 +16,11 @@
       <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
     </item>
     <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://ellielife.github.io/blog/post-2/</link>
+      <title>HTML標籤與Markdown的區別</title>
+      <link>https://ellielife.github.io/blog/html%E6%A8%99%E7%B1%A4%E7%94%A8%E6%B3%95/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/post-2/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://ellielife.github.io/blog/post-3/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/post-3/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://ellielife.github.io/blog/post-4/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/post-4/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://ellielife.github.io/blog/post-5/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/post-5/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://ellielife.github.io/blog/post-6/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/post-6/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://ellielife.github.io/blog/post-7/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/post-7/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://ellielife.github.io/blog/post-8/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/post-8/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://ellielife.github.io/blog/post-9/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/post-9/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
+      <guid>https://ellielife.github.io/blog/html%E6%A8%99%E7%B1%A4%E7%94%A8%E6%B3%95/</guid>
+      <description>HTML &amp;amp; Markdown 標籤1~標籤6的用法 HTML Markdown &amp;lt;h1&amp;gt; &amp;lt;/h1&amp;gt; # &amp;lt;h2&amp;gt; &amp;lt;/h2&amp;gt; ## &amp;lt;h3&amp;gt; &amp;lt;/h3&amp;gt; ### &amp;lt;h4&amp;gt; &amp;lt;/h4&amp;gt; #### &amp;lt;h5&amp;gt; &amp;lt;/h5&amp;gt; ##### &amp;lt;h6&amp;gt; &amp;lt;/h6&amp;gt; ###### 以下是顯示方式 一級標題 二題標題 三級標題 四題標題 五級標題 六級標題 HTML &amp;amp; Markdown 內文標簽的用法 HTML Markdown &amp;lt;p&amp;gt;段落&amp;lt;\p&amp;gt; 無須寫程式碼，直接寫上文字即可，末尾須加兩個空格。 &amp;lt;br/&amp;gt; 換行 直接使用空行來換行。 &amp;lt;b&amp;gt;我是粗體字&amp;lt;/b&amp;gt; 或是 &amp;lt;strong&amp;gt;我是粗體字&amp;lt;/strong&amp;gt; ** 我是粗體字 ** 或是 __ 我是粗體字 __ &amp;lt;i&amp;gt;我是斜體字&amp;lt;/i&amp;gt; 或是 &amp;lt;em&amp;gt;我是斜體&amp;lt;/em&amp;gt; * 我是斜體字* 或是 _我是斜體字_ &amp;lt;h5&amp;gt; &amp;lt;/h5&amp;gt; *我是斜粗體* &amp;lt;h6&amp;gt; &amp;lt;/h6&amp;gt; ###### ※補充:HTML的&amp;lt;b&amp;gt;和&amp;lt;strong&amp;gt;兩組標籤所呈現的結果都是粗體，都是相同的，但在使用時機上是有差別的。</description>
     </item>
   </channel>
 </rss>

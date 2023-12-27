@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ellie&#39;s Blog</title>
-    <link>https://ellielife.github.io/</link>
-    <description>Recent content on Ellie&#39;s Blog</description>
+    <title>靈性日記 on Ellie&#39;s Blog</title>
+    <link>https://ellielife.github.io/categories/%E9%9D%88%E6%80%A7%E6%97%A5%E8%A8%98/</link>
+    <description>Recent content in 靈性日記 on Ellie&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate>
-    <atom:link href="https://ellielife.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Oct 2019 10:07:47 +0600</lastBuildDate>
+    <atom:link href="https://ellielife.github.io/categories/%E9%9D%88%E6%80%A7%E6%97%A5%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024年，很適合與過去的自己說再見。</title>
       <link>https://ellielife.github.io/blog/2024%E5%B9%B4%E8%88%87%E9%81%8E%E5%8E%BB%E7%9A%84%E8%87%AA%E5%B7%B1%E8%AA%AA%E5%86%8D%E8%A6%8B/</link>
@@ -21,20 +21,6 @@
 若有些人跟我一樣感到焦慮的話，那就代表你跟我一樣，在內心的某一部分已經感應到未來會有些挑戰需要突破，你的高我正在提醒你，要為未來做準備，其實你不孤單，我們大多數人都一樣，都需要突破自我，我們會在突破中蛻變成新的自己。
 所以關於未來，當世界看似發展不好的時候，要對地球保持信心，並遵循自己內心的聲音，祂會是我們內心的一盞明燈或是指南針，祂會告訴我們未來要走的方向以及要做的事情，身為光的使者，我們一起加油。
 哈哈哈，對了，我還沒交代為什麼2024年會是個對過去的自己說再見的時刻。 因為從2024年開始，新能量會誘發一系列的改變，你可以利用這個新能量，去成為心目中的你，而當你慕然回首的時候，你將發現過去的自己已不再，取而代之的是新的你。</description>
-    </item>
-    <item>
-      <title>How To Use Checklists To Improve Your UX</title>
-      <link>https://ellielife.github.io/blog/post-13/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/post-13/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    <item>
-      <title>HTML標籤與Markdown的區別</title>
-      <link>https://ellielife.github.io/blog/html%E6%A8%99%E7%B1%A4%E7%94%A8%E6%B3%95/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/html%E6%A8%99%E7%B1%A4%E7%94%A8%E6%B3%95/</guid>
-      <description>HTML &amp;amp; Markdown 標籤1~標籤6的用法 HTML Markdown &amp;lt;h1&amp;gt; &amp;lt;/h1&amp;gt; # &amp;lt;h2&amp;gt; &amp;lt;/h2&amp;gt; ## &amp;lt;h3&amp;gt; &amp;lt;/h3&amp;gt; ### &amp;lt;h4&amp;gt; &amp;lt;/h4&amp;gt; #### &amp;lt;h5&amp;gt; &amp;lt;/h5&amp;gt; ##### &amp;lt;h6&amp;gt; &amp;lt;/h6&amp;gt; ###### 以下是顯示方式 一級標題 二題標題 三級標題 四題標題 五級標題 六級標題 HTML &amp;amp; Markdown 內文標簽的用法 HTML Markdown &amp;lt;p&amp;gt;段落&amp;lt;\p&amp;gt; 無須寫程式碼，直接寫上文字即可，末尾須加兩個空格。 &amp;lt;br/&amp;gt; 換行 直接使用空行來換行。 &amp;lt;b&amp;gt;我是粗體字&amp;lt;/b&amp;gt; 或是 &amp;lt;strong&amp;gt;我是粗體字&amp;lt;/strong&amp;gt; ** 我是粗體字 ** 或是 __ 我是粗體字 __ &amp;lt;i&amp;gt;我是斜體字&amp;lt;/i&amp;gt; 或是 &amp;lt;em&amp;gt;我是斜體&amp;lt;/em&amp;gt; * 我是斜體字* 或是 _我是斜體字_ &amp;lt;h5&amp;gt; &amp;lt;/h5&amp;gt; *我是斜粗體* &amp;lt;h6&amp;gt; &amp;lt;/h6&amp;gt; ###### ※補充:HTML的&amp;lt;b&amp;gt;和&amp;lt;strong&amp;gt;兩組標籤所呈現的結果都是粗體，都是相同的，但在使用時機上是有差別的。</description>
     </item>
   </channel>
 </rss>

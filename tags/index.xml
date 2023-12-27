@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Ellie&#39;s website</title>
+    <title>Tags on Ellie&#39;s Blog</title>
     <link>https://ellielife.github.io/tags/</link>
-    <description>Recent content in Tags on Ellie&#39;s website</description>
+    <description>Recent content in Tags on Ellie&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Tue, 29 Oct 2019 10:07:47 +0600</lastBuildDate>
@@ -41,13 +41,6 @@
       <link>https://ellielife.github.io/tags/python/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       <guid>https://ellielife.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>React</title>
-      <link>https://ellielife.github.io/tags/react/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/tags/react/</guid>
       <description></description>
     </item>
   </channel>

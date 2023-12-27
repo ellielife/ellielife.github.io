@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is meta description">
+  <meta name="description" content="這裡是HTML標籤與Markdown使用上的區別">
   <meta name="author" content="Ellie(梅)">
     
   
@@ -97,60 +97,146 @@
 </header>
 <!-- /navigation -->
 
-<section class="section-sm pb-0">
+<section class="section-sm">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <h2>Get In Touch</h2>
-        <div class="content mb-4">
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/%e5%b7%a5%e7%a8%8b%e7%ad%86%e8%a8%98"
+          class="text-primary">工程筆記</a>
+        
+        <h2>HTML標籤與Markdown的區別</h2>
+        <div class="mb-3 post-meta">
+          <span>By Ellie(梅)</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2019-10-29</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h5 id="html--markdown-標籤1標籤6的用法">HTML &amp; Markdown 標籤1~標籤6的用法</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">HTML</th>
+<th style="text-align:center">Markdown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&lt;h1&gt; &lt;/h1&gt;</td>
+<td style="text-align:center">#</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;h2&gt; &lt;/h2&gt;</td>
+<td style="text-align:center">##</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;h3&gt; &lt;/h3&gt;</td>
+<td style="text-align:center">###</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;h4&gt; &lt;/h4&gt;</td>
+<td style="text-align:center">####</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;h5&gt; &lt;/h5&gt;</td>
+<td style="text-align:center">#####</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;h6&gt; &lt;/h6&gt;</td>
+<td style="text-align:center">######</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h5 id="以下是顯示方式">以下是顯示方式</h5>
+<h1 id="一級標題">一級標題</h1>
+<h2 id="二題標題">二題標題</h2>
+<h3 id="三級標題">三級標題</h3>
+<h4 id="四題標題">四題標題</h4>
+<h5 id="五級標題">五級標題</h5>
+<h6 id="六級標題">六級標題</h6>
+<hr>
+<h5 id="html--markdown-內文標簽的用法">HTML &amp; Markdown 內文標簽的用法</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">HTML</th>
+<th style="text-align:center">Markdown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&lt;p&gt;段落&lt;\p&gt;</td>
+<td style="text-align:center">無須寫程式碼，直接寫上文字即可，末尾須加兩個空格。</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;br/&gt; 換行</td>
+<td style="text-align:center">直接使用空行來換行。</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;b&gt;我是粗體字&lt;/b&gt; 或是 &lt;strong&gt;我是粗體字&lt;/strong&gt;</td>
+<td style="text-align:center">** 我是粗體字 ** 或是  __ 我是粗體字 __</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;i&gt;我是斜體字&lt;/i&gt; 或是 &lt;em&gt;我是斜體&lt;/em&gt;</td>
+<td style="text-align:center">* 我是斜體字* 或是 _我是斜體字_</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;h5&gt; &lt;/h5&gt;</td>
+<td style="text-align:center">*<strong>我是斜粗體</strong>*</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;h6&gt; &lt;/h6&gt;</td>
+<td style="text-align:center">######</td>
+</tr>
+</tbody>
+</table>
+<p>※補充:HTML的&lt;b&gt;和&lt;strong&gt;兩組標籤所呈現的結果都是粗體，都是相同的，但在使用時機上是有差別的。</p>
+<ul>
+<li>&lt;b&gt;:僅將文字標記為粗體。</li>
+<li>&lt;storng&gt;:除了文字標記為粗體外還具有被強調的含意。</li>
+</ul>
+<p>在SEO的部分，搜尋引擎會給予&lt;storng&gt;較高的權重，&lt;b&gt;只是普通的文字。另外，在螢幕輔助閱讀中，&lt;storng&gt;可被讀取，&lt;b&gt;則不會被讀取。</p>
+<blockquote>
+<p>哈囉你好嗎</p>
+<ul>
+<li>&lt;b&gt;:僅將文字標記為粗體。</li>
+</ul>
+</blockquote>
+<h5 id="html--markdown-超連結用法">HTML &amp; Markdown 超連結用法</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">HTML 超連結用法</th>
+<th style="text-align:center">Markdown  超連結用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&lt;a href=&ldquo;網址&rdquo;&gt;</td>
+<td style="text-align:center">[]()</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;a&gt; 加入超連結   href=&ldquo;定義網址&rdquo;</td>
+<td style="text-align:center">:&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;:</td>
+</tr>
+<tr>
+<td style="text-align:center">例如:&lt;a href=&ldquo;<a href="https://www.google.com">https://www.google.com</a>&rdquo;</td>
+<td style="text-align:center">例如:[google網站](https:/www.google.com)</td>
+</tr>
+</tbody>
+</table>
+<p><!-- raw HTML omitted -->  a是加入超連結 a</p>
+<p>例如: <!-- raw HTML omitted --></p>
+<p>顯示方式 <a href="https:/www.google.com">google網站</a>    |</p>
 
         </div>
-        <div class="row">
-          <div class="col-lg-4 small-post-border">
-            <i class="ti-mobile h1 text-primary"></i>
-            <h5 class="font-weight-light my-3">Phone</h5>
-            0124857985320
-          </div>
-          <div class="col-lg-4 small-post-border">
-            <i class="ti-email h1 text-primary"></i>
-            <h5 class="font-weight-light my-3">Email</h5>
-            ellie1118@email.com
-          </div>
-          <div class="col-lg-4 small-post-border">
-            <i class="ti-location-pin h1 text-primary"></i>
-            <h5 class="font-weight-light my-3">Location</h5>
-            Taiwam
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-
-<section class="section-sm pb-0">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <h2 class="mb-4">Hi Write To Me</h2>
-        <form action="#" method="POST" class="row">
-          <div class="col-lg-6">
-            <input type="text" class="form-control mb-4" id="name" name="name" placeholder="Your Name">
-          </div>
-          <div class="col-lg-6">
-            <input type="email" class="form-control mb-4" id="email" name="email" placeholder="Your Email">
-          </div>
-          <div class="col-12">
-            <input type="text" class="form-control mb-4" id="subject" name="subject" placeholder="Subject">
-          </div>
-          <div class="col-12">
-            <textarea name="message" id="message" class="form-control mb-4" placeholder="Your Message"></textarea>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">send message</button>
-          </div>
-        </form>
+        
+        
       </div>
     </div>
   </div>
