@@ -58,7 +58,7 @@
 <!-- preloader end -->
 <!-- navigation 導航列-->
 <header class="navigation"> 
-  <div class="container-fluid">
+  <div class="container">
     
     
     
@@ -77,13 +77,8 @@
             <a class="nav-link" href="https://ellielife.github.io/">部落格Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">技術筆記Note</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="">作品集Portfolio</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://ellielife.github.io/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%98/">生活日記LifeDiary</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://ellielife.github.io/about">關於我About</a>
@@ -114,17 +109,12 @@
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      
-      
-      
-      <div class="col-lg-4 mb-5 mb-lg-0">
+      <div class="col-lg-8 mb-5 mb-lg-0">
         <div class="row">
           
           
-          <div class="col-md-6 mb-4">
+          <div class="col-md-8 mb-4">
     <article class="card">
-        
-        <img src="https://ellielife.github.io/images/%E9%98%BF%E8%AB%BE.jpg" class="card-img-top" alt="阿諾，是我父親最喜歡的外國演員(一)">
         
         <div class="card-body px-0">
         
@@ -140,13 +130,62 @@
             
         </div>
         <p class="card-text"></p>
-        <a href="https://ellielife.github.io/blog/post29/" class="btn btn-outline-primary">read more</a>
+        <a href="https://ellielife.github.io/blog/post29/" class="btn btn-outline-primary">閱讀更多</a>
         </div>
     </article>
 </div>
           
         </div>
       </div>
+      
+      <div class="col-lg-4">
+    <div class="widgets">
+      
+      <div class="widget">
+        
+        <h4 class="widget-title">關於我</h4>
+        
+        <img src="https://ellielife.github.io/images/05.jpg" alt=""
+          class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
+        
+        <p>Hi大家好，我是Ellie(梅)，我喜歡學習和閱讀，尤其是這裡是我分享的天堂，目前只想活在自己熱愛生活裡，活出我的不正常人生。</p>
+        <a href="https://ellielife.github.io/about/" class="btn btn-outline-primary">閱讀更多</a>
+        
+      </div>
+      
+      <div class="widget">
+        <h4 class="widget-title">文章分類</h4>
+        <ul class="list-unstyled">
+          <li><a
+              href="/categories/hi.ellie%e9%9d%88%e9%ad%82%e6%88%90%e9%95%b7/">Hi.ellie靈魂成長</a>
+          </li>
+          <li><a
+              href="/categories/%e6%9c%aa%e4%be%86%e6%97%a5%e8%a8%98/">未來日記</a>
+          </li>
+          <li><a
+              href="/categories/%e7%94%9f%e6%b4%bb%e6%97%a5%e8%a8%98/">生活日記</a>
+          </li>
+          <li><a
+              href="/categories/%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97/">讀書心得</a>
+          </li>
+          <li><a
+              href="/categories/%e9%9d%88%e6%80%a7%e6%96%87%e7%ab%a0%e5%92%8c%e5%bd%b1%e7%89%87%e5%88%86%e4%ba%ab/">靈性文章和影片分享</a>
+          </li>
+        </ul>
+      </div>
+      
+      
+      <div class="widget">
+        <h4 class="widget-title">社群</h4>
+        <ul class="list-inline social-links">
+          
+          <li class="list-inline-item"><a href="https://www.youtube.com/@Ellie.Tarot1118"><i class="ti-youtube"></i></a></li>
+          
+        </ul>
+      </div>
+      
+    </div>
+  </div>
       
 
       
@@ -188,45 +227,5 @@
 
 
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-<div id="js-cookie-box" class="cookie-box cookie-box-hide">
-	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
-</div>
-<script>
-	(function ($) {
-		const cookieBox = document.getElementById('js-cookie-box');
-		const cookieButton = document.getElementById('js-cookie-button');
-		if (!Cookies.get('cookie-box')) {
-			cookieBox.classList.remove('cookie-box-hide');
-			cookieButton.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires:  2 
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
-		}
-	})(jQuery);
-</script>
-
-
-<style>
-.cookie-box {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 9999;
-  padding: 1rem 2rem;
-  background: rgb(71, 71, 71);
-  transition: all .75s cubic-bezier(.19, 1, .22, 1);
-  color: #fdfdfd;
-}
-
-.cookie-box-hide {
-  display: none;
-}
-</style>
 </body>
 </html>
