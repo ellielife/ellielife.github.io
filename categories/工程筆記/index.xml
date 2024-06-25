@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>工程筆記 on Ellie&#39;s Blog</title>
+    <title>工程筆記 on 與心同行｜EllieDiary艾莉的生活日記</title>
     <link>https://ellielife.github.io/categories/%E5%B7%A5%E7%A8%8B%E7%AD%86%E8%A8%98/</link>
-    <description>Recent content in 工程筆記 on Ellie&#39;s Blog</description>
+    <description>Recent content in 工程筆記 on 與心同行｜EllieDiary艾莉的生活日記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 29 Oct 2019 10:07:47 +0600</lastBuildDate>
+    <lastBuildDate>Mon, 24 Jun 2024 02:25:34 +0800</lastBuildDate>
     <atom:link href="https://ellielife.github.io/categories/%E5%B7%A5%E7%A8%8B%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>HTML標籤與Markdown的區別</title>
-      <link>https://ellielife.github.io/blog/html%E6%A8%99%E7%B1%A4%E7%94%A8%E6%B3%95/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      <guid>https://ellielife.github.io/blog/html%E6%A8%99%E7%B1%A4%E7%94%A8%E6%B3%95/</guid>
-      <description>HTML &amp;amp; Markdown 標籤1~標籤6的用法 HTML Markdown &amp;lt;h1&amp;gt; &amp;lt;/h1&amp;gt; # &amp;lt;h2&amp;gt; &amp;lt;/h2&amp;gt; ## &amp;lt;h3&amp;gt; &amp;lt;/h3&amp;gt; ### &amp;lt;h4&amp;gt; &amp;lt;/h4&amp;gt; #### &amp;lt;h5&amp;gt; &amp;lt;/h5&amp;gt; ##### &amp;lt;h6&amp;gt; &amp;lt;/h6&amp;gt; ###### 以下是顯示方式 一級標題 二題標題 三級標題 四題標題 五級標題 六級標題 HTML &amp;amp; Markdown 內文標簽的用法 HTML Markdown &amp;lt;p&amp;gt;段落&amp;lt;\p&amp;gt; 無須寫程式碼，直接寫上文字即可，末尾須加兩個空格。 &amp;lt;br/&amp;gt; 換行 直接使用空行來換行。 &amp;lt;b&amp;gt;我是粗體字&amp;lt;/b&amp;gt; 或是 &amp;lt;strong&amp;gt;我是粗體字&amp;lt;/strong&amp;gt; ** 我是粗體字 ** 或是 __ 我是粗體字 __ &amp;lt;i&amp;gt;我是斜體字&amp;lt;/i&amp;gt; 或是 &amp;lt;em&amp;gt;我是斜體&amp;lt;/em&amp;gt; * 我是斜體字* 或是 _我是斜體字_ &amp;lt;h5&amp;gt; &amp;lt;/h5&amp;gt; *我是斜粗體* &amp;lt;h6&amp;gt; &amp;lt;/h6&amp;gt; ###### ※補充:HTML的&amp;lt;b&amp;gt;和&amp;lt;strong&amp;gt;兩組標籤所呈現的結果都是粗體，都是相同的，但在使用時機上是有差別的。</description>
+      <title>Boostap 基本觀念 (1) - Boostap 簡介</title>
+      <link>https://ellielife.github.io/blog/boostrap/</link>
+      <pubDate>Mon, 24 Jun 2024 02:25:34 +0800</pubDate>
+      <guid>https://ellielife.github.io/blog/boostrap/</guid>
+      <description>Boostrap 簡介 Boostrap是一套用於網站和網路應用程式的前端框架，是個自由軟體，同時提供大量的元件來供靈活使用，且標準化的網格系統可以輕易地使網站能適應不同尺寸的載具，以及具有標準化的語意名稱，可順利的整合前後端開發。
+Boostrap4到Boostrap5的重點改變 移除IE10和IE11的支援
+隨著微軟轉向Edge瀏覽器，IE瀏覽器正在逐漸失去市場。此外Edge採用了開源chromium引擎，使其擁有與最新版本的Chrome和Firefox相當的所有現代JavaScript和CSS功能。
+(1)刪除M
+不再依賴JQuery
+以前需要利用JQuery才可以使用的下拉、滑塊、彈出框等組件，現則是改用原生的JavaScript進行取代。但不依賴不代表不能使用，若要在Boostrap5繼續使用也是可以的。
+新增CSS自定義屬性 由於遺棄了IE瀏覽器的限制器，使Boostrap可以使用自定義的CSS變數而不需要再依賴SaSS之類的協助，可以在_root.</description>
     </item>
   </channel>
 </rss>
