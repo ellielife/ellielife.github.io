@@ -151,7 +151,7 @@
           <span>By Ellie(梅)</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>2024-06-24</span>
+          <span>2024-06-26</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
           
@@ -163,34 +163,56 @@
         
         <div class="content mb-5">
           <h4 id="boostrap-簡介">Boostrap 簡介</h4>
-<p>Boostrap是一套用於網站和網路應用程式的前端框架，是個自由軟體，同時提供大量的元件來供靈活使用，且標準化的網格系統可以輕易地使網站能適應不同尺寸的載具，以及具有標準化的語意名稱，可順利的整合前後端開發。</p>
+<p>Boostrap是一套用於網站和網路應用程式的前端框架，是個自由軟體，同時提供大量的元件來供靈活使用，且標準化的網格系統可以輕易地使網站能適應不同尺寸的載具，以及具有標準化的語意名稱，可順利的整合前後端開發，是目前最受歡迎用來開發前端框架之一。</p>
 <hr>
 <h4 id="boostrap4到boostrap5的重點改變">Boostrap4到Boostrap5的重點改變</h4>
 <ol>
 <li>
 <p>移除IE10和IE11的支援<br>
-隨著微軟轉向Edge瀏覽器，IE瀏覽器正在逐漸失去市場。此外Edge採用了開源chromium引擎，使其擁有與最新版本的Chrome和Firefox相當的所有現代JavaScript和CSS功能。</p>
-<p>(1)刪除M</p>
+隨著微軟轉向Edge瀏覽器，IE瀏覽器正在逐漸失去市場。此外Edge採用了開源chromium引擎，使其擁有與最新版本的Chrome和Firefox相當的所有現代JavaScript和CSS功能。鑑於此開發者們可以專注使用較新的語法。</p>
+<p>(1)刪除Microsoft Edge Legacy。<br>
+(2)刪除internet Explorer 10 and 11。<br>
+(3)刪除Firefox &lt; 60。<br>
+(4)刪除Safari &lt; 10。<br>
+(5)刪除IOS Safari &lt;  10。<br>
+(6)刪除Chrome &lt; 60。<br>
+(7)刪除Android &lt; 6。</p>
 </li>
 <li>
 <p>不再依賴JQuery<br>
 以前需要利用JQuery才可以使用的下拉、滑塊、彈出框等組件，現則是改用原生的JavaScript進行取代。但不依賴不代表不能使用，若要在Boostrap5繼續使用也是可以的。</p>
 </li>
 <li>
-<p>新增CSS自定義屬性
+<p>新增CSS自定義屬性<br>
 由於遺棄了IE瀏覽器的限制器，使Boostrap可以使用自定義的CSS變數而不需要再依賴SaSS之類的協助，可以在_root.scss檔案中找到這些屬性，注意所有的變數都有-bs的前綴來避免它們與第三方套件的樣式衝突。</p>
 </li>
 <li>
-<p>新增Boostrap icon資源庫
+<p>新增Boostrap icon資源庫<br>
 以前開發者會需要引入像是Font Awesome之類的資源來協助打造自己的網站，但現在不用了，這次Boostrap5新增了Booostrap icon Library資源庫，裡面提供了超過1300種的開源圖檔，能夠同時支援不同的使用方式，像是SVG、SVG Sprite以及基本的web font。這個開源套件也可以使用在其他的專案中，並不僅限搭配Booostrap使用。</p>
 </li>
 <li>
-<p>新增響應式字體大小
+<p>新增響應式字體大小<br>
 文字排版的部分，新增了Responsive Font Size的設定，並將其設為預設值。也就是說常見的h1、h2等文字排版會自動響應使用者螢幕大小作出變化。</p>
 </li>
 <li>
-<p>優化了各個組件的外觀
+<p>優化了各個組件的外觀<br>
 以前使用Booostrap做出的網站會給人一種呆板的感覺，會需要撰寫額外的CSS進行優化，但這次Booostrap 5擴展了它的調色板，使包含更多不同色調的顏色，包括調色板或是字體等。</p>
+</li>
+<li>
+<p>增強的網格系統<br>
+Boostrap 5 保留了Boostrap 4 的網格系統結構外還曾增加其他類別以因應目前諸多的尺寸，以下Boostrap 5 網格系統中的改變。</p>
+<p>(1)新增xxl網格。<br>
+(2)gutter的寬度從固定的30px改為1.5em。<br>
+(3)表單佈局選項以替換為新的網格系統。<br>
+(4)添加了垂直兼距類。<br>
+(5)列(Columns)在默認情況下不再此使用  position:relative。</p>
+<h5 id="網站若套用boostrap的流程如下">網站若套用Boostrap的流程如下:</h5>
+<ol>
+<li>先使用網格系統進行網頁結構佈局。</li>
+<li>使用Typography(文字排版)與Components(元件)等類別來建置內容。</li>
+<li>利用Utilities(輔助類別)與Components(元件)本身所提供的調整樣式來美化或整體內容。</li>
+<li>自行撰寫CSS樣式來滿足Boostrap無法達成的效果。</li>
+</ol>
 </li>
 </ol>
 

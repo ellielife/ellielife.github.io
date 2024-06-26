@@ -6,20 +6,18 @@
     <description>Recent content in 工程筆記 on 與心同行｜EllieDiary艾莉的生活日記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 24 Jun 2024 02:25:34 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 26 Jun 2024 19:04:34 +0800</lastBuildDate>
     <atom:link href="https://ellielife.github.io/categories/%E5%B7%A5%E7%A8%8B%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Boostap 基本觀念 (1) - Boostap 簡介</title>
       <link>https://ellielife.github.io/blog/boostrap/</link>
-      <pubDate>Mon, 24 Jun 2024 02:25:34 +0800</pubDate>
+      <pubDate>Wed, 26 Jun 2024 19:04:34 +0800</pubDate>
       <guid>https://ellielife.github.io/blog/boostrap/</guid>
-      <description>Boostrap 簡介 Boostrap是一套用於網站和網路應用程式的前端框架，是個自由軟體，同時提供大量的元件來供靈活使用，且標準化的網格系統可以輕易地使網站能適應不同尺寸的載具，以及具有標準化的語意名稱，可順利的整合前後端開發。
+      <description>Boostrap 簡介 Boostrap是一套用於網站和網路應用程式的前端框架，是個自由軟體，同時提供大量的元件來供靈活使用，且標準化的網格系統可以輕易地使網站能適應不同尺寸的載具，以及具有標準化的語意名稱，可順利的整合前後端開發，是目前最受歡迎用來開發前端框架之一。
 Boostrap4到Boostrap5的重點改變 移除IE10和IE11的支援
-隨著微軟轉向Edge瀏覽器，IE瀏覽器正在逐漸失去市場。此外Edge採用了開源chromium引擎，使其擁有與最新版本的Chrome和Firefox相當的所有現代JavaScript和CSS功能。
-(1)刪除M
-不再依賴JQuery
-以前需要利用JQuery才可以使用的下拉、滑塊、彈出框等組件，現則是改用原生的JavaScript進行取代。但不依賴不代表不能使用，若要在Boostrap5繼續使用也是可以的。
-新增CSS自定義屬性 由於遺棄了IE瀏覽器的限制器，使Boostrap可以使用自定義的CSS變數而不需要再依賴SaSS之類的協助，可以在_root.</description>
+隨著微軟轉向Edge瀏覽器，IE瀏覽器正在逐漸失去市場。此外Edge採用了開源chromium引擎，使其擁有與最新版本的Chrome和Firefox相當的所有現代JavaScript和CSS功能。鑑於此開發者們可以專注使用較新的語法。
+(1)刪除Microsoft Edge Legacy。
+(2)刪除internet Explorer 10 and 11。</description>
     </item>
   </channel>
 </rss>

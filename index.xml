@@ -6,8 +6,19 @@
     <description>Recent content on 與心同行｜EllieDiary艾莉的生活日記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 26 Jun 2024 05:46:34 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 26 Jun 2024 19:04:34 +0800</lastBuildDate>
     <atom:link href="https://ellielife.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Boostap 基本觀念 (1) - Boostap 簡介</title>
+      <link>https://ellielife.github.io/blog/boostrap/</link>
+      <pubDate>Wed, 26 Jun 2024 19:04:34 +0800</pubDate>
+      <guid>https://ellielife.github.io/blog/boostrap/</guid>
+      <description>Boostrap 簡介 Boostrap是一套用於網站和網路應用程式的前端框架，是個自由軟體，同時提供大量的元件來供靈活使用，且標準化的網格系統可以輕易地使網站能適應不同尺寸的載具，以及具有標準化的語意名稱，可順利的整合前後端開發，是目前最受歡迎用來開發前端框架之一。
+Boostrap4到Boostrap5的重點改變 移除IE10和IE11的支援
+隨著微軟轉向Edge瀏覽器，IE瀏覽器正在逐漸失去市場。此外Edge採用了開源chromium引擎，使其擁有與最新版本的Chrome和Firefox相當的所有現代JavaScript和CSS功能。鑑於此開發者們可以專注使用較新的語法。
+(1)刪除Microsoft Edge Legacy。
+(2)刪除internet Explorer 10 and 11。</description>
+    </item>
     <item>
       <title>冥想VS靜心，我個人比較喜歡靜心</title>
       <link>https://ellielife.github.io/blog/%E5%86%A5%E6%83%B3vs%E9%9D%9C%E5%BF%83%E6%88%91%E5%80%8B%E4%BA%BA%E6%AF%94%E8%BC%83%E5%96%9C%E6%AD%A1%E9%9D%9C%E5%BF%83/</link>
