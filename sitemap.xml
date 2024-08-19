@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ellielife.github.io/</loc>
+    <lastmod>2024-08-18T13:13:23+08:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/about/</loc>
+    <lastmod>2024-08-18T13:13:23+08:00</lastmod>
+  </url><url>
     <loc>https://ellielife.github.io/blog/</loc>
     <lastmod>2024-08-11T22:04:10+08:00</lastmod>
   </url><url>
@@ -9,9 +15,6 @@
     <lastmod>2024-08-11T22:04:10+08:00</lastmod>
   </url><url>
     <loc>https://ellielife.github.io/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2024-08-11T22:04:10+08:00</lastmod>
-  </url><url>
-    <loc>https://ellielife.github.io/</loc>
     <lastmod>2024-08-11T22:04:10+08:00</lastmod>
   </url><url>
     <loc>https://ellielife.github.io/blog/%E9%9D%88%E7%95%B0%E9%AB%94%E9%A9%97%E8%AE%93%E6%88%91%E7%9F%A5%E9%81%93/</loc>
@@ -37,9 +40,6 @@
   </url><url>
     <loc>https://ellielife.github.io/blog/%E6%9C%89%E4%BA%BA%E8%B7%9F%E4%BD%A0%E8%AA%AA%E4%BD%A0%E4%B8%8D%E6%BC%82%E4%BA%AE/</loc>
     <lastmod>2024-07-11T01:30:34+08:00</lastmod>
-  </url><url>
-    <loc>https://ellielife.github.io/about/</loc>
-    <lastmod>2024-07-10T13:13:23+08:00</lastmod>
   </url><url>
     <loc>https://ellielife.github.io/blog/%E7%8F%BE%E5%9C%A8%E9%80%99%E4%B8%96%E7%95%8C%E6%9C%80%E5%80%BC%E9%8C%A2%E7%9A%84%E4%B8%8D%E6%98%AF%E8%B2%A1%E5%AF%8C%E8%80%8C%E6%98%AF%E4%BD%A0%E7%9A%84idea/</loc>
     <lastmod>2024-07-07T05:25:47+08:00</lastmod>
