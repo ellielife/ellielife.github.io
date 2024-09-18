@@ -250,8 +250,8 @@ $(element).wrap("<a href='/radio/pick/'></a>");
 
   <script>
     (function(){
-        if('May050928'){
-            if (prompt('請輸入文章密碼') !== 'May050928'){
+        if(''){
+            if (prompt('請輸入文章密碼') !== ''){
                 alert('密碼錯誤！');
                 history.back();
             }
@@ -283,19 +283,111 @@ $(element).wrap("<a href='/radio/pick/'></a>");
         </div>
         
         <div class="content mb-5">
-          <h4 id="marldown語法簡介">Marldown語法簡介</h4>
+          <h3 id="markdown語法簡介">Markdown語法簡介</h3>
 <hr>
 <p>Markdown是由Daring Fireball創建的，原始指南在這裡。然而，它的語法在不同的解析器或編輯器之間有所不同。</p>
 <p>請注意，Markdown 來源中的 HTML 片段將被識別，但不會被解析或渲染。另外，儲存後可能會對原始 Markdown 原始碼進行小的重新格式化。</p>
-<h4 id="內嵌-html">內嵌 HTML</h4>
+<h3 id="內嵌-html">內嵌 HTML</h3>
 <hr>
 <blockquote>
-<p>Markdown的語法，用來作為<strong>網路寫作</strong>的格式。它不是HTML的替代品。它的語法非常小，僅對於HTML標籤是一個非常小的子集，Markdown想法是讓閱讀、寫作和編輯散文變得容易。</p>
+<p>Markdown語法，用來作為<strong>網路寫作</strong>的格式。它不是HTML的替代品。它的語法非常小，僅對於HTML標籤是一個非常小的子集，Markdown想法是讓閱讀、寫作和編輯散文變得容易。</p>
 </blockquote>
 <p>因此，HTML是一種發佈格式； Markdown 是一種寫作 格式。因此，Markdown 的格式化語法僅解決可以用純文字傳達的問題。</p>
 <p>對於 Markdown 語法未涵蓋的任何標記，您只需使用 HTML 本身即可。無需在其前面加上前綴或對其進行分隔來表明您要從 Markdown 切換到 HTML；你只需使用標籤。</p>
-<h4 id="標籤">標籤</h4>
+<h3 id="標籤--heading">標籤  Heading</h3>
 <hr>
+<p>以<code>#</code>為符號代表。</p>
+<blockquote>
+<h5 id="程式碼範例如下">程式碼範例如下&hellip;</h5>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span><span style="color:#d33682">#  this is an h1   
+</span></span></span><span style="display:flex;"><span><span style="color:#d33682"></span><span style="color:#d33682">##   this is an h2 
+</span></span></span><span style="display:flex;"><span><span style="color:#d33682">###   this is an h3 
+</span></span></span><span style="display:flex;"><span><span style="color:#d33682">####   this is an h4 
+</span></span></span><span style="display:flex;"><span><span style="color:#d33682">#####   this is an h5  
+</span></span></span><span style="display:flex;"><span><span style="color:#d33682">######   this is an h6  
+</span></span></span></code></pre></div></blockquote>
+<blockquote>
+<h5 id="顯示出來的結果">顯示出來的結果&hellip;</h5>
+<h1 id="this-is-an-h1">this is an h1</h1>
+<h2 id="this-is-an-h2">this is an h2</h2>
+<h3 id="this-is-an-h3">this is an h3</h3>
+<h4 id="this-is-an-h4">this is an h4</h4>
+<h5 id="this-is-an-h5">this is an h5</h5>
+<h6 id="this-is-an-h6">this is an h6</h6>
+</blockquote>
+<h3 id="清單">清單</h3>
+<hr>
+<h4 id="有序清單-list">有序清單 List</h4>
+<p>以<code>1.</code>數字符號代表，  輸入<code>1. list item 1</code>將建立一個有序列表。</p>
+<blockquote>
+<h5 id="程式碼範例如下-1">程式碼範例如下&hellip;</h5>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span><span style="color:#859900">1.</span> 黃色
+</span></span><span style="display:flex;"><span><span style="color:#859900">2.</span> 綠色
+</span></span><span style="display:flex;"><span><span style="color:#859900">3.</span> 藍色
+</span></span></code></pre></div></blockquote>
+<blockquote>
+<h5 id="顯示結果如下">顯示結果如下&hellip;</h5>
+<ol>
+<li>黃色</li>
+<li>綠色</li>
+<li>藍色</li>
+</ol>
+</blockquote>
+<h4 id="無序清單-unordered-list">無序清單 Unordered List</h4>
+<p>以<code>*</code>和<code>+</code>或<code>-</code>為符號代表，  輸入<code>* list item 1</code>將建立一個無序列表。</p>
+<blockquote>
+<h5 id="程式碼範例如下-2">程式碼範例如下&hellip;</h5>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span><span style="color:#859900">*</span> 黃色
+</span></span><span style="display:flex;"><span><span style="color:#859900">*</span> 綠色
+</span></span><span style="display:flex;"><span><span style="color:#859900">*</span> 藍色
+</span></span></code></pre></div></blockquote>
+<blockquote>
+<h5 id="顯示結果如下-1">顯示結果如下&hellip;</h5>
+<ul>
+<li>黃色</li>
+<li>綠色</li>
+<li>藍色</li>
+</ul>
+</blockquote>
+<h3 id="任務清單">任務清單</h3>
+<hr>
+<p>任務清單是其中項目標記為[ ]或[x]（不完整或完整）的清單。</p>
+<blockquote>
+<h5 id="程式碼範例如下-3">程式碼範例如下&hellip;</h5>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span><span style="color:#859900">-</span> [] 12點睡覺
+</span></span><span style="display:flex;"><span><span style="color:#859900">- [X]</span> 鬧鐘設定好了嗎
+</span></span></code></pre></div></blockquote>
+<blockquote>
+<h5 id="顯示結果如下-2">顯示結果如下&hellip;</h5>
+<ul>
+<li>[] 睡覺</li>
+<li><input checked="" disabled="" type="checkbox"> 鬧鐘設定好了嗎</li>
+</ul>
+</blockquote>
+<h3 id="插入圖片-image">插入圖片 Image</h3>
+<hr>
+<blockquote>
+<h5 id="程式碼範例如下-4">程式碼範例如下&hellip;</h5>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span>![<span style="color:#268bd2;font-weight:bold">image</span>](<span style="color:#268bd2">/images/featured-post/post-1.jpg</span>)
+</span></span></code></pre></div></blockquote>
+<blockquote>
+<h5 id="顯示結果如下-3">顯示結果如下&hellip;</h5>
+<p><img src="/images/featured-post/post-1.jpg" alt="image"></p>
+</blockquote>
+<h3 id="插入yt影片-youtube-video">插入YT影片 Youtube video</h3>
+<hr>
+<blockquote>
+<h5 id="程式碼範例如下-5">程式碼範例如下&hellip;</h5>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span>{ {&lt; <span style="color:#268bd2;font-weight:bold">youtube</span> <span style="color:#268bd2">C0DPdy98e4c</span> &gt;} }
+</span></span></code></pre></div></blockquote>
+<blockquote>
+<h5 id="顯示結果如下-4">顯示結果如下&hellip;</h5>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/C0DPdy98e4c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</blockquote>
 
         </div>
 
