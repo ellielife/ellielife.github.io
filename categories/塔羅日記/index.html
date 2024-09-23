@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-tw"><head>
   <meta charset="utf-8">
-  <title>Ellie&#39;s Blog</title>
+  <title>與心同行｜MayDiary生活日誌</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
-  <meta name="author" content="Ellie(梅)">
+  <meta name="description" content="與心同行｜MayDiary">
+  <meta name="author" content="梅May">
     
   
   <meta name="theme-name" content="liva-hugo" />
@@ -56,26 +56,176 @@
   
 </div>
 <!-- preloader end -->
-<!-- navigation -->
-<header class="navigation">
-  <div class="container">
+<!-- navigation 導航列-->
+
+<header class="navigation"> 
+  <div class="container-fluid">
     
-    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+    
+    
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
+      
       <a class="navbar-brand" href="https://ellielife.github.io/">
-        <span class="text-body">Ellie's Blog</span>
+      <span class="text-body">與心同行｜MayDiary生活日誌</span>
       </a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <i class="ti-menu"></i>
       </button>
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
+<script type="text/javascript">
+  const ap = new APlayer({
+    container: document.getElementById('aplayera'),
+        fixed: true,
+        lrcType: 3,
+        order: 'random',
+    audio: [{
+        name: 'LIMBO 停滯不前',
+        artist: 'Keshi凱西',
+        url: '/images/Music/keshi - LIMBO 停滯不前.mp3',
+        cover: '/images/Music/keshi-LIMBO 停滯不前.jpg',
+        lrc: ''
+    },
+    {
+        name: 'Blue 憂鬱',
+        artist: 'Keshi凱西',
+        url: '/images/Music/keshi - blue.mp3',
+        cover: '/images/Music/keshi-blue.jpg',
+        lrc: ''
+    },
+    {
+        name: 'keshi - beside you',
+        artist: 'Keshi凱西',
+        url: '/images/Music/keshi - beside you.mp3',
+        cover: '/images/Music/beside you.jpg',
+        lrc: ''
+    },
+        {
+        name: '蝶々結び',
+        artist: 'Aimer',
+        url: 'https://lc-gluttony.s3.amazonaws.com/dRYJBlSN7EF3/ofE4yX5UYy3zpMaNwt6nRnWQd0sIP4xi/Aimer%20-%20%E8%9D%B6%E3%80%85%E7%B5%90%E3%81%B3.flac',
+        cover: 'https://lc-gluttony.s3.amazonaws.com/dRYJBlSN7EF3/OQaFrdqT2Yiuzcmtx2uIlsLG8GjD6ok3/%E8%9D%B6%E3%80%85%E7%B5%90%E3%81%B3.jpg',
+        lrc: 'https://lc-gluttony.s3.amazonaws.com/dRYJBlSN7EF3/r1HTik6Im5Bzuvfo7JQiAMIEoBqs2m7I/Aimer%20%28%E3%82%A8%E3%83%A1%29%20-%20%E8%9D%B6%E3%80%85%E7%B5%90%E3%81%B3%20%28%E8%9D%B4%E8%9D%B6%E7%BB%93%29.lrc'
+    },
+    {
+        name: 'last cross',
+        artist: 'T2ya',
+        url: '/images/Music/【Reborn!】last cross.mp3',
+        cover: '/images/Music/Last cross.jpg',
+        lrc: ''
+    },
+    ]
+});
+
+        ready();
+    
+    isRecover = false;
+    function ready(){
+        ap.on('canplay', function () {
+            if(!isRecover){
+                if(localStorage.getItem("musicIndex") != null){
+                    musicIndex = localStorage.getItem("musicIndex");
+                    musicTime = localStorage.getItem("musicTime");
+                    if(ap.list.index != musicIndex){
+                        ap.list.switch(musicIndex);
+                    }else{
+                        ap.seek(musicTime);
+                        ap.play();
+                        localStorage.clear();
+                        ap.setAttribute(muted,'');
+                        ap.setAttribute(playsinline,'');
+                        isRecover = true;
+                    }
+                }else{
+                    isRecover = true;
+                }
+            }
+        });
+    }
+
+    window.onbeforeunload = function(event) {
+        if(!ap.audio.paused){
+            musicIndex = ap.list.index;
+            musicTime = ap.audio.currentTime;
+            localStorage.setItem("musicIndex",musicIndex);
+            localStorage.setItem("musicTime",musicTime);
+        }
+    };
+
+
+
+var element = document.getElementsByClassName("aplayer-title")[0];  
+$(element).wrap("<a href='/radio/pick/'></a>");
+</script>
+
+
+
+
+
+<style type="text/css">
+    .aplayer-title, .aplayer-list-light {
+        color:#000000cc;
+    }
+    .aplayer-list{
+        color:#717070bf;
+    }
+</style>
+
+
+
 
       <div class="navbar-collapse text-center collapse" id="navigation" style>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://ellielife.github.io/">Blog</a>
+        <ul class="navbar-nav ml-auto"> 
+          <li><a class="nav-link" href="https://ellielife.github.io/">首頁</a></li>
+           
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">我熱愛的生活啊</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/日常生活/">日常生活</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/夢記事/">夢記事</a></li>
+
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://ellielife.github.io/about">About me</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">自我成長</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">工程筆記</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/閱讀筆記/">閱讀筆記</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">身心靈平衡</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/療癒筆記/">療癒筆記</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/靈性書寫傳訊/">靈性書寫傳訊</a></li>
+              <li><a class="dropdown-item" href="#">塔羅占卜、水晶、精油等</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">關於我</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">關於我</a></li>
+              <li><a class="dropdown-item" href="#">作品集</a></li>
+            </ul>
+
           </li>
         </ul>
+
 
         
         <!-- search -->
@@ -94,6 +244,27 @@
       </div>
     </nav>
   </div>
+  
+  
+  <div class="row">
+    <div class="container-fluid">
+      <img src="/images/背景圖5.jpg">
+    </div>
+  </div>
+  
+
+  <script>
+    (function(){
+        if(''){
+            if (prompt('請輸入文章密碼') !== ''){
+                alert('密碼錯誤！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
 </header>
 <!-- /navigation -->
 
@@ -101,86 +272,104 @@
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      
-      <div class="col-lg-4">
-  <div class="widgets">
-    
-    <div class="widget">
-      
-      <h4 class="widget-title">About Me</h4>
-      
-      <img src="https://ellielife.github.io/images/ellie.1.jpg" alt=""
-        class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
-      
-      <p>Hello,我叫Ellie艾莉(梅)，我是一名前端工程師、部落格經營者和塔羅師，我的興趣很廣泛，目前只想做自己的事，活在自己熱愛的生活裡。</p>
-      <a href="https://ellielife.github.io/about/" class="btn btn-outline-primary">Know More</a>
-      
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Category</h4>
-      <ul class="list-unstyled">
-        <li><a
-            href="/categories/%e5%a1%94%e7%be%85%e6%97%a5%e8%a8%98/">塔羅日記</a>
-        </li>
-        <li><a
-            href="/categories/%e7%94%9f%e6%b4%bb%e6%97%a5%e8%a8%98/">生活日記</a>
-        </li>
-      </ul>
-    </div>
-    
-   
-
-    
-    <div class="widget">
-      <h4 class="widget-title">Social</h4>
-      <ul class="list-inline social-links">
-        
-        <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
-        
-        <li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
-        
-        <li class="list-inline-item"><a href="#"><i class="ti-instagram"></i></a></li>
-        
-        <li class="list-inline-item"><a href="#"><i class="ti-github"></i></a></li>
-        
-        <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
-        
-      </ul>
-    </div>
-  
-  </div>
-</div>
-
-      
       <div class="col-lg-8 mb-5 mb-lg-0">
         <div class="row">
           
           
-          <div class="col-md-6 mb-4">
+          <div class="col-md-8 mb-4">
     <article class="card">
+        
+        <img src="https://ellielife.github.io/images/post/%E9%9D%88%E6%80%A7/%E5%A1%94%E7%BE%85%E6%97%A5%E8%A8%981.jpg" class="card-img-top" alt="塔羅日記｜我今天該請假嗎?">
         
         <div class="card-body px-0">
         
-        <a href="/categories/%e5%a1%94%e7%be%85%e6%97%a5%e8%a8%98"
-            class="text-primary">塔羅日記</a>
-        
-        <a href="https://ellielife.github.io/blog/post-2/" class="h5 d-block my-3">塔羅案例分享:這個月我能拿到薪水嗎?。</a>
+        <a href="https://ellielife.github.io/blog/%E9%9B%A3%E9%81%93%E4%B8%80%E5%AE%9A%E8%A6%81%E7%B5%90%E5%A9%9A%E7%94%9F%E5%AD%90%E6%89%8D%E7%AE%97%E6%98%AF%E4%BA%BA%E7%94%9F%E5%8B%9D%E5%88%A9%E7%A5%96%E5%97%8E/" class="h5 d-block my-3">塔羅日記｜我今天該請假嗎?</a>
         <div class="mb-3 post-meta">
-            <span>By Ellie(梅)</span>
+            <span>By 梅May</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2023-01-05</span>
+            <span>2024-09-23</span>
+            
+            <span class="border-bottom border-primary px-2 mx-1"></span>
+            
+            <a href="/categories/%e5%a1%94%e7%be%85%e6%97%a5%e8%a8%98"
+            class="text-primary">塔羅日記</a>
             
         </div>
-        <p class="card-text">指引</p>
-        <a href="https://ellielife.github.io/blog/post-2/" class="btn btn-outline-primary">read more</a>
+        <p class="card-text"></p>
+        <a href="https://ellielife.github.io/blog/%E9%9B%A3%E9%81%93%E4%B8%80%E5%AE%9A%E8%A6%81%E7%B5%90%E5%A9%9A%E7%94%9F%E5%AD%90%E6%89%8D%E7%AE%97%E6%98%AF%E4%BA%BA%E7%94%9F%E5%8B%9D%E5%88%A9%E7%A5%96%E5%97%8E/" class="btn btn-outline-primary">閱讀更多</a>
         </div>
+        <hr>
     </article>
 </div>
           
         </div>
       </div>
+      
+      <div class="col-lg-4">
+    <div class="widgets">
+      
+      <div class="widget">
+        
+        <h4 class="widget-title">哈囉，我是梅May🙂</h4>
+        
+        <img src="https://ellielife.github.io/images/myself/May8.jpg" alt=""
+          class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
+        
+        <p>自我探索｜自我學習｜身心靈療癒，是個生活修行者，心靈陪伴者， 這裡是我紀錄生活日誌的地方，只想活在自己熱愛的生活裡，成為自己的太陽，活出我的不正常人生</p> 
+        <a href="https://ellielife.github.io/about/" class="btn btn-outline-primary">閱讀更多</a>
+        
+      </div>
+      
+      <div class="widget">
+        <h4 class="widget-title">文章分類</h4>
+        <ul class="list-unstyled">
+          <li><a
+              href="/categories/%e4%be%86%e9%bb%9e%e5%a5%bd%e7%8e%a9%e7%9a%84/">來點好玩的</a>
+          </li>
+          <li><a
+              href="/categories/%e5%a1%94%e7%be%85%e6%97%a5%e8%a8%98/">塔羅日記</a>
+          </li>
+          <li><a
+              href="/categories/%e5%a4%a2%e8%a8%98%e4%ba%8b/">夢記事</a>
+          </li>
+          <li><a
+              href="/categories/%e5%b7%a5%e7%a8%8b%e7%ad%86%e8%a8%98/">工程筆記</a>
+          </li>
+          <li><a
+              href="/categories/%e6%97%a5%e5%b8%b8%e7%94%9f%e6%b4%bb/">日常生活</a>
+          </li>
+          <li><a
+              href="/categories/%e7%94%9f%e6%b4%bb%e6%97%a5%e8%a8%98/">生活日記</a>
+          </li>
+          <li><a
+              href="/categories/%e7%99%82%e7%99%92%e7%ad%86%e8%a8%98/">療癒筆記</a>
+          </li>
+          <li><a
+              href="/categories/%e8%ba%ab%e5%bf%83%e9%9d%88%e7%99%82%e7%99%92/">身心靈療癒</a>
+          </li>
+          <li><a
+              href="/categories/%e9%96%b1%e8%ae%80%e7%ad%86%e8%a8%98/">閱讀筆記</a>
+          </li>
+          <li><a
+              href="/categories/%e9%9d%88%e6%80%a7%e6%9b%b8%e5%af%ab%e5%82%b3%e8%a8%8a/">靈性書寫傳訊</a>
+          </li>
+        </ul>
+      </div>
+      
+      
+      <div class="widget">
+        <h4 class="widget-title">社群</h4>
+        <ul class="list-inline social-links">
+          
+          <li class="list-inline-item"><a href="https://www.instagram.com/elliediary0509?igsh=MWZ0MDgxcGRxZWxwYg%3D%3D&amp;utm_source=qrhttps://www.instagram.com/elliediary0509?igsh=MWZ0MDgxcGRxZWxwYg%3D%3D&amp;utm_source=qr"><i class="ti-instagram"></i></a></li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+  </div>
       
 
       
@@ -222,45 +411,5 @@
 
 
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-<div id="js-cookie-box" class="cookie-box cookie-box-hide">
-	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
-</div>
-<script>
-	(function ($) {
-		const cookieBox = document.getElementById('js-cookie-box');
-		const cookieButton = document.getElementById('js-cookie-button');
-		if (!Cookies.get('cookie-box')) {
-			cookieBox.classList.remove('cookie-box-hide');
-			cookieButton.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires:  2 
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
-		}
-	})(jQuery);
-</script>
-
-
-<style>
-.cookie-box {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 9999;
-  padding: 1rem 2rem;
-  background: rgb(71, 71, 71);
-  transition: all .75s cubic-bezier(.19, 1, .22, 1);
-  color: #fdfdfd;
-}
-
-.cookie-box-hide {
-  display: none;
-}
-</style>
 </body>
 </html>
