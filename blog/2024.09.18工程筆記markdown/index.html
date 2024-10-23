@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>Ellie&#39;s Diary｜艾莉生活日記</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Ellie&#39;s Diary｜艾莉生活日記">
+  <meta name="author" content="Ellie(梅)✨">
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+  
+  <meta name="generator" content="Hugo 0.120.4">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://ellielife.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://ellielife.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation 導航列-->
+
+<header class="navigation"> 
+  <div class="container-fluid">
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
+      
+      <a class="navbar-brand" href="https://ellielife.github.io/">
+      <span class="text-body">Ellie's Diary｜艾莉生活日記</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <i class="ti-menu"></i>
+      </button>
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
+<script type="text/javascript">
+  const ap = new APlayer({
+    container: document.getElementById('aplayera'),
+        fixed: true,
+        lrcType: 3,
+        order: 'random',
+    audio: [{
+      name: 'Return to Innocence 反璞歸真',
+        artist: '台灣原住民+Enigma',
+        url: '/images/Music/Return_to_Innocence.wmv.mp3',
+        cover: '/images/Music/Return to Innocence.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Sasha_Alex_Sloan_-_Older',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/Sasha_Alex_Sloan_-_Older.mp3',
+        cover: '/images/Music/Sasha_Alex_Sloan-Older.jpg',
+        lrc: ''
+    },
+    {
+      name: '謎幻樂團-雷鳴_Thunder',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/謎幻樂團-雷鳴_Thunder.mp3',
+        cover: '/images/Music/謎幻樂團Thunder.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Wherever you are',
+        artist: 'ONE OK ROCK',
+        url: '/images/Music/ONE OK ROCK - Wherever you are.m4a',
+        cover: '/images/Music/Wherever you are .png',
+        lrc: ''
+    },
+    ]
+});
+
+        ready();
+    
+    isRecover = false;
+    function ready(){
+        ap.on('canplay', function () {
+            if(!isRecover){
+                if(localStorage.getItem("musicIndex") != null){
+                    musicIndex = localStorage.getItem("musicIndex");
+                    musicTime = localStorage.getItem("musicTime");
+                    if(ap.list.index != musicIndex){
+                        ap.list.switch(musicIndex);
+                    }else{
+                        ap.seek(musicTime);
+                        ap.play();
+                        localStorage.clear();
+                        ap.setAttribute(muted,'');
+                        ap.setAttribute(playsinline,'');
+                        isRecover = true;
+                    }
+                }else{
+                    isRecover = true;
+                }
+            }
+        });
+    }
+
+    window.onbeforeunload = function(event) {
+        if(!ap.audio.paused){
+            musicIndex = ap.list.index;
+            musicTime = ap.audio.currentTime;
+            localStorage.setItem("musicIndex",musicIndex);
+            localStorage.setItem("musicTime",musicTime);
+        }
+    };
+
+
+
+var element = document.getElementsByClassName("aplayer-title")[0];  
+$(element).wrap("<a href='/radio/pick/'></a>");
+</script>
+
+
+
+
+
+<style type="text/css">
+    .aplayer-title, .aplayer-list-light {
+        color:#000000cc;
+    }
+    .aplayer-list{
+        color:#717070bf;
+    }
+</style>
+
+
+
+
+      <div class="navbar-collapse text-center collapse" id="navigation" style>
+        <ul class="navbar-nav ml-auto"> 
+          <li><a class="nav-link" href="https://ellielife.github.io/">首頁</a></li>
+           
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">我熱愛的生活啊</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/日常生活/">日常生活</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/夢記事/">夢記事</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">自我成長</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">工程筆記</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/閱讀筆記/">閱讀筆記</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">身心靈平衡</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/療癒筆記/">療癒筆記</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/靈性書寫傳訊/">靈性書寫傳訊</a></li>
+              <li><a class="dropdown-item" href="#">塔羅占卜、水晶、精油等</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">關於我</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">關於我</a></li>
+              <li><a class="dropdown-item" href="#">作品集</a></li>
+            </ul>
+
+          </li>
+        </ul>
+
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://ellielife.github.io//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+  
+  
+  <div class="row">
+    <div class="container-fluid">
+      <img src="/images/背景圖5.jpg" width="100%">
+    </div>
+  </div>
+  
+
+  <script>
+    (function(){
+        if(''){
+            if (prompt('請輸入文章密碼') !== ''){
+                alert('密碼錯誤！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h3 class="text-center">工程筆記｜Markdown語法</h3>  
+        
+        <div class="mb-3 text-center">  
+          <span>By Ellie(梅)✨</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2024-09-18</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/%e5%b7%a5%e7%a8%8b%e7%ad%86%e8%a8%98">
+            <span class="text-primary">工程筆記</span>
+          </a>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h3 id="markdown語法簡介">Markdown語法簡介</h3>
+<hr>
+<p>Markdown是由Daring Fireball創建的，原始指南在這裡。然而，它的語法在不同的解析器或編輯器之間有所不同。</p>
+<p>請注意，Markdown 來源中的 HTML 片段將被識別，但不會被解析或渲染。另外，儲存後可能會對原始 Markdown 原始碼進行小的重新格式化。</p>
+<h3 id="內嵌-html">內嵌 HTML</h3>
+<hr>
+<blockquote>
+<p>Markdown語法，用來作為<strong>網路寫作</strong>的格式。它不是HTML的替代品。它的語法非常小，僅對於HTML標籤是一個非常小的子集，Markdown想法是讓閱讀、寫作和編輯散文變得容易。</p>
+</blockquote>
+<p>因此，HTML是一種發佈格式； Markdown 是一種寫作 格式。因此，Markdown 的格式化語法僅解決可以用純文字傳達的問題。</p>
+<p>對於 Markdown 語法未涵蓋的任何標記，您只需使用 HTML 本身即可。無需在其前面加上前綴或對其進行分隔來表明您要從 Markdown 切換到 HTML；你只需使用標籤。</p>
+<h3 id="標籤--heading">標籤  Heading</h3>
+<hr>
+<p>以<code>#</code>為符號代表。</p>
+<blockquote>
+<h5 id="程式碼範例如下">程式碼範例如下&hellip;</h5>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span><span style="color:#d33682">#  this is an h1   
+</span></span></span><span style="display:flex;"><span><span style="color:#d33682"></span><span style="color:#d33682">##   this is an h2 
+</span></span></span><span style="display:flex;"><span><span style="color:#d33682">###   this is an h3 
+</span></span></span><span style="display:flex;"><span><span style="color:#d33682">####   this is an h4 
+</span></span></span><span style="display:flex;"><span><span style="color:#d33682">#####   this is an h5  
+</span></span></span><span style="display:flex;"><span><span style="color:#d33682">######   this is an h6  
+</span></span></span></code></pre></div></blockquote>
+<blockquote>
+<h5 id="顯示出來的結果">顯示出來的結果&hellip;</h5>
+<h1 id="this-is-an-h1">this is an h1</h1>
+<h2 id="this-is-an-h2">this is an h2</h2>
+<h3 id="this-is-an-h3">this is an h3</h3>
+<h4 id="this-is-an-h4">this is an h4</h4>
+<h5 id="this-is-an-h5">this is an h5</h5>
+<h6 id="this-is-an-h6">this is an h6</h6>
+</blockquote>
+<h3 id="清單">清單</h3>
+<hr>
+<h4 id="有序清單-list">有序清單 List</h4>
+<p>以<code>1.</code>數字符號代表，  輸入<code>1. list item 1</code>將建立一個有序列表。</p>
+<blockquote>
+<h5 id="程式碼範例如下-1">程式碼範例如下&hellip;</h5>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span><span style="color:#859900">1.</span> 黃色
+</span></span><span style="display:flex;"><span><span style="color:#859900">2.</span> 綠色
+</span></span><span style="display:flex;"><span><span style="color:#859900">3.</span> 藍色
+</span></span></code></pre></div></blockquote>
+<blockquote>
+<h5 id="顯示結果如下">顯示結果如下&hellip;</h5>
+<ol>
+<li>黃色</li>
+<li>綠色</li>
+<li>藍色</li>
+</ol>
+</blockquote>
+<h4 id="無序清單-unordered-list">無序清單 Unordered List</h4>
+<p>以<code>*</code>和<code>+</code>或<code>-</code>為符號代表，  輸入<code>* list item 1</code>將建立一個無序列表。</p>
+<blockquote>
+<h5 id="程式碼範例如下-2">程式碼範例如下&hellip;</h5>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span><span style="color:#859900">*</span> 黃色
+</span></span><span style="display:flex;"><span><span style="color:#859900">*</span> 綠色
+</span></span><span style="display:flex;"><span><span style="color:#859900">*</span> 藍色
+</span></span></code></pre></div></blockquote>
+<blockquote>
+<h5 id="顯示結果如下-1">顯示結果如下&hellip;</h5>
+<ul>
+<li>黃色</li>
+<li>綠色</li>
+<li>藍色</li>
+</ul>
+</blockquote>
+<h3 id="任務清單">任務清單</h3>
+<hr>
+<p>任務清單是其中項目標記為[ ]或[x]（不完整或完整）的清單。</p>
+<blockquote>
+<h5 id="程式碼範例如下-3">程式碼範例如下&hellip;</h5>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span><span style="color:#859900">-</span> [] 12點睡覺
+</span></span><span style="display:flex;"><span><span style="color:#859900">- [X]</span> 鬧鐘設定好了嗎
+</span></span></code></pre></div></blockquote>
+<blockquote>
+<h5 id="顯示結果如下-2">顯示結果如下&hellip;</h5>
+<ul>
+<li>[] 睡覺</li>
+<li><input checked="" disabled="" type="checkbox"> 鬧鐘設定好了嗎</li>
+</ul>
+</blockquote>
+<h3 id="插入圖片-image">插入圖片 Image</h3>
+<hr>
+<blockquote>
+<h5 id="程式碼範例如下-4">程式碼範例如下&hellip;</h5>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span>![<span style="color:#268bd2;font-weight:bold">image</span>](<span style="color:#268bd2">/images/featured-post/post-1.jpg</span>)
+</span></span></code></pre></div></blockquote>
+<blockquote>
+<h5 id="顯示結果如下-3">顯示結果如下&hellip;</h5>
+<p><img src="/images/featured-post/post-1.jpg" alt="image"></p>
+</blockquote>
+<h3 id="插入yt影片-youtube-video">插入YT影片 Youtube video</h3>
+<hr>
+<blockquote>
+<h5 id="程式碼範例如下-5">程式碼範例如下&hellip;</h5>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Markdown" data-lang="Markdown"><span style="display:flex;"><span>{ {&lt; <span style="color:#268bd2;font-weight:bold">youtube</span> <span style="color:#268bd2">C0DPdy98e4c</span> &gt;} }
+</span></span></code></pre></div></blockquote>
+<blockquote>
+<h5 id="顯示結果如下-4">顯示結果如下&hellip;</h5>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/C0DPdy98e4c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+</blockquote>
+<h3 id="markdowm渲染效果">Markdowm渲染效果</h3>
+<hr>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ellielife1118" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2024  <a href="https://ellielife.github.io/">Ellie&rsquo;s Diary｜艾莉生活日記</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  var indexURL = "https://ellielife.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://ellielife.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/mark.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://ellielife.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

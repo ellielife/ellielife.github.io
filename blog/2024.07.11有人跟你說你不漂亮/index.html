@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>Ellie&#39;s Diary｜艾莉生活日記</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Ellie&#39;s Diary｜艾莉生活日記">
+  <meta name="author" content="Ellie(梅)✨">
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+  
+  <meta name="generator" content="Hugo 0.120.4">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://ellielife.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://ellielife.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation 導航列-->
+
+<header class="navigation"> 
+  <div class="container-fluid">
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
+      
+      <a class="navbar-brand" href="https://ellielife.github.io/">
+      <span class="text-body">Ellie's Diary｜艾莉生活日記</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <i class="ti-menu"></i>
+      </button>
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
+<script type="text/javascript">
+  const ap = new APlayer({
+    container: document.getElementById('aplayera'),
+        fixed: true,
+        lrcType: 3,
+        order: 'random',
+    audio: [{
+      name: 'Return to Innocence 反璞歸真',
+        artist: '台灣原住民+Enigma',
+        url: '/images/Music/Return_to_Innocence.wmv.mp3',
+        cover: '/images/Music/Return to Innocence.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Sasha_Alex_Sloan_-_Older',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/Sasha_Alex_Sloan_-_Older.mp3',
+        cover: '/images/Music/Sasha_Alex_Sloan-Older.jpg',
+        lrc: ''
+    },
+    {
+      name: '謎幻樂團-雷鳴_Thunder',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/謎幻樂團-雷鳴_Thunder.mp3',
+        cover: '/images/Music/謎幻樂團Thunder.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Wherever you are',
+        artist: 'ONE OK ROCK',
+        url: '/images/Music/ONE OK ROCK - Wherever you are.m4a',
+        cover: '/images/Music/Wherever you are .png',
+        lrc: ''
+    },
+    ]
+});
+
+        ready();
+    
+    isRecover = false;
+    function ready(){
+        ap.on('canplay', function () {
+            if(!isRecover){
+                if(localStorage.getItem("musicIndex") != null){
+                    musicIndex = localStorage.getItem("musicIndex");
+                    musicTime = localStorage.getItem("musicTime");
+                    if(ap.list.index != musicIndex){
+                        ap.list.switch(musicIndex);
+                    }else{
+                        ap.seek(musicTime);
+                        ap.play();
+                        localStorage.clear();
+                        ap.setAttribute(muted,'');
+                        ap.setAttribute(playsinline,'');
+                        isRecover = true;
+                    }
+                }else{
+                    isRecover = true;
+                }
+            }
+        });
+    }
+
+    window.onbeforeunload = function(event) {
+        if(!ap.audio.paused){
+            musicIndex = ap.list.index;
+            musicTime = ap.audio.currentTime;
+            localStorage.setItem("musicIndex",musicIndex);
+            localStorage.setItem("musicTime",musicTime);
+        }
+    };
+
+
+
+var element = document.getElementsByClassName("aplayer-title")[0];  
+$(element).wrap("<a href='/radio/pick/'></a>");
+</script>
+
+
+
+
+
+<style type="text/css">
+    .aplayer-title, .aplayer-list-light {
+        color:#000000cc;
+    }
+    .aplayer-list{
+        color:#717070bf;
+    }
+</style>
+
+
+
+
+      <div class="navbar-collapse text-center collapse" id="navigation" style>
+        <ul class="navbar-nav ml-auto"> 
+          <li><a class="nav-link" href="https://ellielife.github.io/">首頁</a></li>
+           
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">我熱愛的生活啊</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/日常生活/">日常生活</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/夢記事/">夢記事</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">自我成長</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">工程筆記</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/閱讀筆記/">閱讀筆記</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">身心靈平衡</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/療癒筆記/">療癒筆記</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/靈性書寫傳訊/">靈性書寫傳訊</a></li>
+              <li><a class="dropdown-item" href="#">塔羅占卜、水晶、精油等</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">關於我</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">關於我</a></li>
+              <li><a class="dropdown-item" href="#">作品集</a></li>
+            </ul>
+
+          </li>
+        </ul>
+
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://ellielife.github.io//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+  
+  
+  <div class="row">
+    <div class="container-fluid">
+      <img src="/images/背景圖5.jpg" width="100%">
+    </div>
+  </div>
+  
+
+  <script>
+    (function(){
+        if(''){
+            if (prompt('請輸入文章密碼') !== ''){
+                alert('密碼錯誤！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h3 class="text-center">當有人跟你說你不漂亮時，那不是事實，事實是他們想打擊你，所以做好自己，盡情展現你的美，氣死他們，哈哈</h3>  
+        
+        <div class="mb-3 text-center">  
+          <span>By Ellie(梅)✨</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2024-07-11</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/%e6%97%a5%e5%b8%b8%e7%94%9f%e6%b4%bb">
+            <span class="text-primary">日常生活</span>
+          </a>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <h2 id="imageimagesmyselfmay004jpg"><img src="/images/myself/May004.jpg" alt="image"></h2>
+<h5 id="你長得不像原住民我認識的原住民五官都比你深邃更漂亮你反而比較像東南亞">你長得不像原住民，我認識的原住民五官都比你深邃更漂亮，你反而比較像東南亞。</h5>
+<p>當我聽到這句話時，我笑了。但我不想跟這樣的人爭執，所以我微笑不說話。</p>
+<p>確實，我在原住民裡面，我的長相是最平庸的，我的五官不是最漂亮最深邃的，甚至長得不像他們，但那又如何，我本來就不注重外貌，關於男女之間的事，關於受歡迎這件事，對我而言吸引力沒有很大，從某方面來說反而是一件困擾，因為我不喜歡活在聚光燈底下，我喜歡無憂無慮地做自己，當我身邊的女孩們都在學習如何打扮自己、如何讓自己變得更漂亮、更有吸引力時，我跟男孩們一起玩耍，不論是打棒球，打電動等其他運動遊戲，或是在課業上彼此競爭等等樣樣都來，對於要注重外貌這件事，從小我就不怎麼在意，我媽也沒教過我女人要愛漂亮，只對我的功課有要求。</p>
+<p>從小我就有被人家說醜，本來不以為意直到暗戀的對象要畢業了，老師要我們上台跟這些學長姐握手說再見，我很興奮很高興，因為可以握到喜歡的人的手，我覺得這是上帝給我的機會，當下真的很開心，但他卻拒絕跟我握手，因為他知道我喜歡他，當時對我的打擊真的很大，我當時想自己的外貌有這麼差嗎?因這件事的發生，至少有四年的時間我把自己封閉起來，那段日子我過得不是很開心，過的沒有比以前自信，直到有天上廁所時某個學姐跟我說:『你知道嗎?我們班有人喜歡你耶！還在考卷上寫你的名字，哈哈哈！』</p>
+<p>聽到的當下是蠻高興的，因自己沒想到長這麼醜還有人喜歡我、暗戀我，簡直不可思議，我知道那個人是誰，他的打掃區域是我每天要去打掃時的必經之路，我從沒跟他講過話，他也沒主動跟我說過話，但我有特別注意到他，因為他的個性在某方面與我很像，甚至是個比我還害羞的人，因為有次我跟他視線對上時，他特意別過我的眼睛看別的地方，當下覺得這舉動很奇怪，但也沒在意，當我知道他喜歡我時是蠻驚訝的，因為我不知道自己身上哪一點吸引他，尤其我是大家公認很醜的女孩，不過我很謝謝他，這麼醜的女孩他居然還願意公開表示喜歡我這件事，讓我重拾了自信。</p>
+<p>還有剛升上國一時，剛入學不到一個禮拜，自己跟同學正要回到教室時，有位學長叫住了我，我回頭看了下，當下的想法是我到底做了什麼壞事，為什麼學長帶一大堆人來找我，是要找我幹架是不是，結果是來跟我要聯繫方式的，聽到他跟我要聯繫方式時我還覺得自己是不是聽錯了。回到教室時，我一直在偷笑，因為我沒想到怎麼有男孩這麼可愛，怕被拒絕帶兄弟來助陣。</p>
+<p>經歷這兩件事讓我明白，不管你的長相如何，總有人會喜歡你和欣賞你。
+而且我的經歷告訴我，有些人說你不漂亮時，那是謊言，事實是他們想打擊你，想讓你沒自信，因為你過的比他們耀眼，你身上一定有一些特質是他們羨慕和嫉妒的，所以，當有人告訴你不漂亮時，告訴你很醜時，那不是事實，事實是不管你的長相如何，在這世界上一定有人會被你吸引，想靠近你，喜歡你和欣賞你，你的存在某部分是為了他們而存在的，你的美要為他們綻放，所以不管別人怎麼說，愛自己就對了，儘管綻放自己的美，氣死那些人，哈哈哈😂😂😂。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/BvFAvLZrF3I" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ellielife1118" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2024  <a href="https://ellielife.github.io/">Ellie&rsquo;s Diary｜艾莉生活日記</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  var indexURL = "https://ellielife.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://ellielife.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/mark.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://ellielife.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>

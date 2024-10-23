@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>Ellie&#39;s Diary｜艾莉生活日記</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="人的心理健康取決於他對生命意義的領悟，以及他對自己生活方式的選擇。">
+  <meta name="author" content="Ellie(梅)✨">
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+  
+  <meta name="generator" content="Hugo 0.120.4">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://ellielife.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://ellielife.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation 導航列-->
+
+<header class="navigation"> 
+  <div class="container-fluid">
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
+      
+      <a class="navbar-brand" href="https://ellielife.github.io/">
+      <span class="text-body">Ellie's Diary｜艾莉生活日記</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <i class="ti-menu"></i>
+      </button>
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
+<script type="text/javascript">
+  const ap = new APlayer({
+    container: document.getElementById('aplayera'),
+        fixed: true,
+        lrcType: 3,
+        order: 'random',
+    audio: [{
+      name: 'Return to Innocence 反璞歸真',
+        artist: '台灣原住民+Enigma',
+        url: '/images/Music/Return_to_Innocence.wmv.mp3',
+        cover: '/images/Music/Return to Innocence.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Sasha_Alex_Sloan_-_Older',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/Sasha_Alex_Sloan_-_Older.mp3',
+        cover: '/images/Music/Sasha_Alex_Sloan-Older.jpg',
+        lrc: ''
+    },
+    {
+      name: '謎幻樂團-雷鳴_Thunder',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/謎幻樂團-雷鳴_Thunder.mp3',
+        cover: '/images/Music/謎幻樂團Thunder.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Wherever you are',
+        artist: 'ONE OK ROCK',
+        url: '/images/Music/ONE OK ROCK - Wherever you are.m4a',
+        cover: '/images/Music/Wherever you are .png',
+        lrc: ''
+    },
+    ]
+});
+
+        ready();
+    
+    isRecover = false;
+    function ready(){
+        ap.on('canplay', function () {
+            if(!isRecover){
+                if(localStorage.getItem("musicIndex") != null){
+                    musicIndex = localStorage.getItem("musicIndex");
+                    musicTime = localStorage.getItem("musicTime");
+                    if(ap.list.index != musicIndex){
+                        ap.list.switch(musicIndex);
+                    }else{
+                        ap.seek(musicTime);
+                        ap.play();
+                        localStorage.clear();
+                        ap.setAttribute(muted,'');
+                        ap.setAttribute(playsinline,'');
+                        isRecover = true;
+                    }
+                }else{
+                    isRecover = true;
+                }
+            }
+        });
+    }
+
+    window.onbeforeunload = function(event) {
+        if(!ap.audio.paused){
+            musicIndex = ap.list.index;
+            musicTime = ap.audio.currentTime;
+            localStorage.setItem("musicIndex",musicIndex);
+            localStorage.setItem("musicTime",musicTime);
+        }
+    };
+
+
+
+var element = document.getElementsByClassName("aplayer-title")[0];  
+$(element).wrap("<a href='/radio/pick/'></a>");
+</script>
+
+
+
+
+
+<style type="text/css">
+    .aplayer-title, .aplayer-list-light {
+        color:#000000cc;
+    }
+    .aplayer-list{
+        color:#717070bf;
+    }
+</style>
+
+
+
+
+      <div class="navbar-collapse text-center collapse" id="navigation" style>
+        <ul class="navbar-nav ml-auto"> 
+          <li><a class="nav-link" href="https://ellielife.github.io/">首頁</a></li>
+           
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">我熱愛的生活啊</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/日常生活/">日常生活</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/夢記事/">夢記事</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">自我成長</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">工程筆記</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/閱讀筆記/">閱讀筆記</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">身心靈平衡</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/療癒筆記/">療癒筆記</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/靈性書寫傳訊/">靈性書寫傳訊</a></li>
+              <li><a class="dropdown-item" href="#">塔羅占卜、水晶、精油等</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">關於我</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">關於我</a></li>
+              <li><a class="dropdown-item" href="#">作品集</a></li>
+            </ul>
+
+          </li>
+        </ul>
+
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://ellielife.github.io//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+  
+  
+  <div class="row">
+    <div class="container-fluid">
+      <img src="/images/背景圖5.jpg" width="100%">
+    </div>
+  </div>
+  
+
+  <script>
+    (function(){
+        if(''){
+            if (prompt('請輸入文章密碼') !== ''){
+                alert('密碼錯誤！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h3 class="text-center">療癒筆記｜自我價值的重要性</h3>  
+        
+        <div class="mb-3 text-center">  
+          <span>By Ellie(梅)✨</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2024-09-25</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/%e7%99%82%e7%99%92%e7%ad%86%e8%a8%98">
+            <span class="text-primary">療癒筆記</span>
+          </a>
+          
+        </div>
+        
+        <img src="https://ellielife.github.io/images/post/CAT.jpg" class="img-fluid w-100 mb-4" alt="療癒筆記｜自我價值的重要性">
+        
+        <div class="content mb-5">
+          <p>其實每一個生命都是平等的，我親愛的孩子，若你肯用心去觀察整個生態系，你會發現即使是最微小的生命，都有它自身存在的意義，你會發現不管是任何形式的生命體，它們都會利用自己有限的生命，只管綻放自己的生命色彩，你們人類總是會因為自己外貌的缺陷，而低估自己的價值，難道你們內在的核心價值只憑外貌就可以論斷?難道你們內在的核心只憑財富、權勢就可以論斷?難道你們內在的核心價值只能任由那些不知道自己是誰的人道三論四?親愛的，難道你內在的核心價值就這麼不值得嗎?為什麼要把自己看得這麼低?</p>
+<p>你是誰?我親愛的孩子。你常跟我抱怨：自己長得不夠漂亮、為什麼自己不漂亮；但是為什麼不問問你自己：為什麼我需要長得漂亮?到底是為了什麼?是為了受歡迎嗎?還是為了滿足自己內在的虛榮心?還是忌妒別人很受觀迎?讓我來告訴你事實:『你的靈魂一點都不在乎這些，你的靈魂不在乎權勢、地位、財富和外貌，祂要的只是經驗，只有經驗是祂唯一能帶走的東西，對祂來說，經驗才是無價之寶，甚至讓你吃點苦也值得，因為你就是祂，祂需要指引祂自己也就是你，在正確的道路上成長。』我知道現在對你說這些有點難度，但這是你靈魂為人類的你設下的關卡，祂要你明白真正的美是由內而外的綻放，每個人的靈魂之光都不一樣，那是需要藉由生生世世不同的生命經驗累計而成的，相信我，那個更大更大的你，真的會感謝有這些經驗豐富祂的靈魂。</p>
+<p>你是誰?我親愛的孩子。過去你經歷的這些都是為了要讓你透徹的了解到自我價值這個概念是有多麼的重要，<strong>人的心理健康取決於他對生命意義的領悟，以及他對自己生活方式的選擇。</strong> 在你們人類社會中，外在的形象似乎有著強大的力量，但同時，它也是十分地膚淺，因為任何的外在形象都是虛幻的，只有一種無法被掩蓋，那就是你內在的核心本質，那才是唯一真實的，<strong>在靈性的世界裡，一切都隱藏不了，一看就知道誰在打腫臉充胖子。</strong></p>
+<p>你去看看大自然的動植物，甚至是非生命存在體，牠們都清楚的知道自己是誰和了解自己的價值，並將這份價值服務整個大自然，換句話說，當你們人類了解到自我價值這個概念後，你們會激發自己內在靈魂攜帶下來的天賦，並將這份力量透過服務回饋給社會，可惜的是你們人類並不了解這一點，你們當今這世上&quot;醒著&quot;的人很少，只佔2%，</p>
+<p>所以，我親愛的孩子，真正的美，就像花朵一樣由內而外綻放，那是一種自然的過程，會在適當的時間點開花，這是無庸置疑的。</p>
+<p>你們人類有一句話:「真正變好的不是生活，是自己。」這句話的涵義很深奧，因為它包含了內在和外在，吸引力和創造力。</p>
+<hr>
+<h4 id="自我價值社會角色帶來的價值">自我價值≠社會角色帶來的價值</h4>
+<p>還有一點我想讓你明白，自我價值≠社會角色帶來的價值，當你根據內心的指引活出自己的內在價值時，<strong>附加</strong>價值就是社會角色帶來的價值。</p>
+<p>讓我舉個例子來說：<br>
+如果今天你是一位董事長，你可以享受整個公司的人事和資源都任由你支配的權威感；<br>
+如果今天你是一位法官，那你可以享受特權式的社會地位；<br>
+如果今天你是位部長，您可以享受成為媒體的焦點與新聞人物。<br>
+但是，這些都只是你的「社會角色帶來的價值」。它們跟我所說的「自我價值」，一點關係都沒有。</p>
+<p>現今這個社會，有太多人誤認為社會角色的價值跟自我價值是同個等號，但事實並非如此，一個擁有自我價值的人會全心全意的透過熱情和興趣工作，而非為了財富、權力、地位，因為他們清楚的了解自己的生命存在於自己的熱情與投入當中，他們了解自己是誰並清楚的知道自己是值得存在的，但這不怪大多數的你們，畢竟你們需要為了<strong>生存</strong>奮鬥，還有帷幕幈障在阻隔著你們，但之後這帷幕幈障會越來越稀薄，會有越來越多的人接觸到另一維度的世界，要小心人類世界靈性圈子的內亂，要懂得識別且靈性世界沒有你們想像中那麼的美好，比人類世界更複雜更快顯化，沒有一定的基礎能力，可是會被自己的顯化能力給搞死，且並不是所有的靈魂都是『善』的，也有不懷好意的，所以不管是人類還是靈性世界都要有保護自己的能力，這也就是為什麼你的靈魂寧願讓你吃苦，也要讓你成長的因素，你的靈魂在靈性的世界裡也在成長，所以不要去羨慕別人的生活過得一帆風順，別人有別人的靈魂旅程，你有你的靈魂旅程，專注在自己的靈魂旅程上就好了。</p>
+<p><img src="/images/post/%E8%87%AA%E6%88%91%E5%83%B9%E5%80%BC%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7.jpg" alt="images"></p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ellielife1118" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2024  <a href="https://ellielife.github.io/">Ellie&rsquo;s Diary｜艾莉生活日記</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  var indexURL = "https://ellielife.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://ellielife.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/mark.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://ellielife.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>
