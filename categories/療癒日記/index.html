@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-tw"><head>
   <meta charset="utf-8">
-  <title>與心同行｜EllieDiary艾莉的生活日記</title>
+  <title>Ellie&#39;s Diary｜艾莉生活日記</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="與心同行｜EllieDiary">
-  <meta name="author" content="Ellie(梅)">
+  <meta name="description" content="Ellie&#39;s Diary｜艾莉生活日記">
+  <meta name="author" content="Ellie(梅)✨">
     
   
   <meta name="theme-name" content="liva-hugo" />
@@ -59,19 +59,119 @@
 <!-- navigation 導航列-->
 
 <header class="navigation"> 
-  <div class="container">
+  <div class="container-fluid">
     
     
     
     
     
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
+      
       <a class="navbar-brand" href="https://ellielife.github.io/">
-      <span class="text-body">與心同行｜EllieDiary艾莉的生活日記</span>
+      <span class="text-body">Ellie's Diary｜艾莉生活日記</span>
       </a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
         <i class="ti-menu"></i>
       </button>
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
+<script type="text/javascript">
+  const ap = new APlayer({
+    container: document.getElementById('aplayera'),
+        fixed: true,
+        lrcType: 3,
+        order: 'random',
+    audio: [{
+      name: 'Return to Innocence 反璞歸真',
+        artist: '台灣原住民+Enigma',
+        url: '/images/Music/Return_to_Innocence.wmv.mp3',
+        cover: '/images/Music/Return to Innocence.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Sasha_Alex_Sloan_-_Older',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/Sasha_Alex_Sloan_-_Older.mp3',
+        cover: '/images/Music/Sasha_Alex_Sloan-Older.jpg',
+        lrc: ''
+    },
+    {
+      name: '謎幻樂團-雷鳴_Thunder',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/謎幻樂團-雷鳴_Thunder.mp3',
+        cover: '/images/Music/謎幻樂團Thunder.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Wherever you are',
+        artist: 'ONE OK ROCK',
+        url: '/images/Music/ONE OK ROCK - Wherever you are.m4a',
+        cover: '/images/Music/Wherever you are .png',
+        lrc: ''
+    },
+    ]
+});
+
+        ready();
+    
+    isRecover = false;
+    function ready(){
+        ap.on('canplay', function () {
+            if(!isRecover){
+                if(localStorage.getItem("musicIndex") != null){
+                    musicIndex = localStorage.getItem("musicIndex");
+                    musicTime = localStorage.getItem("musicTime");
+                    if(ap.list.index != musicIndex){
+                        ap.list.switch(musicIndex);
+                    }else{
+                        ap.seek(musicTime);
+                        ap.play();
+                        localStorage.clear();
+                        ap.setAttribute(muted,'');
+                        ap.setAttribute(playsinline,'');
+                        isRecover = true;
+                    }
+                }else{
+                    isRecover = true;
+                }
+            }
+        });
+    }
+
+    window.onbeforeunload = function(event) {
+        if(!ap.audio.paused){
+            musicIndex = ap.list.index;
+            musicTime = ap.audio.currentTime;
+            localStorage.setItem("musicIndex",musicIndex);
+            localStorage.setItem("musicTime",musicTime);
+        }
+    };
+
+
+
+var element = document.getElementsByClassName("aplayer-title")[0];  
+$(element).wrap("<a href='/radio/pick/'></a>");
+</script>
+
+
+
+
+
+<style type="text/css">
+    .aplayer-title, .aplayer-list-light {
+        color:#000000cc;
+    }
+    .aplayer-list{
+        color:#717070bf;
+    }
+</style>
+
+
+
 
       <div class="navbar-collapse text-center collapse" id="navigation" style>
         <ul class="navbar-nav ml-auto"> 
@@ -138,12 +238,26 @@
     </nav>
   </div>
   
+  
   <div class="row">
-    <div class="container">
-      <img src="/images/elliediary4.png" mw-100>
+    <div class="container-fluid">
+      <img src="/images/背景圖5.jpg" width="100%">
     </div>
   </div>
   
+
+  <script>
+    (function(){
+        if(''){
+            if (prompt('請輸入文章密碼') !== ''){
+                alert('密碼錯誤！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
 </header>
 <!-- /navigation -->
 
@@ -158,16 +272,13 @@
           <div class="col-md-8 mb-4">
     <article class="card">
         
-        <img src="https://ellielife.github.io/images/post/%E9%9D%88%E6%80%A7/Gold%20852.jpg" class="card-img-top" alt="瑪雅曆法了解自我｜原來我是個只要有目標就會持之以恆的人">
-        
         <div class="card-body px-0">
-        
-        <a href="https://ellielife.github.io/blog/%E7%91%AA%E9%9B%85%E6%9B%86%E6%B3%95%E4%BA%86%E8%A7%A3%E8%87%AA%E6%88%91%E5%8E%9F%E4%BE%86%E6%88%91%E6%98%AF%E5%80%8B%E5%8F%AA%E8%A6%81%E6%9C%89%E7%9B%AE%E6%A8%99%E5%B0%B1%E6%9C%83%E6%8C%81%E4%B9%8B%E4%BB%A5%E6%81%86%E7%9A%84%E4%BA%BA/" class="h5 d-block my-3">瑪雅曆法了解自我｜原來我是個只要有目標就會持之以恆的人</a>
+        <a href="https://ellielife.github.io/blog/2024.10.27%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E6%84%8F%E5%A4%96%E7%99%BC%E7%8F%BE%E7%9A%84%E5%AF%B6%E8%97%8F%E5%B0%8F%E7%94%B7%E5%AD%A9/" class="h4 d-block my-3">信仰的力量｜我的療癒小王子</a>
         <div class="mb-3 post-meta">
-            <span>By Ellie(梅)</span>
+            <span>By Ellie(梅)✨</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2024-07-07</span>
+            <span>2024-10-27</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
             
@@ -175,8 +286,8 @@
             class="text-primary">療癒日記</a>
             
         </div>
-        <p class="card-text"></p>
-        <a href="https://ellielife.github.io/blog/%E7%91%AA%E9%9B%85%E6%9B%86%E6%B3%95%E4%BA%86%E8%A7%A3%E8%87%AA%E6%88%91%E5%8E%9F%E4%BE%86%E6%88%91%E6%98%AF%E5%80%8B%E5%8F%AA%E8%A6%81%E6%9C%89%E7%9B%AE%E6%A8%99%E5%B0%B1%E6%9C%83%E6%8C%81%E4%B9%8B%E4%BB%A5%E6%81%86%E7%9A%84%E4%BA%BA/" class="btn btn-outline-primary">閱讀更多</a>
+        <p class="card-text">感召我的不是上帝的力量，而是孩子心中純淨的心靈。</p>
+        <a href="https://ellielife.github.io/blog/2024.10.27%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E6%84%8F%E5%A4%96%E7%99%BC%E7%8F%BE%E7%9A%84%E5%AF%B6%E8%97%8F%E5%B0%8F%E7%94%B7%E5%AD%A9/" class="btn btn-outline-primary">閱讀更多</a>
         </div>
         <hr>
     </article>
@@ -190,12 +301,12 @@
       
       <div class="widget">
         
-        <h4 class="widget-title">Hey.我是Ellie(李艾莉)</h4>
+        <h4 class="widget-title">關於我</h4>
         
-        <img src="https://ellielife.github.io/images/myself/%E6%88%B4%E7%8F%8D%E7%8F%A0%E7%9A%84%E5%A5%B3%E4%BA%BA.jpg" alt=""
+        <img src="https://ellielife.github.io/images/myself/May8.jpg" alt=""
           class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
         
-        <p>自我探索｜自我學習｜生活療癒師，這裡是我記錄生活的地方，目前只想活在自己熱愛的生活哩，活出我的不正常人生</p> 
+        <p>Hi，我是Ellie(梅)，喜好自我探索｜自我學習｜身心靈療癒，因某種原因開始寫日記，因市面上部落格的樣式我都不喜歡，所以開始嘗試自己寫程式，漸漸地開始熱愛創作和程式設計，目前只想活在自己熱愛的小太陽裡，活出我的不正常人生。</p> 
         <a href="https://ellielife.github.io/about/" class="btn btn-outline-primary">閱讀更多</a>
         
       </div>
@@ -204,7 +315,10 @@
         <h4 class="widget-title">文章分類</h4>
         <ul class="list-unstyled">
           <li><a
-              href="/categories/%e5%a4%a2%e8%a8%98%e4%ba%8b/">夢記事</a>
+              href="/categories/%e4%be%86%e9%bb%9e%e5%a5%bd%e7%8e%a9%e7%9a%84/">來點好玩的</a>
+          </li>
+          <li><a
+              href="/categories/%e5%a1%94%e7%be%85%e6%97%a5%e8%a8%98/">塔羅日記</a>
           </li>
           <li><a
               href="/categories/%e5%b7%a5%e7%a8%8b%e7%ad%86%e8%a8%98/">工程筆記</a>
@@ -225,6 +339,12 @@
               href="/categories/%e9%96%b1%e8%ae%80%e7%ad%86%e8%a8%98/">閱讀筆記</a>
           </li>
           <li><a
+              href="/categories/%e9%9b%bb%e5%bd%b1%e5%bf%83%e5%be%97/">電影心得</a>
+          </li>
+          <li><a
+              href="/categories/%e9%9d%88%e6%80%a7%e6%9b%b8%e5%af%ab/">靈性書寫</a>
+          </li>
+          <li><a
               href="/categories/%e9%9d%88%e6%80%a7%e6%9b%b8%e5%af%ab%e5%82%b3%e8%a8%8a/">靈性書寫傳訊</a>
           </li>
         </ul>
@@ -235,7 +355,7 @@
         <h4 class="widget-title">社群</h4>
         <ul class="list-inline social-links">
           
-          <li class="list-inline-item"><a href="https://www.instagram.com/elliediary0509?igsh=MWZ0MDgxcGRxZWxwYg%3D%3D&amp;utm_source=qrhttps://www.instagram.com/elliediary0509?igsh=MWZ0MDgxcGRxZWxwYg%3D%3D&amp;utm_source=qr"><i class="ti-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="https://github.com/ellielife"><i class="ti-github"></i></a></li>
           
         </ul>
       </div>
@@ -256,6 +376,13 @@
 
 
 
+
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2024  <a href="https://ellielife.github.io/">Ellie&rsquo;s Diary｜艾莉生活日記</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 <script>
