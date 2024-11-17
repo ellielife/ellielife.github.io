@@ -277,12 +277,12 @@ $(element).wrap("<a href='/radio/pick/'></a>");
           <span>By May(梅)✨</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>2024-11-16</span>
+          <span>2024-11-17</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
           
-          <a href="/categories/%e6%99%82%e4%ba%8b%e8%a9%95%e8%ab%96">
-            <span class="text-primary">時事評論</span>
+          <a href="/categories/%e8%81%b7%e5%a0%b4%e6%8a%80%e8%83%bd">
+            <span class="text-primary">職場技能</span>
           </a>
           
         </div>
@@ -292,13 +292,12 @@ $(element).wrap("<a href='/radio/pick/'></a>");
 
 
         <div class="content mb-5">
-          <p><a href="#markdown%E8%AA%9E%E6%B3%95%E4%BB%8B%E7%B4%B9">Markdown語法介紹</a></p>
-<h3 id="markdown語法介紹">Markdown語法介紹</h3>
+          <h4 id="markdown語法介紹">Markdown語法介紹</h4>
 <p>Markdown 是一種輕量級標記語言，目的是讓文檔編寫更簡單直觀。<br>
 它使用簡單的符號來標記文字的格式，並且可以輕鬆轉換為 HTML 格式。<br>
 以下是一些常用的 Markdown 語法及示例，幫助你快速學習並運用它來撰寫文檔。</p>
 <hr>
-<h3 id="1標題headings">1.標題（Headings）</h3>
+<h4 id="1標題">1.標題</h4>
 <p>Markdown 使用 # 標記來創建標題，# 的數量表示標題的層級。<br>
 最多支持 6 層標題（# 到 ######）。</p>
 <pre tabindex="0"><code>---範例如下---
@@ -308,101 +307,177 @@ $(element).wrap("<a href='/radio/pick/'></a>");
 #### 這是 H4 標題
 ##### 這是 H5 標題
 ###### 這是 H6 標題
-</code></pre><hr>
-<h3 id="2段落paragraphs">2.段落（Paragraphs）</h3>
+</code></pre><p><strong>顯示結果如下</strong></p>
+<h1 id="這是-h1-標題">這是 H1 標題</h1>
+<h2 id="這是-h2-標題">這是 H2 標題</h2>
+<h3 id="這是-h3-標題">這是 H3 標題</h3>
+<h4 id="這是-h4-標題">這是 H4 標題</h4>
+<h5 id="這是-h5-標題">這是 H5 標題</h5>
+<h6 id="這是-h6-標題">這是 H6 標題</h6>
+<hr>
+<h4 id="2段落與換行">2.段落與換行</h4>
 <p>段落直接輸入文本即可，若需要換行，請按兩次 Enter。單行換行使用 （兩個空格）結尾。</p>
 <pre tabindex="0"><code>---範例如下---
 這是一個段落，按 Enter 會換行。
 
 這是第二個段落。
-</code></pre><h3 id="換行">換行</h3>
-<p>TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST
-TEST</p>
-<h3 id="強調">強調</h3>
-<p>TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST
-TEST</p>
-<h3 id="引用">引用</h3>
-<p>TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST<br>
-TEST
-TEST</p>
-<h3 id="列表">列表</h3>
-<h3 id="代碼">代碼</h3>
-<h3 id="分隔線">分隔線</h3>
-<h3 id="鏈接">鏈接</h3>
-<h3 id="圖片">圖片</h3>
-<h3 id="轉譯字符語法">轉譯字符語法</h3>
-<h3 id="內嵌html語法">內嵌html語法</h3>
+</code></pre><hr>
+<h4 id="3文字格式-text-formatting">3.文字格式 (Text Formatting)</h4>
+<p>支持 粗體、斜體、粗斜體、刪除線。</p>
+<pre tabindex="0"><code>---範例如下---
+**粗體文字**
+*斜體文字*
+***粗斜體文字***
+~~刪除線文字~~
+</code></pre><p><strong>顯示結果如下</strong></p>
+<p><strong>粗體文字</strong><br>
+<em>斜體文字</em><br>
+<em><strong>粗斜體文字</strong></em><br>
+<del>刪除線文字</del></p>
+<hr>
+<h4 id="4引用">4.引用</h4>
+<p>使用 &gt; 來創建引用。引用可以嵌套或包含其他元素。</p>
+<pre tabindex="0"><code>---範例如下---
+&gt; 這是一段引用。
+&gt; 
+&gt; - 引用內的列表項目
+&gt; - 引用內的另一個項目
+</code></pre><hr>
+<h4 id="5列表">5.列表</h4>
+<ul>
+<li>無序列表 使用 - 、 * 或 +。</li>
+<li>有序列表 使用數字。</li>
+</ul>
+<pre tabindex="0"><code>---範例如下---
+- 項目 1
+- 項目 2
+  - 子項目
+
+1. 項目一
+2. 項目二
+   1. 子項目一
+   2. 子項目二
+</code></pre><h4 id="6程式碼-code">6.程式碼 (Code)</h4>
+<p><strong>行內程式碼</strong> 使用 `。<br>
+<strong>區塊程式碼</strong> 使用三個反引號 ``` 或縮排四個空格。<br>
+<strong>語法高亮</strong> 使用語言標註。</p>
+<pre tabindex="0"><code>---範例如下---
+行內程式碼：`print(&#34;Hello World&#34;)`
+
+```python
+# 這是一個 Python 程式碼區塊
+def hello():
+    print(&#34;Hello World&#34;)
+</code></pre><hr>
+<h4 id="7分隔線-horizontal-rule">7.分隔線 (Horizontal Rule)</h4>
+<p>使用三個或更多 -、* 或 _。</p>
+<pre tabindex="0"><code>---範例如下---
+1. ---
+2. ___
+3. ***
+以上三種寫法都可以。
+</code></pre><hr>
+<h4 id="8連結與圖片-links-and-images">8.連結與圖片 (Links and Images)</h4>
+<p>連結 使用 <code>[文字](URL)</code>。<br>
+圖片 使用  <code>![文字](圖片URL)。</code><br>
+參考式連結 可重複使用同一連結。</p>
+<pre tabindex="0"><code>---範例如下---
+連結→ [Google](https://www.google.com)
+
+圖片→ ![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/Octocat.png)
+
+[GitHub]: https://github.com
+[這是 GitHub 的連結][GitHub]
+</code></pre><h4 id="9內嵌html語法">9.內嵌html語法</h4>
+<p>Markdown 支援 HTML 語法，適用於標準 Markdown 無法處理的情況。</p>
+<pre tabindex="0"><code>---範例如下---
+&lt;p style=&#34;color:red;&#34;&gt;這是一段紅色文字。&lt;/p&gt;
+</code></pre><hr>
+<h4 id="10任務列表-task-list">10.任務列表 (Task List)</h4>
+<p>使用 [ ] 表示未完成，[x] 表示已完成。</p>
+<pre tabindex="0"><code>---範例如下---
+- [x] 完成項目
+- [ ] 未完成項目
+</code></pre><p><strong>顯示結果如下</strong></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 完成項目</li>
+<li><input disabled="" type="checkbox"> 未完成項目</li>
+</ul>
+<hr>
+<h4 id="11表格-tables">11.表格 (Tables)</h4>
+<p>使用 | 和 - 來創建表格，可以對齊內容。</p>
+<pre tabindex="0"><code>---範例如下---
+| 姓名  | 年齡 | 性別 |
+|:-----|:----:|-----:|
+| 小明  | 20   | 男   |
+| 小花  | 18   | 女   |
+</code></pre><p><strong>顯示結果如下</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">姓名</th>
+          <th style="text-align: center">年齡</th>
+          <th style="text-align: right">性別</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">小明</td>
+          <td style="text-align: center">20</td>
+          <td style="text-align: right">男</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">小花</td>
+          <td style="text-align: center">18</td>
+          <td style="text-align: right">女</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="擴展語法-extended-syntax">擴展語法 (Extended Syntax)</h3>
+<p>一些平台如 GitHub、VS Code 支援擴展語法。</p>
+<p><strong>1.折疊內容 (Details Tag)</strong></p>
+<pre tabindex="0"><code>&lt;details&gt;
+&lt;summary&gt;點擊展開詳細內容&lt;/summary&gt;
+這是一段隱藏的詳細內容。
+&lt;/details&gt;
+</code></pre><p><strong>2.表情符號 (Emojis)</strong>
+使用 : 包裹表情符號名稱，僅限支援的平台。</p>
+<pre tabindex="0"><code>---範例如下---
+:smile: :heart: :+1:
+</code></pre><p>顯示效果：😄 ❤️ 👍</p>
+<p><strong>3.頁內連結</strong>
+Markdown 中，標題通常會自動生成對應的錨點（Anchor）。可以使用 <a href="#%E6%A8%99%E9%A1%8C%E9%8C%A8%E9%BB%9E">連結文字</a> 的格式來建立頁內連結。</p>
+<pre tabindex="0"><code>## 目錄
+- [介紹](#介紹)
+- [功能說明](#功能說明)
+- [安裝方法](#安裝方法)
+- [使用範例](#使用範例)
+- [結論](#結論)
+
+## 介紹
+這是介紹部分。
+
+## 功能說明
+這是功能說明部分。
+
+## 安裝方法
+這是安裝方法部分。
+
+## 使用範例
+這是使用範例部分。
+
+## 結論
+這是結論部分。
+</code></pre><p><strong>顯示結果如下</strong></p>
+<ul>
+<li>介紹</li>
+<li>功能說明</li>
+<li>安裝方法</li>
+<li>使用範例</li>
+<li>結論</li>
+</ul>
+<p>點擊這些連結會跳轉到對應的標題部分。</p>
 
         </div>
 
