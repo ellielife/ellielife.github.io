@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-tw"><head>
   <meta charset="utf-8">
-  <title>與心同行｜EllieDiary艾莉的生活日記</title>
+  <title>May&#39;s Daily｜用新的視野 訴說不一樣的故事</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Ellie Diary 艾莉的生活日記">
-  <meta name="author" content="Ellie(梅)">
+  <meta name="description" content="May&#39;s Daily｜用新的視野 訴說不一樣的故事">
+  <meta name="author" content="May(梅)✨">
     
   
   <meta name="theme-name" content="liva-hugo" />
   
-  <meta name="generator" content="Hugo 0.120.4">
+  <meta name="generator" content="Hugo 0.138.0">
 
   <!-- plugins -->
   
@@ -57,33 +57,199 @@
 </div>
 <!-- preloader end -->
 <!-- navigation 導航列-->
+
 <header class="navigation"> 
-  <div class="container">
+  <div class="container-fluid">
     
     
     
     
     
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
+      
       <a class="navbar-brand" href="https://ellielife.github.io/">
-      <span class="text-body">與心同行｜EllieDiary艾莉的生活日記</span>
+      <span class="text-body">May's Daily｜用新的視野 訴說不一樣的故事</span>
       </a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <i class="ti-menu"></i>
       </button>
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
+<script type="text/javascript">
+  const ap = new APlayer({
+    container: document.getElementById('aplayera'),
+        fixed: true,
+        lrcType: 3,
+        order: 'random',
+    audio: [{
+      name: 'Return to Innocence 反璞歸真',
+        artist: '台灣原住民+Enigma',
+        url: '/images/Music/Return_to_Innocence.wmv.mp3',
+        cover: '/images/Music/Return to Innocence.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Sasha_Alex_Sloan_-_Older',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/Sasha_Alex_Sloan_-_Older.mp3',
+        cover: '/images/Music/Sasha_Alex_Sloan-Older.jpg',
+        lrc: ''
+    },
+    {
+      name: '謎幻樂團-雷鳴_Thunder',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/謎幻樂團-雷鳴_Thunder.mp3',
+        cover: '/images/Music/謎幻樂團Thunder.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Wherever you are',
+        artist: 'ONE OK ROCK',
+        url: '/images/Music/ONE OK ROCK - Wherever you are.m4a',
+        cover: '/images/Music/Wherever you are .png',
+        lrc: ''
+    },
+    {
+      name: 'ソラゴト - 明透ASU',
+        artist: '明透',
+        url: '/images/Music/ソラゴト - 明透ASU.m4a',
+        cover: '/images/Music/路透.png',
+        lrc: ''
+    },
+    {
+      name: 'Coldplay - A Sky Full Of Stars',
+        artist: 'Coldplay',
+        url: '/images/Music/A Sky Full Of Stars - Coldplay.m4a',
+        cover: '/images/Music/Coldplay - A Sky Full Of Stars.jpg',
+        lrc: ''
+    },
+    {
+      name: 'd Sheeran - Shivers.m4a',
+        artist: 'Ed Sheeran',
+        url: '/images/Music/Ed Sheeran - Shivers',
+        cover: '/images/Music/Ed Sheeran - Shivers.jpg',
+        lrc: ''
+    },
+    ]
+});
+
+        ready();
+    
+    isRecover = false;
+    function ready(){
+        ap.on('canplay', function () {
+            if(!isRecover){
+                if(localStorage.getItem("musicIndex") != null){
+                    musicIndex = localStorage.getItem("musicIndex");
+                    musicTime = localStorage.getItem("musicTime");
+                    if(ap.list.index != musicIndex){
+                        ap.list.switch(musicIndex);
+                    }else{
+                        ap.seek(musicTime);
+                        ap.play();
+                        localStorage.clear();
+                        ap.setAttribute(muted,'');
+                        ap.setAttribute(playsinline,'');
+                        isRecover = true;
+                    }
+                }else{
+                    isRecover = true;
+                }
+            }
+        });
+    }
+
+    window.onbeforeunload = function(event) {
+        if(!ap.audio.paused){
+            musicIndex = ap.list.index;
+            musicTime = ap.audio.currentTime;
+            localStorage.setItem("musicIndex",musicIndex);
+            localStorage.setItem("musicTime",musicTime);
+        }
+    };
+
+
+
+var element = document.getElementsByClassName("aplayer-title")[0];  
+$(element).wrap("<a href='/radio/pick/'></a>");
+</script>
+
+
+
+
+
+<style type="text/css">
+    .aplayer-title, .aplayer-list-light {
+        color:#000000cc;
+    }
+    .aplayer-list{
+        color:#717070bf;
+    }
+</style>
+
+
+
 
       <div class="navbar-collapse text-center collapse" id="navigation" style>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://ellielife.github.io/">所有文章</a>
+        <ul class="navbar-nav ml-auto"> 
+          <li><a class="nav-link" href="https://ellielife.github.io/">首頁</a></li>
+           
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">愛生活</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><h6 class="dropdown-header">生活分享</h6></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/逃離吧我的社畜人生/">─ 逃離吧！我的社畜人生！</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">時事評論</a></li>
+
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">作品集</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">自我成長</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">塔羅牌相關</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">身心靈相關</h6></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 我的靈異故事分享</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">療癒日記</a></li>
+              <li><a class="dropdown-item" href="#">自省回顧</a></li>
+            </ul>
+
           </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">閱讀心得</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">人際關係</a></li>
+              <li><a class="dropdown-item" href="#">個人成長</a></li>
+              <li><a class="dropdown-item" href="#">影劇動漫</a></li>
+              <li><a class="dropdown-item" href="#">投資理財</a></li>
+              <li><a class="dropdown-item" href="#">職場技能</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/程式語言/">程式語言</a></li>
+            </ul>
+
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://ellielife.github.io/about">關於我</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">關於我</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">關於我</a></li>
+              <li><a class="dropdown-item" href="#">作品集</a></li>
+            </ul>
+
           </li>
         </ul>
+
 
         
         <!-- search -->
@@ -102,6 +268,22 @@
       </div>
     </nav>
   </div>
+  
+  
+  
+
+  <script>
+    (function(){
+        if(''){
+            if (prompt('請輸入文章密碼') !== ''){
+                alert('密碼錯誤！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
 </header>
 <!-- /navigation -->
 
@@ -112,10 +294,10 @@
         <h3 class="text-center">【影片分享】：你選擇來到地球 轉化與整合黑暗</h3>  
         
         <div class="mb-3 text-center">  
-          <span>By Ellie(梅)</span>
+          <span>By May(梅)✨</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>2024-05-13</span>
+          <span>2024-11-24</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
           
@@ -127,25 +309,38 @@
         
         <img src="https://ellielife.github.io/images/post/%E9%9D%88%E6%80%A7/%E5%B7%B4%E5%A4%8F.jpg" class="img-fluid w-100 mb-4" alt="【影片分享】：你選擇來到地球 轉化與整合黑暗">
         
+
+      
+
+
         <div class="content mb-5">
-          <h3 id="前言">前言</h3>
+          <blockquote>
+<p><strong>巴夏有自己的官方網站，有興趣的話可以上網搜尋第一手資料喔</strong><br>
+我懶得查，自己查嘿~哈哈。(很懶的作者)</p>
+</blockquote>
+<h3 id="前言">前言</h3>
 <p>以下要推薦的影片是來自巴夏的訊息，這影片的訊息含金量很高，看得懂就看得懂，看不懂沒關係，等時間到了你在看一次又會有不同的見解，總之巴夏是說現在是地球轉換期的時刻，你的靈魂選擇此時來到這裡其實也是想透過自己的一份力量幫助地球，因地球是宇宙中極少數黑暗的星球，對於全體宇宙種族來說，要在極限中將黑暗轉換成光明不容易，會需要經歷一段黑暗期，我們會在極限中創造一條屬於人類光明的道路，地球其實是被另一個不懷好意的勢力影響很久了，但沒關係，它們可以持續製造混亂，但它們阻止不了<strong>來自更高緯度意識</strong>決心要讓地球和其上的所有物種進化，地球是一顆美麗的行星，祂是時候恢復祂神聖的光芒和宇宙中的位置。</p>
+<h3 id="地外智慧生命-愛莎莎妮星球人">地外智慧生命─── 愛莎莎妮星球人</h3>
 <p>巴夏是來自愛莎莎妮星球的第五維度的外星人，根據巴夏所說是在獵戶座裡，愛莎莎妮星球人是我們人類與灰人的後代子孫，巴夏說了一句我覺得很受用，過去-現在-未來 同時存在，換言之，現在的星球轉換期，不只其他宇宙種族也有混血人類的後代子孫在看，就連來自未來的人類也在同時觀看，但我相信他們也在以另一種方式幫助地球，就像巴夏是以提供訊息的方式提醒我們，但更多是需要此時此刻生活在地球上的人幫助，這一個工作不容易，希望我們一起加油！</p>
 <p>為什麼推薦他呢?是因為在眾多靈媒管道裡，就我接觸的 ─ 巴夏是我認為最值得信任的，若你們想了解他的話可以上網搜尋。</p>
 <h3 id="為什麼相信">為什麼相信?</h3>
-<p>因我的祖母是個靈媒，她可以傳達來自另一世界的訊息也可以看到另外一個世界，所以我從小就明白這世界遠比我們想像的更加豐富，不管你們相不相信，人類遲早會面臨接受地外生命的存在，如果你抗拒的話，我是建議早點敞開心扉接受新事物的存在，因為再過不了幾年，地外生命的存在將會被揭露，政府要隱瞞也隱瞞不了多久了，地外生命將會與我們人類作接觸，當他們認為時機到了就會出現。</p>
+<p>因我的祖母是個靈媒，她跟巴夏的傳訊人一樣是可以傳達來自另一世界的訊息也可以看到來自另一維度的靈性世界，再加上自己本身也是個敏感體質，也有通靈的經驗，所以我從小就明白這世界遠比我們想像的更加豐富，不管你們相不相信，人類遲早會面臨接受地外智慧生命的存在，如果你抗拒的話，我是建議早點敞開心扉接受新事物的存在，因為再過不了幾年，地外智慧生命的存在將會被揭露，政府要隱瞞也隱瞞不了多久了，地外智慧生命將會與我們人類作接觸，當他們認為時機到了就會出現。</p>
 <h3 id="巴夏訊息-你選擇來到地球-轉化與整合黑暗">巴夏訊息 你選擇來到地球 轉化與整合黑暗</h3>
+<p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/g2ri0Z0CiDs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/5zoycXtdcbo?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
+分享自<a href="https://www.youtube.com/watch?v=5zoycXtdcbo">Youtube-小多</a></p>
 
         </div>
 
         
         <div id="disqus_thread"></div>
-<script type="application/javascript">
+<script>
     window.disqus_config = function () {
     
     
@@ -172,6 +367,13 @@
 
 
 
+
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2024  <a href="https://ellielife.github.io/">May&rsquo;s Daily｜用新的視野 訴說不一樣的故事</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 <script>
