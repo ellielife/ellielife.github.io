@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>May&#39;s Daily｜用新的視野 訴說不一樣的故事</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="May&#39;s Daily｜用新的視野 訴說不一樣的故事">
+  <meta name="author" content="May(梅)✨">
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+  
+  <meta name="generator" content="Hugo 0.138.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://ellielife.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://ellielife.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation 導航列-->
+
+<header class="navigation"> 
+  <div class="container-fluid">
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
+      
+      <a class="navbar-brand" href="https://ellielife.github.io/">
+      <span class="text-body">May's Daily｜用新的視野 訴說全新的故事</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <i class="ti-menu"></i>
+      </button>
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
+<script type="text/javascript">
+  const ap = new APlayer({
+    container: document.getElementById('aplayera'),
+        fixed: true,
+        lrcType: 3,
+        order: 'random',
+    audio: [{
+      name: 'Return to Innocence 反璞歸真',
+        artist: '台灣原住民+Enigma',
+        url: '/images/Music/Return_to_Innocence.wmv.mp3',
+        cover: '/images/Music/Return to Innocence.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Sasha_Alex_Sloan_-_Older',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/Sasha_Alex_Sloan_-_Older.mp3',
+        cover: '/images/Music/Sasha_Alex_Sloan-Older.jpg',
+        lrc: ''
+    },
+    {
+      name: '謎幻樂團-雷鳴_Thunder',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/謎幻樂團-雷鳴_Thunder.mp3',
+        cover: '/images/Music/謎幻樂團Thunder.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Wherever you are',
+        artist: 'ONE OK ROCK',
+        url: '/images/Music/ONE OK ROCK - Wherever you are.m4a',
+        cover: '/images/Music/Wherever you are .png',
+        lrc: ''
+    },
+    {
+      name: 'ソラゴト - 明透ASU',
+        artist: '明透',
+        url: '/images/Music/ソラゴト - 明透ASU.m4a',
+        cover: '/images/Music/路透.png',
+        lrc: ''
+    },
+    {
+      name: 'Coldplay - A Sky Full Of Stars',
+        artist: 'Coldplay',
+        url: '/images/Music/A Sky Full Of Stars - Coldplay.m4a',
+        cover: '/images/Music/Coldplay - A Sky Full Of Stars.jpg',
+        lrc: ''
+    },
+    {
+      name: 'All For Love為愛而戰',
+        artist: 'Tungevaag & Raaban',
+        url: '/images/Music/All For Love為愛而戰.mp3',
+        cover: '/images/Music/為愛而戰.png',
+        lrc: ''
+    },
+    {
+      name: 'Call of Silence（Remix）',
+        artist: '不明',
+        url: '/images/Music/Call of Silence（Remix）.webm',
+        cover: '/images/Music/Call of Silence.png',
+        lrc: ''
+    },
+    ]
+});
+
+        ready();
+    
+    isRecover = false;
+    function ready(){
+        ap.on('canplay', function () {
+            if(!isRecover){
+                if(localStorage.getItem("musicIndex") != null){
+                    musicIndex = localStorage.getItem("musicIndex");
+                    musicTime = localStorage.getItem("musicTime");
+                    if(ap.list.index != musicIndex){
+                        ap.list.switch(musicIndex);
+                    }else{
+                        ap.seek(musicTime);
+                        ap.play();
+                        localStorage.clear();
+                        ap.setAttribute(muted,'');
+                        ap.setAttribute(playsinline,'');
+                        isRecover = true;
+                    }
+                }else{
+                    isRecover = true;
+                }
+            }
+        });
+    }
+
+    window.onbeforeunload = function(event) {
+        if(!ap.audio.paused){
+            musicIndex = ap.list.index;
+            musicTime = ap.audio.currentTime;
+            localStorage.setItem("musicIndex",musicIndex);
+            localStorage.setItem("musicTime",musicTime);
+        }
+    };
+
+
+
+var element = document.getElementsByClassName("aplayer-title")[0];  
+$(element).wrap("<a href='/radio/pick/'></a>");
+</script>
+
+
+
+
+
+<style type="text/css">
+    .aplayer-title, .aplayer-list-light {
+        color:#000000cc;
+    }
+    .aplayer-list{
+        color:#717070bf;
+    }
+</style>
+
+
+
+
+      <div class="navbar-collapse text-center collapse" id="navigation" style>
+        <ul class="navbar-nav ml-auto"> 
+          <li><a class="nav-link" href="https://ellielife.github.io/">首頁</a></li>
+           
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">愛生活</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><h6 class="dropdown-header">生活分享</h6></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/逃離吧我的社畜人生/">─ 逃離吧！我的社畜人生！</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">時事評論</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">自我成長</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">塔羅牌相關</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">身心靈相關</h6></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 我的靈異故事分享</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 靈性文章和影片分享</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">療癒日記</a></li>
+              <li><a class="dropdown-item" href="#">自省回顧</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">閱讀心得</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">人際關係</a></li>
+              <li><a class="dropdown-item" href="#">個人成長</a></li>
+              <li><a class="dropdown-item" href="#">影劇動漫</a></li>
+              <li><a class="dropdown-item" href="#">投資理財</a></li>
+              <li><a class="dropdown-item" href="#">職場技能</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/程式語言/">程式語言</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">關於我</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">關於我</a></li>
+              <li><a class="dropdown-item" href="#">作品集</a></li>
+            </ul>
+
+          </li>
+        </ul>
+
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://ellielife.github.io//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+  
+  
+  
+
+  <script>
+    (function(){
+        if(''){
+            if (prompt('請輸入文章密碼') !== ''){
+                alert('密碼錯誤！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h3 class="text-center">2025年，新的一年，新的開始。</h3>  
+        
+        <div class="mb-3 text-center">  
+          <span>By May(梅)✨</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2025-01-01</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/%e7%94%9f%e6%b4%bb%e7%ad%86%e8%a8%98">
+            <span class="text-primary">生活筆記</span>
+          </a>
+          
+        </div>
+        
+        <img src="https://ellielife.github.io/images/post/2025/2025%E6%96%B0%E5%B9%B4%E5%BF%AB%E6%A8%82.jpg" class="img-fluid w-100 mb-4" alt="2025年，新的一年，新的開始。">
+        
+
+      
+
+
+        <div class="content mb-5">
+          
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/wIIvG_JGiAI?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p>Hi，親愛的大家，這裡先分享朋友傳給我的淡江大橋年終的煙火秀，她知道我很少在過節的，所以分享喜悅的心情給我，我也分享給大家，分享給跟我一樣沒有出去跨年的朋友，你並不孤單，我也跟你們這群人一樣沒有去跨年呢，主要是因為人潮太多了，我不喜歡人潮太多的地方，還有一個原因是剛好這天身體不舒服，月經來潮，早早就睡了呢！不然的話，我就會在電視機前面與大家一起倒數跨年呢。</p>
+<hr>
+<h3 id="2025年新的一年新的開始"><strong>2025年，新的一年，新的開始，</strong></h3>
+<h3 id="今天是365天的第一天日記的空白頁你會想寫什麼呢"><strong>今天是365天的第一天，日記的空白頁，你會想寫什麼呢?</strong></h3>
+<p>不知道大家沒有規劃好今年的目標呢?</p>
+<p>像我今年主要目標之一，就是減肥到60KG，不怕你們笑😉</p>
+<p>(快祝福我減肥成功 🥰，這樣我減肥成功的機率就會增加！)</p>
+<p>自從胖了以後，我真的有感受到被歧視的感覺，以前瘦的時候都沒有，就只有因為膚色的關係受到歧視，但不會像現在這麼誇張，我窺探了胖子一小部分的世界，現在的我很能理解胖子的感受 🥲 真的有些感受只有經歷過的人才知道，所以那些沒有胖過的人，不要再說不要在意這句話，畢竟台灣不像國外，懂得尊重每個人的種族、文化、膚色和體型，有機會的話我還真的蠻想在國外生活的，想體驗一下多元開放的社會，我要解放我自己 😝 不會誤會阿，各位！我這裡說的是我要穿我喜歡的衣服，畢竟這裡沒有人會批評你的身材和膚色，嘿嘿 😊。</p>
+<p>說真的，不知道什麼原因越來越胖了呢，明明生活作息都正常，兩年內胖20公斤，覺得身體出問題了，宇宙在提醒我要注意身體健康，所以今年的主要目標之二就是健康飲食，有沒有人要跟我一起減肥、健身的，有的話歡迎追蹤我的IG，與我聯繫，哈哈哈。(變得很開放，瘋了XD</p>
+<p>對了，我還有一個主要目標，就是經營塔羅頻道，頻道內容不只是塔羅占卜，還會分享有關於自我成長和身心靈療癒的知識，還有其他…魔法蠟燭、精油等等，都是我感興趣的喔 🥰， 希望藉由塔羅頻道接觸更多跟我一樣同溫層的朋友們外(我這個超級大社恐，終於要出來見人了。)，也希望幫助更多在生活上有些迷茫的人指引一些方向，但更多的是只想跟你們一起成為夥伴，一同靈魂成長，活出自己的生命。敬啟期待！</p>
+<p>剛突然想到，既然是新年新的希望，那我就許一個願望，那就是如果頻道經營的好，有不少粉絲的話，今年的聖誕節我會舉辦抽獎送禮物活動，送一些小禮物給這些支持我的人，感謝那些日子的陪伴，哈哈哈！(看來我要準備禮物了呢！)</p>
+<p>好啦，<strong>只是想跟大家拜個新年而已，讓我參與一下跨年的喜悅，新年快樂！各位！</strong>😘</p>
+<hr>
+<p>不要忘了2025年，是個強烈波動的一年，</p>
+<p>要記得好好照顧自己的身體和情緒喔，</p>
+<p>如果真的有心事、有困難無法跨越，不要害怕，放下自尊找人幫忙/聊聊天，</p>
+<p>我們身邊一定都會有貴人幫助的，</p>
+<p>也祝大家新的一年<strong>平安、健康、幸福、快樂</strong>。</p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ellielife1118" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2024  <a href="https://ellielife.github.io/">May&rsquo;s Daily｜用新的視野 訴說不一樣的故事</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  var indexURL = "https://ellielife.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://ellielife.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/mark.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://ellielife.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>
