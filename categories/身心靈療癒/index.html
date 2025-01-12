@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="zh-tw"><head>
+<html lang="zh-tw"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
-  <title>Ellie&#39;s Diary｜艾莉生活日記</title>
+  <title>靈性女孩的日記Spiritual Girly&#39;s journal</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Ellie&#39;s Diary｜艾莉生活日記">
-  <meta name="author" content="Ellie(梅)✨">
+  <meta name="description" content="靈性女孩的日記Spiritual Girly&#39;s journal">
+  <meta name="author" content="May(梅)✨">
     
   
   <meta name="theme-name" content="liva-hugo" />
   
-  <meta name="generator" content="Hugo 0.120.4">
+  <meta name="generator" content="Hugo 0.138.0">
 
   <!-- plugins -->
   
-  <link rel="stylesheet" href="https://ellielife.github.io/plugins/bootstrap/bootstrap.min.css ">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/bootstrap/bootstrap.min.css ">
   
-  <link rel="stylesheet" href="https://ellielife.github.io/plugins/slick/slick.css ">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/slick/slick.css ">
   
-  <link rel="stylesheet" href="https://ellielife.github.io/plugins/themify-icons/themify-icons.css ">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/themify-icons/themify-icons.css ">
   
-  <link rel="stylesheet" href="https://ellielife.github.io/plugins/venobox/venobox.css ">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/venobox/venobox.css ">
   
 
   <!-- Main Stylesheet -->
   
-  <link rel="stylesheet" href="https://ellielife.github.io/scss/style.min.css" media="screen">
+  <link rel="stylesheet" href="http://localhost:1313/scss/style.min.css" media="screen">
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="https://ellielife.github.io/images/favicon.png " type="image/x-icon">
-  <link rel="icon" href="https://ellielife.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="shortcut icon" href="http://localhost:1313/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="http://localhost:1313/images/favicon.png " type="image/x-icon">
 
   <!-- google analitycs -->
   <script>
@@ -68,7 +68,7 @@
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
       
       <a class="navbar-brand" href="https://ellielife.github.io/">
-      <span class="text-body">Ellie's Diary｜艾莉生活日記</span>
+      <span class="text-body">靈性女孩的日記Spiritual Girly's journal</span>
       </a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
         <i class="ti-menu"></i>
@@ -111,6 +111,34 @@
         artist: 'ONE OK ROCK',
         url: '/images/Music/ONE OK ROCK - Wherever you are.m4a',
         cover: '/images/Music/Wherever you are .png',
+        lrc: ''
+    },
+    {
+      name: 'ソラゴト - 明透ASU',
+        artist: '明透',
+        url: '/images/Music/ソラゴト - 明透ASU.m4a',
+        cover: '/images/Music/路透.png',
+        lrc: ''
+    },
+    {
+      name: 'Coldplay - A Sky Full Of Stars',
+        artist: 'Coldplay',
+        url: '/images/Music/A Sky Full Of Stars - Coldplay.m4a',
+        cover: '/images/Music/Coldplay - A Sky Full Of Stars.jpg',
+        lrc: ''
+    },
+    {
+      name: 'All For Love為愛而戰',
+        artist: 'Tungevaag & Raaban',
+        url: '/images/Music/All For Love為愛而戰.mp3',
+        cover: '/images/Music/為愛而戰.png',
+        lrc: ''
+    },
+    {
+      name: 'Call of Silence（Remix）',
+        artist: '不明',
+        url: '/images/Music/Call of Silence（Remix）.webm',
+        cover: '/images/Music/Call of Silence.png',
         lrc: ''
     },
     ]
@@ -179,10 +207,12 @@ $(element).wrap("<a href='/radio/pick/'></a>");
            
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">我熱愛的生活啊</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">愛生活</a>
             <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
-              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/日常生活/">日常生活</a></li>
-              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/夢記事/">夢記事</a></li>
+              <li><h6 class="dropdown-header">生活分享</h6></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/逃離吧我的社畜人生/">─ 逃離吧！我的社畜人生！</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">─ 愛自己日記Love myself journal</a></li>
 
             </ul>
           </li>
@@ -191,19 +221,28 @@ $(element).wrap("<a href='/radio/pick/'></a>");
             <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">自我成長</a>
 
             <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
-              <li><a class="dropdown-item" href="#">工程筆記</a></li>
-              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/閱讀筆記/">閱讀筆記</a></li>
+              <li><a class="dropdown-item" href="#">塔羅牌相關</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">身心靈相關</h6></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 我的靈異故事分享</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 靈性文章和影片分享</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">療癒日記</a></li>
+              <li><a class="dropdown-item" href="#">自省回顧</a></li>
             </ul>
 
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">身心靈平衡</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">閱讀心得</a>
 
             <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
-              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/療癒筆記/">療癒筆記</a></li>
-              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/靈性書寫傳訊/">靈性書寫傳訊</a></li>
-              <li><a class="dropdown-item" href="#">塔羅占卜、水晶、精油等</a></li>
+              <li><a class="dropdown-item" href="#">人際關係</a></li>
+              <li><a class="dropdown-item" href="#">個人成長</a></li>
+              <li><a class="dropdown-item" href="#">影劇動漫</a></li>
+              <li><a class="dropdown-item" href="#">投資理財</a></li>
+              <li><a class="dropdown-item" href="#">職場技能</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/程式語言/">程式語言</a></li>
             </ul>
 
           </li>
@@ -212,7 +251,7 @@ $(element).wrap("<a href='/radio/pick/'></a>");
             <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">關於我</a>
 
             <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
-              <li><a class="dropdown-item" href="#">關於我</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/about/">關於我</a></li>
               <li><a class="dropdown-item" href="#">作品集</a></li>
             </ul>
 
@@ -225,7 +264,7 @@ $(element).wrap("<a href='/radio/pick/'></a>");
         <div class="search pl-lg-4">
           <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
           <div class="search-wrapper">
-            <form action="https://ellielife.github.io//search" class="h-100">
+            <form action="http://localhost:1313//search" class="h-100">
               <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
             </form>
             <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
@@ -267,13 +306,17 @@ $(element).wrap("<a href='/radio/pick/'></a>");
           <div class="col-md-8 mb-4">
     <article class="card">
         
+        
+        <img src="http://localhost:1313/images/post/%E4%B8%8D%E5%86%8D%E5%90%83%E7%B3%96%E4%BA%86%21%E7%AD%89%E4%BD%A0%E7%9C%8B%E5%AE%8C%E9%80%99%E5%BD%B1%E7%89%87.jpg" class="card-img-top" alt="靈魂覺醒的第一步：獨自踏上黑暗的朝聖之路">
+        
+        
         <div class="card-body px-0">
-        <a href="https://ellielife.github.io/blog/2024.06.26%E5%86%A5%E6%83%B3vs%E9%9D%9C%E5%BF%83%E6%88%91%E5%80%8B%E4%BA%BA%E6%AF%94%E8%BC%83%E5%96%9C%E6%AD%A1%E9%9D%9C%E5%BF%83/" class="h4 d-block my-3">冥想VS靜心，我個人比較喜歡靜心</a>
+        <a href="http://localhost:1313/blog/2025%E5%B9%B4/2025.01.11%E9%9D%88%E9%AD%82%E8%A6%BA%E9%86%92%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AD%A5%E7%8D%A8%E8%87%AA%E8%B8%8F%E4%B8%8A%E9%BB%91%E6%9A%97%E7%9A%84%E6%9C%9D%E8%81%96%E4%B9%8B%E8%B7%AF/" class="h4 d-block my-3">靈魂覺醒的第一步：獨自踏上黑暗的朝聖之路</a>
         <div class="mb-3 post-meta">
-            <span>By Ellie(梅)✨</span>
+            <span>By May(梅)✨</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2024-06-26</span>
+            <span>2025-01-11</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
             
@@ -282,9 +325,11 @@ $(element).wrap("<a href='/radio/pick/'></a>");
             
         </div>
         <p class="card-text"></p>
-        <a href="https://ellielife.github.io/blog/2024.06.26%E5%86%A5%E6%83%B3vs%E9%9D%9C%E5%BF%83%E6%88%91%E5%80%8B%E4%BA%BA%E6%AF%94%E8%BC%83%E5%96%9C%E6%AD%A1%E9%9D%9C%E5%BF%83/" class="btn btn-outline-primary">閱讀更多</a>
+        <a href="http://localhost:1313/blog/2025%E5%B9%B4/2025.01.11%E9%9D%88%E9%AD%82%E8%A6%BA%E9%86%92%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AD%A5%E7%8D%A8%E8%87%AA%E8%B8%8F%E4%B8%8A%E9%BB%91%E6%9A%97%E7%9A%84%E6%9C%9D%E8%81%96%E4%B9%8B%E8%B7%AF/" class="btn btn-outline-primary">閱讀更多</a>
         </div>
         <hr>
+
+
     </article>
 </div>
           
@@ -293,18 +338,24 @@ $(element).wrap("<a href='/radio/pick/'></a>");
       
       <div class="col-lg-4">
     <div class="widgets">
+
+       
+       
       
       <div class="widget">
         
         <h4 class="widget-title">關於我</h4>
         
-        <img src="https://ellielife.github.io/images/myself/May8.jpg" alt=""
+        <img src="http://localhost:1313/images/May%E9%9D%88%E9%AD%82%E5%BD%A2%E8%B1%A1/56842.1.jpg" alt=""
           class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
         
-        <p>Hi，我是Ellie(梅)，喜好自我探索｜自我學習｜身心靈療癒，因某種原因開始寫日記，因市面上部落格的樣式我都不喜歡，所以開始嘗試自己寫程式，漸漸地開始熱愛創作和程式設計，目前只想活在自己熱愛的小太陽裡，活出我的不正常人生。</p> 
-        <a href="https://ellielife.github.io/about/" class="btn btn-outline-primary">閱讀更多</a>
+        <p>Hi，我是May(梅)✨，喜好閱讀、自我學習和身心靈相關領域，我為自己開始寫日記，期許自己每天進步一點點，目前只想活在自己熱愛的小太陽裡，依『心』而活。</p> 
+        <a href="http://localhost:1313/about/" class="btn btn-outline-primary">閱讀更多</a>
         
       </div>
+
+
+
       
       <div class="widget">
         <h4 class="widget-title">文章分類</h4>
@@ -313,13 +364,31 @@ $(element).wrap("<a href='/radio/pick/'></a>");
               href="/categories/%e4%be%86%e9%bb%9e%e5%a5%bd%e7%8e%a9%e7%9a%84/">來點好玩的</a>
           </li>
           <li><a
+              href="/categories/%e5%80%8b%e4%ba%ba%e6%88%90%e9%95%b7/">個人成長</a>
+          </li>
+          <li><a
               href="/categories/%e5%a1%94%e7%be%85%e6%97%a5%e8%a8%98/">塔羅日記</a>
           </li>
           <li><a
               href="/categories/%e5%b7%a5%e7%a8%8b%e7%ad%86%e8%a8%98/">工程筆記</a>
           </li>
           <li><a
+              href="/categories/%e6%84%9b%e7%94%9f%e6%b4%bb/">愛生活</a>
+          </li>
+          <li><a
+              href="/categories/%e6%88%91%e7%9a%84%e9%9d%88%e7%95%b0%e6%95%85%e4%ba%8b%e5%88%86%e4%ba%ab/">我的靈異故事分享</a>
+          </li>
+          <li><a
               href="/categories/%e6%97%a5%e5%b8%b8%e7%94%9f%e6%b4%bb/">日常生活</a>
+          </li>
+          <li><a
+              href="/categories/%e6%99%82%e4%ba%8b%e8%a9%95%e8%ab%96/">時事評論</a>
+          </li>
+          <li><a
+              href="/categories/%e7%94%9f%e6%b4%bb%e6%97%a5%e8%a8%98/">生活日記</a>
+          </li>
+          <li><a
+              href="/categories/%e7%94%9f%e6%b4%bb%e7%ad%86%e8%a8%98/">生活筆記</a>
           </li>
           <li><a
               href="/categories/%e7%99%82%e7%99%92%e6%97%a5%e8%a8%98/">療癒日記</a>
@@ -328,7 +397,13 @@ $(element).wrap("<a href='/radio/pick/'></a>");
               href="/categories/%e7%99%82%e7%99%92%e7%ad%86%e8%a8%98/">療癒筆記</a>
           </li>
           <li><a
+              href="/categories/%e7%a8%8b%e5%bc%8f%e8%aa%9e%e8%a8%80/">程式語言</a>
+          </li>
+          <li><a
               href="/categories/%e8%ba%ab%e5%bf%83%e9%9d%88%e7%99%82%e7%99%92/">身心靈療癒</a>
+          </li>
+          <li><a
+              href="/categories/%e9%80%83%e9%9b%a2%e5%90%a7%e6%88%91%e7%9a%84%e7%a4%be%e7%95%9c%e4%ba%ba%e7%94%9f/">逃離吧！我的社畜人生！</a>
           </li>
           <li><a
               href="/categories/%e9%96%b1%e8%ae%80%e7%ad%86%e8%a8%98/">閱讀筆記</a>
@@ -337,7 +412,7 @@ $(element).wrap("<a href='/radio/pick/'></a>");
               href="/categories/%e9%9b%bb%e5%bd%b1%e5%bf%83%e5%be%97/">電影心得</a>
           </li>
           <li><a
-              href="/categories/%e9%9d%88%e6%80%a7%e6%9b%b8%e5%af%ab/">靈性書寫</a>
+              href="/categories/%e9%9d%88%e6%80%a7%e6%96%87%e7%ab%a0%e5%92%8c%e5%bd%b1%e7%89%87%e5%88%86%e4%ba%ab/">靈性文章和影片分享</a>
           </li>
           <li><a
               href="/categories/%e9%9d%88%e6%80%a7%e6%9b%b8%e5%af%ab%e5%82%b3%e8%a8%8a/">靈性書寫傳訊</a>
@@ -347,8 +422,10 @@ $(element).wrap("<a href='/radio/pick/'></a>");
       
       
       <div class="widget">
-        <h4 class="widget-title">社群</h4>
+        <h4 class="widget-title">追蹤</h4>
         <ul class="list-inline social-links">
+          
+          <li class="list-inline-item"><a href="https://www.instagram.com/may_daily0509?igsh=ZDQ4ZWc5bzc2aWJz&amp;utm_source=qr"><i class="ti-instagram"></i></a></li>
           
         </ul>
       </div>
@@ -362,6 +439,9 @@ $(element).wrap("<a href='/radio/pick/'></a>");
       <div class="col-12 mt-5">
         
       </div>
+
+      
+
     </div>
   </div>
 </section>
@@ -371,7 +451,7 @@ $(element).wrap("<a href='/radio/pick/'></a>");
 
 
       <div class="col-12 border-top py-4 text-center">
-        | copyright © 2024  <a href="https://ellielife.github.io/">Ellie&rsquo;s Diary｜艾莉生活日記</a> All Rights Reserved |
+        | copyright © 2024  <a href="https://ellielife.github.io/">靈性女孩的日記Spiritual Girly&rsquo;s journal</a> All Rights Reserved |
       </div>
     </div>
   </div>
@@ -379,28 +459,28 @@ $(element).wrap("<a href='/radio/pick/'></a>");
 
 
 <script>
-  var indexURL = "https://ellielife.github.io/index.json"
+  var indexURL = "http://localhost:1313/index.json"
 </script>
 
 <!-- JS Plugins -->
 
-<script src="https://ellielife.github.io/plugins/jQuery/jquery.min.js"></script>
+<script src="http://localhost:1313/plugins/jQuery/jquery.min.js"></script>
 
-<script src="https://ellielife.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="http://localhost:1313/plugins/bootstrap/bootstrap.min.js"></script>
 
-<script src="https://ellielife.github.io/plugins/slick/slick.min.js"></script>
+<script src="http://localhost:1313/plugins/slick/slick.min.js"></script>
 
-<script src="https://ellielife.github.io/plugins/venobox/venobox.min.js"></script>
+<script src="http://localhost:1313/plugins/venobox/venobox.min.js"></script>
 
-<script src="https://ellielife.github.io/plugins/search/fuse.min.js"></script>
+<script src="http://localhost:1313/plugins/search/fuse.min.js"></script>
 
-<script src="https://ellielife.github.io/plugins/search/mark.js"></script>
+<script src="http://localhost:1313/plugins/search/mark.js"></script>
 
-<script src="https://ellielife.github.io/plugins/search/search.js"></script>
+<script src="http://localhost:1313/plugins/search/search.js"></script>
 
 <!-- Main Script -->
 
-<script src="https://ellielife.github.io/js/script.min.js"></script>
+<script src="http://localhost:1313/js/script.min.js"></script>
 
 
 
