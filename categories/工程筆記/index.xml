@@ -10,23 +10,23 @@
     <atom:link href="https://ellielife.github.io/categories/%E5%B7%A5%E7%A8%8B%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>工程筆記｜Markdown語法</title>
-      <link>https://ellielife.github.io/blog/2024.09.18%E5%B7%A5%E7%A8%8B%E7%AD%86%E8%A8%98markdown/</link>
+      <link>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.09.18%E5%B7%A5%E7%A8%8B%E7%AD%86%E8%A8%98markdown/</link>
       <pubDate>Wed, 18 Sep 2024 11:28:34 +0800</pubDate>
-      <guid>https://ellielife.github.io/blog/2024.09.18%E5%B7%A5%E7%A8%8B%E7%AD%86%E8%A8%98markdown/</guid>
+      <guid>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.09.18%E5%B7%A5%E7%A8%8B%E7%AD%86%E8%A8%98markdown/</guid>
       <description>&lt;h3 id=&#34;markdown語法簡介&#34;&gt;Markdown語法簡介&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Markdown是由Daring Fireball創建的，原始指南在這裡。然而，它的語法在不同的解析器或編輯器之間有所不同。&lt;/p&gt;&#xA;&lt;p&gt;請注意，Markdown 來源中的 HTML 片段將被識別，但不會被解析或渲染。另外，儲存後可能會對原始 Markdown 原始碼進行小的重新格式化。&lt;/p&gt;&#xA;&lt;h3 id=&#34;內嵌-html&#34;&gt;內嵌 HTML&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Markdown語法，用來作為&lt;strong&gt;網路寫作&lt;/strong&gt;的格式。它不是HTML的替代品。它的語法非常小，僅對於HTML標籤是一個非常小的子集，Markdown想法是讓閱讀、寫作和編輯散文變得容易。&lt;/p&gt;</description>
     </item>
     <item>
       <title>前端筆記｜Boostrap5 導覽列基本觀念和類型</title>
-      <link>https://ellielife.github.io/blog/2024.09.12%E5%89%8D%E7%AB%AF%E7%AD%86%E8%A8%98%E5%B0%8E%E8%A6%BD%E5%88%97%E9%A1%9E%E5%9E%8B/</link>
+      <link>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.09.12%E5%89%8D%E7%AB%AF%E7%AD%86%E8%A8%98%E5%B0%8E%E8%A6%BD%E5%88%97%E9%A1%9E%E5%9E%8B/</link>
       <pubDate>Thu, 12 Sep 2024 23:14:47 +0800</pubDate>
-      <guid>https://ellielife.github.io/blog/2024.09.12%E5%89%8D%E7%AB%AF%E7%AD%86%E8%A8%98%E5%B0%8E%E8%A6%BD%E5%88%97%E9%A1%9E%E5%9E%8B/</guid>
+      <guid>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.09.12%E5%89%8D%E7%AB%AF%E7%AD%86%E8%A8%98%E5%B0%8E%E8%A6%BD%E5%88%97%E9%A1%9E%E5%9E%8B/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;h4 id=&#34;boostrap5-導覽列-基本觀念&#34;&gt;Boostrap5 導覽列 基本觀念&lt;/h4&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h5 id=&#34;navbar-expand--sm-md-lg-xl-xxl用來設定響應式折疊&#34;&gt;navbar-expand-{-sm|-md|-lg|-xl|-xxl}，用來設定響應式折疊。&lt;/h5&gt;&#xA;&lt;h5 id=&#34;navbar-dark和bg-dark-可以設定顏色主題&#34;&gt;navbar-dark和bg-dark 可以設定顏色主題&lt;/h5&gt;&#xA;&lt;hr&gt;&#xA;&lt;h5 id=&#34;在-bootstrap-5-中導覽列navbar有多種類型可以根據需求進行自訂和設置以下是常見的導覽列類型和範例涵蓋基礎的導航欄設置帶有下拉菜單的導覽列不同的定位方式垂直導覽列等&#34;&gt;在 Bootstrap 5 中，導覽列（Navbar）有多種類型，可以根據需求進行自訂和設置。以下是常見的導覽列類型和範例，涵蓋基礎的導航欄設置、帶有下拉菜單的導覽列、不同的定位方式、垂直導覽列等。&lt;/h5&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;h4 id=&#34;1-基礎導覽列&#34;&gt;1. 基礎導覽列&lt;/h4&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;這是一個簡單的 Bootstrap 5 導覽列範例，包含品牌名稱和導航連結。&lt;/p&gt;</description>
     </item>
     <item>
       <title>前端筆記｜我使用Github&#43;ChatGPT來學習HTML</title>
-      <link>https://ellielife.github.io/blog/2024.08.21%E5%89%8D%E7%AB%AF%E7%AD%86%E8%A8%98html%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8/</link>
+      <link>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.08.21%E5%89%8D%E7%AB%AF%E7%AD%86%E8%A8%98html%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8/</link>
       <pubDate>Wed, 21 Aug 2024 14:04:34 +0800</pubDate>
-      <guid>https://ellielife.github.io/blog/2024.08.21%E5%89%8D%E7%AB%AF%E7%AD%86%E8%A8%98html%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8/</guid>
+      <guid>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.08.21%E5%89%8D%E7%AB%AF%E7%AD%86%E8%A8%98html%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8/</guid>
       <description>&lt;p&gt;如何快速學習一項技術，最重要的就是&lt;strong&gt;練習、練習、再練習，直到它成為你身上的一部分&lt;/strong&gt;，很可惜，訪間很多書籍都缺乏練習題，就算有練習題，遇到不會的或是有疑問的也只能上網搜尋答案，但自從我使用Github+ChatGPT來學習後，我發現效率很高，我不用一直在搜尋引擎輸入關鍵字，看哪位大佬有教學，我直接問ChatGPT還比較快，它可以馬上告訴我使用哪種方式來解決，如果我不懂它也可以告訴我觀念，基本上只要問對問題都能迎刃而解，因為HTML蠻簡單的，但不是運用的很熟練，畢竟現在還有一個語法叫Markdown標記語言，比較常使用這個，於是關於html學習我都是請ChatGPT給我練習題，我自己寫完後，會去參考它的答案，並針對不熟的部分在多練習，沒想到AI還蠻好使用的，我猜&amp;hellip;用不了多久，這技術成熟的話，它真的可以打趴一堆線上的課程，畢竟有些線上課程好貴喔，想省錢可以使用ChatGPT來學習喔。&lt;/p&gt;&#xA;&lt;p&gt;順帶一提，我使用的是專業版的ChatGPT+GithubAI工具，&lt;strong&gt;基本上你想學什麼都可以，它可以為你設計課程大綱，而且你也可以針對自己不熟的部分做強化&lt;/strong&gt;，有興趣的可以試試看，真的很OP。&lt;/p&gt;&#xA;&lt;h5 id=&#34;關於githubai工具&#34;&gt;關於GithubAI工具&lt;/h5&gt;&#xA;&lt;p&gt;據說是一位不到18歲的鬼才設計出來的喔，真的很厲害。&#xA;&lt;a href=&#34;https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor&#34;&gt;GithubAI(使用說明在裡面)&lt;/a&gt;&#xA;或是直接&lt;a href=&#34;https://chatgpt.com/g/g-9PKhaweyb-mr-ranedeer&#34;&gt;【點擊連結】&lt;/a&gt;&#xA;※請注意ChatGPT要是&lt;strong&gt;專業版&lt;/strong&gt;的喔，否則功能會被受限。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;標題與段落&#34;&gt;標題與段落&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;h1-h6&lt;br&gt;&#xA;標題標籤作為標題效果（共 6 段），大小、粗度、行距…等等接依據瀏覽器（各家效果差距不同）預設所提供外觀，如果需要使用者也可另外透過自訂 (CSS) 自訂調整外觀。&lt;/li&gt;&#xA;&lt;li&gt;p&lt;br&gt;&#xA;段落是一組文字段落，瀏覽器會以段落表達，本身也有行距與大小粗度。&lt;/li&gt;&#xA;&lt;li&gt;a&#xA;連結可以語義為一個外部網址或是內部網址，也可以是一個網頁上的錨點。屬性 href 是個組合縮寫字，它原文是 Hypertext（超文字） + Reference （參考、查詢、提交、關聯）之意。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h4 id=&#34;ai給我的練習題&#34;&gt;AI給我的練習題&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;a標籤練習&lt;/li&gt;&#xA;&lt;li&gt;0821練習題：建立個人簡介網頁&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;未完待續&amp;hellip; 有點累了&amp;gt;&amp;quot;&amp;lt;&lt;/p&gt;</description>
     </item>
   </channel>

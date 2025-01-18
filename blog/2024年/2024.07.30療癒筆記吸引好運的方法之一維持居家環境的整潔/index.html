@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>Ellie&#39;s journal｜艾莉的小太陽</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="打造屬於你個人有生命力的地方">
+  <meta name="author" content="May(梅)✨">
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+  
+  <meta name="generator" content="Hugo 0.138.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://ellielife.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://ellielife.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+
+
+
+
+
+  
+   
+
+  
+   
+  
+
+
+
+
+
+<!-- navigation 導航列-->
+
+<header class="navigation"> 
+  <div class="container-fluid">
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
+      
+      <a class="navbar-brand" href="https://ellielife.github.io/">
+      <span class="text-body">Ellie's journal｜艾莉的小太陽</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <i class="ti-menu"></i>
+      </button>
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
+<script type="text/javascript">
+  const ap = new APlayer({
+    container: document.getElementById('aplayera'),
+        fixed: true,
+        lrcType: 3,
+        order: 'random',
+    audio: [{
+      name: 'Return to Innocence 反璞歸真',
+        artist: '台灣原住民+Enigma',
+        url: '/images/Music/Return_to_Innocence.wmv.mp3',
+        cover: '/images/Music/Return to Innocence.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Sasha_Alex_Sloan_-_Older',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/Sasha_Alex_Sloan_-_Older.mp3',
+        cover: '/images/Music/Sasha_Alex_Sloan-Older.jpg',
+        lrc: ''
+    },
+    {
+      name: 'god is a girl',
+        artist: 'Groove Coverage',
+        url: '/images/Music/god is a girl.m4a',
+        cover: '/images/Music/god is a gril.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Wherever you are',
+        artist: 'ONE OK ROCK',
+        url: '/images/Music/ONE OK ROCK - Wherever you are.m4a',
+        cover: '/images/Music/Wherever you are .png',
+        lrc: ''
+    },
+    {
+      name: 'ソラゴト - 明透ASU',
+        artist: '明透',
+        url: '/images/Music/ソラゴト - 明透ASU.m4a',
+        cover: '/images/Music/路透.png',
+        lrc: ''
+    },
+    {
+      name: '《In The Shadow Of The Sun》',
+        artist: 'Professor Green',
+        url: '/images/Music/《In The Shadow Of The Sun》- Professor Green 中英歌詞.mp3',
+        cover: '/images/Music/《In The Shadow Of The Sun》- Professor Green.png',
+        lrc: ''
+    },
+    {
+      name: 'CRY FOR ME （feat）愛海',
+        artist: 'MICHITA & 愛海',
+        url: '/images/Music/MICHITA - CRY FOR ME （feat）爱海.mp3',
+        cover: '/images/Music/MICHITA - CRY FOR ME.png',
+        lrc: ''
+    },
+    {
+      name: 'Call of Silence（Remix）',
+        artist: '不明',
+        url: '/images/Music/Call of Silence（Remix）.webm',
+        cover: '/images/Music/Call of Silence.png',
+        lrc: ''
+    },
+    ]
+});
+
+        ready();
+    
+    isRecover = false;
+    function ready(){
+        ap.on('canplay', function () {
+            if(!isRecover){
+                if(localStorage.getItem("musicIndex") != null){
+                    musicIndex = localStorage.getItem("musicIndex");
+                    musicTime = localStorage.getItem("musicTime");
+                    if(ap.list.index != musicIndex){
+                        ap.list.switch(musicIndex);
+                    }else{
+                        ap.seek(musicTime);
+                        ap.play();
+                        localStorage.clear();
+                        ap.setAttribute(muted,'');
+                        ap.setAttribute(playsinline,'');
+                        isRecover = true;
+                    }
+                }else{
+                    isRecover = true;
+                }
+            }
+        });
+    }
+
+    window.onbeforeunload = function(event) {
+        if(!ap.audio.paused){
+            musicIndex = ap.list.index;
+            musicTime = ap.audio.currentTime;
+            localStorage.setItem("musicIndex",musicIndex);
+            localStorage.setItem("musicTime",musicTime);
+        }
+    };
+
+
+
+var element = document.getElementsByClassName("aplayer-title")[0];  
+$(element).wrap("<a href='/radio/pick/'></a>");
+</script>
+
+
+
+
+
+<style type="text/css">
+    .aplayer-title, .aplayer-list-light {
+        color:#000000cc;
+    }
+    .aplayer-list{
+        color:#717070bf;
+    }
+</style>
+
+
+
+
+      <div class="navbar-collapse text-center collapse" id="navigation" style>
+        <ul class="navbar-nav ml-auto"> 
+          <li><a class="nav-link" href="https://ellielife.github.io/">首頁</a></li>
+           
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">愛生活</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><h6 class="dropdown-header">生活分享</h6></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/逃離吧我的社畜人生/">─ 逃離吧！我的社畜人生！</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">─ 愛自己日記Love myself journal</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">自我成長</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">塔羅牌相關</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">身心靈相關</h6></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 我的靈異故事分享</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 靈性文章和影片分享</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">療癒日記</a></li>
+              <li><a class="dropdown-item" href="#">自省回顧</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">閱讀心得</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">人際關係</a></li>
+              <li><a class="dropdown-item" href="#">個人成長</a></li>
+              <li><a class="dropdown-item" href="#">影劇動漫</a></li>
+              <li><a class="dropdown-item" href="#">投資理財</a></li>
+              <li><a class="dropdown-item" href="#">職場技能</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/程式語言/">程式語言</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">關於我</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="https://ellielife.github.io/about/">關於我</a></li>
+              <li><a class="dropdown-item" href="#">作品集</a></li>
+            </ul>
+
+          </li>
+        </ul>
+
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://ellielife.github.io//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+  
+  
+
+      
+
+
+  
+  
+
+  <script>
+    (function(){
+        if(''){
+            if (prompt('請輸入文章密碼') !== ''){
+                alert('密碼錯誤！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h3 class="text-center">吸引好運的方法之一：維持居家環境的整潔。</h3>  
+        
+        <div class="mb-3 text-center">  
+          <span>By May(梅)✨</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2024-07-30</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/%e7%99%82%e7%99%92%e7%ad%86%e8%a8%98">
+            <span class="text-primary">療癒筆記</span>
+          </a>
+          
+        </div>
+        
+        <img src="https://ellielife.github.io/images/post/%E9%9D%88%E6%80%A7/%E5%AF%8C%E6%9C%89%E7%94%9F%E5%91%BD%E5%8A%9B1.jpg" class="img-fluid w-100 mb-4" alt="吸引好運的方法之一：維持居家環境的整潔。">
+        
+
+      
+
+
+        <div class="content mb-5">
+          <p>知道嗎?那些靈性很高的存有們，都很喜歡待在乾淨整潔、<strong>很有生命力</strong>的環境。所以有祂們在的地方，你除了可以看見該地方具有豐富的生態鏈以外，也可以看到清澈的河水和溫暖和諧卻不刺眼的陽光，因為這個地方永遠都在萬象更新，永遠都保持著能量的更新和替換，讓這個地方保持著生生不息的生命力，這對於祂們來說很重要，因此要讓高靈處在一個能量封閉的地方，祂可是會瘋掉的，哈哈。(有可能會變成邪神</p>
+<hr>
+<h5 id="為什麼打掃居家環境這麼重要">為什麼打掃居家環境這麼重要?</h5>
+<p>因為居家環境是我們每天與這個環境互動相處的地方，<strong>一個負面的環境和磁場會影響人，同理，人的磁場也是會影響環境的。</strong> 世界上只有一種人能夠不被環境影響，就是那種內心很清淨且穩重的人，只有這種人才能跨過環境的障礙不被受影響，但大多數地球上的我們，內心都沒有到達那種程度，所以很容易被周遭的人事物影響。</p>
+<p>相信很多人都不知道，我們人類每天都會產生負面的能量或說是負面的情緒垃圾，比方說上班的壓力、人際關係的煩惱、金錢的壓力等等，甚至是你出門後也會把別人的負面情緒垃圾帶回家，而這些負面情緒垃圾會隨機掉落在居家環境各個地方，如果你平日不打掃，不保持環境的整潔和空氣(能量)流通，最終這些負面能量累積起來也是會影響居住在裡面的我們，所以平日打掃很重要，對外窗不管是下雨天還是晴天都要保持暢通，讓風進來把這些負面能量吹走，大自然會將這些負面能量轉換成其他形式。</p>
+<p>但若你都不抽空打掃居家環境，家裡總是推很多的雜物和物品，例如有很多該丟卻不丟的紙箱或是推了很多平常都用不到的東西，其實很容易招來阿飄喔，家裡啥時候有個阿飄都不知道呢，更何況是跟祂們朝夕相處，哈哈。尤其是有物品囤積症的要小心阿，不要以為家裡有阿飄沒事，其實久而久之還是會對人造成影響。</p>
+<p>所以，固定時間清掉那些已不再對自己有益的東西很重要，而且當你東西沒有那麼多的時候，其實你的思考會變得很清晰，會比較沒有那麼多的雜訊。另外，如果你是個比較偏向負面的人，想要改變自己不要那麼負面，先從環境上下手，為自己打造一個舒適的居家環境，除了心情好以外，慢慢地會淺移默化、由內而外的改變你這個人。</p>
+<h5 id="若你是在外租房子選擇一個好房間真的很重要">若你是在外租房子，選擇一個好房間真的很重要！</h5>
+<p>在外面租房子，真的不要懶惰，多去看看不同的房子，如果預算夠的話，最好找個有對外窗且有陽光照進來的地方，對我來說，最好要有個陽台，原因只因為我喜歡種花、種植物，這可能傳承自我媽的內在基因，打從我有記憶以來我就看到我媽都會種一些不知是什麼品種的花，小時候不明白為什麼母親要種這些植物，甚至覺得是浪費空間，直到有天我看見這些植物內在的生命力，我覺得很神奇，搞得我也開始種植物，不過我都是種吃的，哈哈。順帶一提，植物會吸收我們人體產生的負面能量喔，所以家裡有顆植物除了美觀環境外也能夠淨化居家環境，不妨也可以考慮一下。</p>
+<hr>
+<h5 id="為你自己創造能夠產生正面影響力的環境讓這個地方成為你生命力的地方">為你自己創造能夠產生<strong>正面影響力</strong>的環境，讓這個地方成為你生命力的地方。</h5>
+<p>如果你能為自己的居家環境保持一個正能量的循環，會多了一個屬於你自己靈魂的味道，除了環境會有能量清晰的味道外，自己身上也會散發屬於你自己的靈魂味道，每個人都不一樣，像我的好朋友曾經跟我說過：『你身上有一種木頭味，不過那種木頭味不是臭的，是一種很獨特的香氣，我不知道該怎麼形容，總之不是臭的，不要誤會我的意思。』我當下很納悶，通常都是髮香或是衣服上的香味或香水味，怎麼會是木頭味，於是我問她：『為什麼你會覺得是木頭味?』她：『我直覺就是樹木的味道。』嗯&hellip;經她這麼一說，我突然想起曾經也有人跟我說過和我朋友一樣的話，說我身上有一種木頭味，本來我還不在意的說，好吧，我是大自然的孩子，多了一個木頭味也OK，反正不是臭的，直到後來因緣際會，偶然聽到某位在YT經營的靈性前輩說，每個人的靈魂味道不一樣，但如果你的香氣是木頭味，那表示你的靈性天賦很高。我聽到當下，只產生了一句疑問詞，是嗎?但我不覺得耶，哈哈。</p>
+<p>當然，對一個能量敏感的人來說，平日照顧自己的居家環境也是給自己設立一個能量防護牆，無形中會給這個環境空間設立一個空間結界，這個結界就是告訴那些無形的阿飄們，這裡有人住囉，這裡有人在打理喔，不要擅自闖入喔。一般情況下，這些阿飄和魔都不會輕易靠近，唉啊，能量療癒師都在使用的防護結界被你們知道啦，所以為你自己創造能夠產生<strong>正面影響力</strong>的環境很重要喔，讓這個地方充滿你生命力的地方。</p>
+<hr>
+<h5 id="對我來說整理環境有四大好處">對我來說，整理環境有四大好處。</h5>
+<p>首先，第一，除了可以活動筋骨以外，還可以聽喜歡的音樂。第二，訓練自己將意識專注在當下外，同時訓練自己對同一件事保持高度的專注度，畢竟現代有太多讓我們分心的人事物了，我覺得現代人很需要的是對同一件事保持高度的專注度，不然馬上就要被另一件事給分心了。第三，當然就是如我標題所說的，吸引好運來到你身邊。第四，設立空間結界，讓那些妖魔鬼怪不要影響到自己的能量。</p>
+<p>以下分享我整理環境時喜歡聽的音樂，希望你們也會喜歡。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mjCns6ko5C0?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ellielife1118" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2024  <a href="https://ellielife.github.io/">Ellie&rsquo;s journal｜艾莉的小太陽</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  var indexURL = "https://ellielife.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://ellielife.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/mark.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://ellielife.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>
