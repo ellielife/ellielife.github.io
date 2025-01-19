@@ -6,22 +6,8 @@
     <description>Recent content in 工程筆記 on Ellie&#39;s journal｜新世代女巫的自我覺醒之路</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 18 Sep 2024 11:28:34 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 21 Aug 2024 14:04:34 +0800</lastBuildDate>
     <atom:link href="https://ellielife.github.io/categories/%E5%B7%A5%E7%A8%8B%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>工程筆記｜Markdown語法</title>
-      <link>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.09.18%E5%B7%A5%E7%A8%8B%E7%AD%86%E8%A8%98markdown/</link>
-      <pubDate>Wed, 18 Sep 2024 11:28:34 +0800</pubDate>
-      <guid>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.09.18%E5%B7%A5%E7%A8%8B%E7%AD%86%E8%A8%98markdown/</guid>
-      <description>&lt;h3 id=&#34;markdown語法簡介&#34;&gt;Markdown語法簡介&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Markdown是由Daring Fireball創建的，原始指南在這裡。然而，它的語法在不同的解析器或編輯器之間有所不同。&lt;/p&gt;&#xA;&lt;p&gt;請注意，Markdown 來源中的 HTML 片段將被識別，但不會被解析或渲染。另外，儲存後可能會對原始 Markdown 原始碼進行小的重新格式化。&lt;/p&gt;&#xA;&lt;h3 id=&#34;內嵌-html&#34;&gt;內嵌 HTML&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Markdown語法，用來作為&lt;strong&gt;網路寫作&lt;/strong&gt;的格式。它不是HTML的替代品。它的語法非常小，僅對於HTML標籤是一個非常小的子集，Markdown想法是讓閱讀、寫作和編輯散文變得容易。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>前端筆記｜Boostrap5 導覽列基本觀念和類型</title>
-      <link>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.09.12%E5%89%8D%E7%AB%AF%E7%AD%86%E8%A8%98%E5%B0%8E%E8%A6%BD%E5%88%97%E9%A1%9E%E5%9E%8B/</link>
-      <pubDate>Thu, 12 Sep 2024 23:14:47 +0800</pubDate>
-      <guid>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.09.12%E5%89%8D%E7%AB%AF%E7%AD%86%E8%A8%98%E5%B0%8E%E8%A6%BD%E5%88%97%E9%A1%9E%E5%9E%8B/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;h4 id=&#34;boostrap5-導覽列-基本觀念&#34;&gt;Boostrap5 導覽列 基本觀念&lt;/h4&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h5 id=&#34;navbar-expand--sm-md-lg-xl-xxl用來設定響應式折疊&#34;&gt;navbar-expand-{-sm|-md|-lg|-xl|-xxl}，用來設定響應式折疊。&lt;/h5&gt;&#xA;&lt;h5 id=&#34;navbar-dark和bg-dark-可以設定顏色主題&#34;&gt;navbar-dark和bg-dark 可以設定顏色主題&lt;/h5&gt;&#xA;&lt;hr&gt;&#xA;&lt;h5 id=&#34;在-bootstrap-5-中導覽列navbar有多種類型可以根據需求進行自訂和設置以下是常見的導覽列類型和範例涵蓋基礎的導航欄設置帶有下拉菜單的導覽列不同的定位方式垂直導覽列等&#34;&gt;在 Bootstrap 5 中，導覽列（Navbar）有多種類型，可以根據需求進行自訂和設置。以下是常見的導覽列類型和範例，涵蓋基礎的導航欄設置、帶有下拉菜單的導覽列、不同的定位方式、垂直導覽列等。&lt;/h5&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;h4 id=&#34;1-基礎導覽列&#34;&gt;1. 基礎導覽列&lt;/h4&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;這是一個簡單的 Bootstrap 5 導覽列範例，包含品牌名稱和導航連結。&lt;/p&gt;</description>
-    </item>
     <item>
       <title>前端筆記｜我使用Github&#43;ChatGPT來學習HTML</title>
       <link>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.08.21%E5%89%8D%E7%AB%AF%E7%AD%86%E8%A8%98html%E5%9F%BA%E6%9C%AC%E6%95%99%E5%AD%B8/</link>

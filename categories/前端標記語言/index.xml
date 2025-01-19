@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>前端標記語言 on Ellie&#39;s journal｜新世代女巫的自我覺醒之路</title>
+    <link>https://ellielife.github.io/categories/%E5%89%8D%E7%AB%AF%E6%A8%99%E8%A8%98%E8%AA%9E%E8%A8%80/</link>
+    <description>Recent content in 前端標記語言 on Ellie&#39;s journal｜新世代女巫的自我覺醒之路</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 18 Sep 2024 11:28:34 +0800</lastBuildDate>
+    <atom:link href="https://ellielife.github.io/categories/%E5%89%8D%E7%AB%AF%E6%A8%99%E8%A8%98%E8%AA%9E%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown語法</title>
+      <link>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.09.18%E5%B7%A5%E7%A8%8B%E7%AD%86%E8%A8%98markdown/</link>
+      <pubDate>Wed, 18 Sep 2024 11:28:34 +0800</pubDate>
+      <guid>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.09.18%E5%B7%A5%E7%A8%8B%E7%AD%86%E8%A8%98markdown/</guid>
+      <description>&lt;h3 id=&#34;markdown語法簡介&#34;&gt;Markdown語法簡介&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Markdown是由Daring Fireball創建的，原始指南在這裡。然而，它的語法在不同的解析器或編輯器之間有所不同。&lt;/p&gt;&#xA;&lt;p&gt;請注意，Markdown 來源中的 HTML 片段將被識別，但不會被解析或渲染。另外，儲存後可能會對原始 Markdown 原始碼進行小的重新格式化。&lt;/p&gt;&#xA;&lt;h3 id=&#34;內嵌-html&#34;&gt;內嵌 HTML&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Markdown語法，用來作為&lt;strong&gt;網路寫作&lt;/strong&gt;的格式。它不是HTML的替代品。它的語法非常小，僅對於HTML標籤是一個非常小的子集，Markdown想法是讓閱讀、寫作和編輯散文變得容易。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

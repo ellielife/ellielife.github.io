@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Boostrap5 RWD框架 on Ellie&#39;s journal｜新世代女巫的自我覺醒之路</title>
+    <link>https://ellielife.github.io/categories/boostrap5-rwd%E6%A1%86%E6%9E%B6/</link>
+    <description>Recent content in Boostrap5 RWD框架 on Ellie&#39;s journal｜新世代女巫的自我覺醒之路</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 12 Sep 2024 23:14:47 +0800</lastBuildDate>
+    <atom:link href="https://ellielife.github.io/categories/boostrap5-rwd%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Boostrap5 導覽列基本觀念和類型</title>
+      <link>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.09.12boostrap5-rwd%E6%A1%86%E6%9E%B6boostrap5-%E5%B0%8E%E8%A6%BD%E5%88%97%E5%9F%BA%E6%9C%AC%E8%A7%80%E5%BF%B5%E5%92%8C%E9%A1%9E%E5%9E%8B/</link>
+      <pubDate>Thu, 12 Sep 2024 23:14:47 +0800</pubDate>
+      <guid>https://ellielife.github.io/blog/2024%E5%B9%B4/2024.09.12boostrap5-rwd%E6%A1%86%E6%9E%B6boostrap5-%E5%B0%8E%E8%A6%BD%E5%88%97%E5%9F%BA%E6%9C%AC%E8%A7%80%E5%BF%B5%E5%92%8C%E9%A1%9E%E5%9E%8B/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;h4 id=&#34;boostrap5-導覽列-基本觀念&#34;&gt;Boostrap5 導覽列 基本觀念&lt;/h4&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h5 id=&#34;navbar-expand--sm-md-lg-xl-xxl用來設定響應式折疊&#34;&gt;navbar-expand-{-sm|-md|-lg|-xl|-xxl}，用來設定響應式折疊。&lt;/h5&gt;&#xA;&lt;h5 id=&#34;navbar-dark和bg-dark-可以設定顏色主題&#34;&gt;navbar-dark和bg-dark 可以設定顏色主題&lt;/h5&gt;&#xA;&lt;hr&gt;&#xA;&lt;h5 id=&#34;在-bootstrap-5-中導覽列navbar有多種類型可以根據需求進行自訂和設置以下是常見的導覽列類型和範例涵蓋基礎的導航欄設置帶有下拉菜單的導覽列不同的定位方式垂直導覽列等&#34;&gt;在 Bootstrap 5 中，導覽列（Navbar）有多種類型，可以根據需求進行自訂和設置。以下是常見的導覽列類型和範例，涵蓋基礎的導航欄設置、帶有下拉菜單的導覽列、不同的定位方式、垂直導覽列等。&lt;/h5&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;h4 id=&#34;1-基礎導覽列&#34;&gt;1. 基礎導覽列&lt;/h4&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;這是一個簡單的 Bootstrap 5 導覽列範例，包含品牌名稱和導航連結。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
