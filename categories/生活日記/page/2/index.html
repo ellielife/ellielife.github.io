@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-tw"><head>
   <meta charset="utf-8">
-  <title>與心同行｜EllieDiary艾莉的生活日記</title>
+  <title>Ellie&#39;s daily｜用新的視野訴說全新的故事</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Ellie Diary 艾莉的生活日記">
-  <meta name="author" content="Ellie(梅)">
+  <meta name="description" content="Ellie&#39;s journal｜新世代女巫的自我成長日記">
+  <meta name="author" content="Ellie｜艾莉✨">
     
   
   <meta name="theme-name" content="liva-hugo" />
   
-  <meta name="generator" content="Hugo 0.120.4">
+  <meta name="generator" content="Hugo 0.138.0">
 
   <!-- plugins -->
   
@@ -56,34 +56,224 @@
   
 </div>
 <!-- preloader end -->
+
+
+
+
+
+  
+   
+
+  
+   
+  
+
+
+
+
+
 <!-- navigation 導航列-->
+
 <header class="navigation"> 
-  <div class="container">
+  <div class="container-fluid">
     
     
     
     
     
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
+      
       <a class="navbar-brand" href="https://ellielife.github.io/">
-      <span class="text-body">與心同行｜EllieDiary艾莉的生活日記</span>
+      <span class="text-body">Ellie's journal｜新世代女巫的自我成長日記</span>
       </a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <i class="ti-menu"></i>
       </button>
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
+<script type="text/javascript">
+  const ap = new APlayer({
+    container: document.getElementById('aplayera'),
+        fixed: true,
+        lrcType: 3,
+        order: 'random',
+    audio: [{
+      name: 'Return to Innocence 反璞歸真',
+        artist: '台灣原住民+Enigma',
+        url: '/images/Music/Return_to_Innocence.wmv.mp3',
+        cover: '/images/Music/Return to Innocence.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Sasha_Alex_Sloan_-_Older',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/Sasha_Alex_Sloan_-_Older.mp3',
+        cover: '/images/Music/Sasha_Alex_Sloan-Older.jpg',
+        lrc: ''
+    },
+    {
+      name: 'god is a girl',
+        artist: 'Groove Coverage',
+        url: '/images/Music/god is a girl.m4a',
+        cover: '/images/Music/god is a gril.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Wherever you are',
+        artist: 'ONE OK ROCK',
+        url: '/images/Music/ONE OK ROCK - Wherever you are.m4a',
+        cover: '/images/Music/Wherever you are .png',
+        lrc: ''
+    },
+    {
+      name: 'ソラゴト - 明透ASU',
+        artist: '明透',
+        url: '/images/Music/ソラゴト - 明透ASU.m4a',
+        cover: '/images/Music/路透.png',
+        lrc: ''
+    },
+    {
+      name: 'Before You Break My Heart',
+        artist: 'Stevie Hoang',
+        url: '/images/Music/Before You Break My Heart.m4a',
+        cover: '/images/Music/Before You Break My Heart.jpg',
+        lrc: ''
+    },
+    {
+      name: 'CRY FOR ME （feat）愛海',
+        artist: 'MICHITA & 愛海',
+        url: '/images/Music/MICHITA - CRY FOR ME （feat）爱海.mp3',
+        cover: '/images/Music/MICHITA - CRY FOR ME.png',
+        lrc: ''
+    },
+    {
+      name: 'Call of Silence（Remix）',
+        artist: '不明',
+        url: '/images/Music/Call of Silence（Remix）.webm',
+        cover: '/images/Music/Call of Silence.png',
+        lrc: ''
+    },
+    {
+      name: 'Fight Song《戰歌》',
+        artist: 'Rachel Platten',
+        url: '/images/Music/Fight Song《戰歌》 - Rachel Platten.m4a',
+        cover: '/images/Music/Fight Song《戰歌》 - Rachel Platten.jpg',
+        lrc: ''
+    },
+    ]
+});
+
+        ready();
+    
+    isRecover = false;
+    function ready(){
+        ap.on('canplay', function () {
+            if(!isRecover){
+                if(localStorage.getItem("musicIndex") != null){
+                    musicIndex = localStorage.getItem("musicIndex");
+                    musicTime = localStorage.getItem("musicTime");
+                    if(ap.list.index != musicIndex){
+                        ap.list.switch(musicIndex);
+                    }else{
+                        ap.seek(musicTime);
+                        ap.play();
+                        localStorage.clear();
+                        ap.setAttribute(muted,'');
+                        ap.setAttribute(playsinline,'');
+                        isRecover = true;
+                    }
+                }else{
+                    isRecover = true;
+                }
+            }
+        });
+    }
+
+    window.onbeforeunload = function(event) {
+        if(!ap.audio.paused){
+            musicIndex = ap.list.index;
+            musicTime = ap.audio.currentTime;
+            localStorage.setItem("musicIndex",musicIndex);
+            localStorage.setItem("musicTime",musicTime);
+        }
+    };
+
+
+
+var element = document.getElementsByClassName("aplayer-title")[0];  
+$(element).wrap("<a href='/radio/pick/'></a>");
+</script>
+
+
+
+
+
+<style type="text/css">
+    .aplayer-title, .aplayer-list-light {
+        color:#000000cc;
+    }
+    .aplayer-list{
+        color:#717070bf;
+    }
+</style>
+
+
+
 
       <div class="navbar-collapse text-center collapse" id="navigation" style>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://ellielife.github.io/">所有文章</a>
+        <ul class="navbar-nav ml-auto"> 
+          <li><a class="nav-link" href="https://ellielife.github.io/">首頁</a></li>
+           
+          <li><a class="nav-link" href="https://ellielife.github.io/">生活日記</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">自我成長</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">塔羅牌相關</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">身心靈相關</h6></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 我的靈異故事分享</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 靈性文章和影片分享</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">療癒日記</a></li>
+              <li><a class="dropdown-item" href="#">自省回顧</a></li>
+            </ul>
+
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">作品集</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">閱讀心得</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">人際關係</a></li>
+              <li><a class="dropdown-item" href="#">個人成長</a></li>
+              <li><a class="dropdown-item" href="#">影劇動漫</a></li>
+              <li><a class="dropdown-item" href="#">投資理財</a></li>
+              <li><a class="dropdown-item" href="#">職場技能</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">程式語言</h6></li>
+              <li><a class="dropdown-item" href="#">前端標記語言</a></li>
+              <li><a class="dropdown-item" href="#">Boostrap5 RWD框架</a></li>
+            </ul>
+
           </li>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://ellielife.github.io/about">關於我</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">關於我</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="https://ellielife.github.io/about/">關於我</a></li>
+              <li><a class="dropdown-item" href="#">作品集</a></li>
+            </ul>
+
           </li>
         </ul>
+
 
         
         <!-- search -->
@@ -102,6 +292,29 @@
       </div>
     </nav>
   </div>
+  
+  
+
+      
+
+    
+
+
+  
+  
+
+  <script>
+    (function(){
+        if(''){
+            if (prompt('請輸入文章密碼') !== ''){
+                alert('密碼錯誤！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
 </header>
 <!-- /navigation -->
 
@@ -116,16 +329,17 @@
           <div class="col-md-8 mb-4">
     <article class="card">
         
-        <img src="https://ellielife.github.io/images/%E6%AD%BB%E7%A5%9E.jpg" class="card-img-top" alt="死神帶來的改變和祝福">
+        
+        <img src="https://ellielife.github.io/images/%E5%B7%9D%E6%99%AEVS%E8%B3%80%E6%99%AF%E5%88%A9.jpg" class="card-img-top" alt="美國總統大選｜不管黑貓白貓，能捉到老鼠就是好貓">
+        
         
         <div class="card-body px-0">
-        
-        <a href="https://ellielife.github.io/blog/post27/" class="h5 d-block my-3">死神帶來的改變和祝福</a>
+        <a href="https://ellielife.github.io/blog/2024%E5%B9%B4/2024.11.06%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%98%E7%BE%8E%E5%9C%8B%E7%B8%BD%E7%B5%B1%E5%A4%A7%E9%81%B8%E4%B8%8D%E7%AE%A1%E9%BB%91%E8%B2%93%E7%99%BD%E8%B2%93%E8%83%BD%E6%8D%89%E5%88%B0%E8%80%81%E9%BC%A0%E5%B0%B1%E6%98%AF%E5%A5%BD%E8%B2%93/" class="h4 d-block my-3">美國總統大選｜不管黑貓白貓，能捉到老鼠就是好貓</a>
         <div class="mb-3 post-meta">
-            <span>By Ellie(梅)</span>
+            <span>By Ellie｜艾莉✨</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2024-04-30</span>
+            <span>2024-11-06</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
             
@@ -134,25 +348,26 @@
             
         </div>
         <p class="card-text"></p>
-        <a href="https://ellielife.github.io/blog/post27/" class="btn btn-outline-primary">閱讀更多</a>
+        <a href="https://ellielife.github.io/blog/2024%E5%B9%B4/2024.11.06%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%98%E7%BE%8E%E5%9C%8B%E7%B8%BD%E7%B5%B1%E5%A4%A7%E9%81%B8%E4%B8%8D%E7%AE%A1%E9%BB%91%E8%B2%93%E7%99%BD%E8%B2%93%E8%83%BD%E6%8D%89%E5%88%B0%E8%80%81%E9%BC%A0%E5%B0%B1%E6%98%AF%E5%A5%BD%E8%B2%93/" class="btn btn-outline-primary">閱讀更多</a>
         </div>
         <hr>
+
+
     </article>
 </div>
           
           <div class="col-md-8 mb-4">
     <article class="card">
         
-        <img src="https://ellielife.github.io/images/zero.jpg" class="card-img-top" alt="從0到1，從無到有">
+        
         
         <div class="card-body px-0">
-        
-        <a href="https://ellielife.github.io/blog/post26/" class="h5 d-block my-3">從0到1，從無到有</a>
+        <a href="https://ellielife.github.io/blog/2024%E5%B9%B4/2024.10.19%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%98%E6%90%96%E6%93%BA%E4%B8%8D%E5%AE%9A%E7%9A%84%E6%99%82%E4%BB%A3/" class="h4 d-block my-3">搖擺不定的時代</a>
         <div class="mb-3 post-meta">
-            <span>By Ellie(梅)</span>
+            <span>By Ellie｜艾莉✨</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2024-04-27</span>
+            <span>2024-10-19</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
             
@@ -160,26 +375,27 @@
             class="text-primary">生活日記</a>
             
         </div>
-        <p class="card-text"></p>
-        <a href="https://ellielife.github.io/blog/post26/" class="btn btn-outline-primary">閱讀更多</a>
+        <p class="card-text">你的人生不是活在別人的眼中和口中，請勇敢活出自己。</p>
+        <a href="https://ellielife.github.io/blog/2024%E5%B9%B4/2024.10.19%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%98%E6%90%96%E6%93%BA%E4%B8%8D%E5%AE%9A%E7%9A%84%E6%99%82%E4%BB%A3/" class="btn btn-outline-primary">閱讀更多</a>
         </div>
         <hr>
+
+
     </article>
 </div>
           
           <div class="col-md-8 mb-4">
     <article class="card">
         
-        <img src="https://ellielife.github.io/images/post/%E6%97%A5%E8%9D%95.png" class="card-img-top" alt="關於台灣的地震">
+        
         
         <div class="card-body px-0">
-        
-        <a href="https://ellielife.github.io/blog/post13-%E9%97%9C%E6%96%BC%E5%8F%B0%E7%81%A3%E5%9C%B0%E9%9C%87/" class="h5 d-block my-3">關於台灣的地震</a>
+        <a href="https://ellielife.github.io/blog/2024%E5%B9%B4/2024.09.09%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%98%E6%96%B0%E9%9D%92%E5%AE%89%E6%94%BF%E7%AD%96-%E8%B2%B7%E6%88%BF%E7%9C%9F%E7%9A%84%E6%98%AF%E6%9C%80%E5%A5%BD%E7%9A%84%E9%81%B8%E6%93%87%E5%97%8E/" class="h4 d-block my-3">新青安政策｜買房真的是最好的選擇嗎?</a>
         <div class="mb-3 post-meta">
-            <span>By Ellie(梅)</span>
+            <span>By Ellie｜艾莉✨</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2024-04-04</span>
+            <span>2024-09-09</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
             
@@ -188,25 +404,28 @@
             
         </div>
         <p class="card-text"></p>
-        <a href="https://ellielife.github.io/blog/post13-%E9%97%9C%E6%96%BC%E5%8F%B0%E7%81%A3%E5%9C%B0%E9%9C%87/" class="btn btn-outline-primary">閱讀更多</a>
+        <a href="https://ellielife.github.io/blog/2024%E5%B9%B4/2024.09.09%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%98%E6%96%B0%E9%9D%92%E5%AE%89%E6%94%BF%E7%AD%96-%E8%B2%B7%E6%88%BF%E7%9C%9F%E7%9A%84%E6%98%AF%E6%9C%80%E5%A5%BD%E7%9A%84%E9%81%B8%E6%93%87%E5%97%8E/" class="btn btn-outline-primary">閱讀更多</a>
         </div>
         <hr>
+
+
     </article>
 </div>
           
           <div class="col-md-8 mb-4">
     <article class="card">
         
-        <img src="https://ellielife.github.io/images/post/3303.png" class="card-img-top" alt="來自某靈魂的記憶碎片">
+        
+        <img src="https://ellielife.github.io/images/post/%E6%8B%92%E7%B5%95%E5%86%8D%E7%8E%A9.png" class="card-img-top" alt="很久沒有瘋一場｜下次回去一定與家人們一起同歡共樂">
+        
         
         <div class="card-body px-0">
-        
-        <a href="https://ellielife.github.io/blog/post10-%E4%BE%86%E8%87%AA%E6%9F%90%E9%9D%88%E9%AD%82%E7%9A%84%E8%A8%98%E6%86%B6%E7%A2%8E%E7%89%87/" class="h5 d-block my-3">來自某靈魂的記憶碎片</a>
+        <a href="https://ellielife.github.io/blog/2024%E5%B9%B4/2024.08.10%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%98%E5%BE%88%E4%B9%85%E6%B2%92%E6%9C%89%E7%98%8B%E4%B8%80%E5%A0%B4%E4%B8%8B%E6%AC%A1%E5%9B%9E%E5%8E%BB%E4%B8%80%E5%AE%9A%E8%88%87%E4%BD%A0%E5%80%91%E5%90%8C%E6%AD%A1%E5%85%B1%E6%A8%82/" class="h4 d-block my-3">很久沒有瘋一場｜下次回去一定與家人們一起同歡共樂</a>
         <div class="mb-3 post-meta">
-            <span>By Ellie(梅)</span>
+            <span>By Ellie｜艾莉✨</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2024-03-22</span>
+            <span>2024-08-10</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
             
@@ -214,26 +433,29 @@
             class="text-primary">生活日記</a>
             
         </div>
-        <p class="card-text"></p>
-        <a href="https://ellielife.github.io/blog/post10-%E4%BE%86%E8%87%AA%E6%9F%90%E9%9D%88%E9%AD%82%E7%9A%84%E8%A8%98%E6%86%B6%E7%A2%8E%E7%89%87/" class="btn btn-outline-primary">閱讀更多</a>
+        <p class="card-text">祖靈，想我囉，要找時間回家了。</p>
+        <a href="https://ellielife.github.io/blog/2024%E5%B9%B4/2024.08.10%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%98%E5%BE%88%E4%B9%85%E6%B2%92%E6%9C%89%E7%98%8B%E4%B8%80%E5%A0%B4%E4%B8%8B%E6%AC%A1%E5%9B%9E%E5%8E%BB%E4%B8%80%E5%AE%9A%E8%88%87%E4%BD%A0%E5%80%91%E5%90%8C%E6%AD%A1%E5%85%B1%E6%A8%82/" class="btn btn-outline-primary">閱讀更多</a>
         </div>
         <hr>
+
+
     </article>
 </div>
           
           <div class="col-md-8 mb-4">
     <article class="card">
         
-        <img src="https://ellielife.github.io/images/post/%E9%9D%88%E9%AD%82%E6%88%90%E9%95%B7%E7%B3%BB%E5%88%971.jpg" class="card-img-top" alt="與其成為受歡迎的人，我比較喜歡一個人輕鬆自在">
+        
+        <img src="https://ellielife.github.io/images/happy.jpg" class="card-img-top" alt="今年的生日，對我來說有點特別">
+        
         
         <div class="card-body px-0">
-        
-        <a href="https://ellielife.github.io/blog/post8-%E8%88%87%E5%85%B6%E6%88%90%E7%82%BA%E5%8F%97%E6%AD%A1%E8%BF%8E%E7%9A%84%E4%BA%BA%E6%88%91%E6%AF%94%E8%BC%83%E5%96%9C%E6%AD%A1%E4%B8%80%E5%80%8B%E4%BA%BA%E8%BC%95%E9%AC%86%E8%87%AA%E5%9C%A8/" class="h5 d-block my-3">與其成為受歡迎的人，我比較喜歡一個人輕鬆自在</a>
+        <a href="https://ellielife.github.io/blog/2024%E5%B9%B4/2024.05.24%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%98%E4%BB%8A%E5%B9%B4%E7%9A%84%E7%94%9F%E6%97%A5%E5%B0%8D%E6%88%91%E4%BE%86%E8%AA%AA%E6%9C%89%E9%BB%9E%E7%89%B9%E5%88%A5/" class="h4 d-block my-3">今年的生日，對我來說有點特別</a>
         <div class="mb-3 post-meta">
-            <span>By Ellie(梅)</span>
+            <span>By Ellie｜艾莉✨</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2024-03-03</span>
+            <span>2024-05-24</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
             
@@ -242,25 +464,28 @@
             
         </div>
         <p class="card-text"></p>
-        <a href="https://ellielife.github.io/blog/post8-%E8%88%87%E5%85%B6%E6%88%90%E7%82%BA%E5%8F%97%E6%AD%A1%E8%BF%8E%E7%9A%84%E4%BA%BA%E6%88%91%E6%AF%94%E8%BC%83%E5%96%9C%E6%AD%A1%E4%B8%80%E5%80%8B%E4%BA%BA%E8%BC%95%E9%AC%86%E8%87%AA%E5%9C%A8/" class="btn btn-outline-primary">閱讀更多</a>
+        <a href="https://ellielife.github.io/blog/2024%E5%B9%B4/2024.05.24%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%98%E4%BB%8A%E5%B9%B4%E7%9A%84%E7%94%9F%E6%97%A5%E5%B0%8D%E6%88%91%E4%BE%86%E8%AA%AA%E6%9C%89%E9%BB%9E%E7%89%B9%E5%88%A5/" class="btn btn-outline-primary">閱讀更多</a>
         </div>
         <hr>
+
+
     </article>
 </div>
           
           <div class="col-md-8 mb-4">
     <article class="card">
         
-        <img src="https://ellielife.github.io/images/post/111.jpg" class="card-img-top" alt="如何重新找回自己的工作熱情?">
+        
+        <img src="https://ellielife.github.io/images/2024%E5%B9%B4%E5%BA%A6%E8%A8%88%E7%95%AB.jpg" class="card-img-top" alt="2024年 年度企劃表">
+        
         
         <div class="card-body px-0">
-        
-        <a href="https://ellielife.github.io/blog/post6-%E5%A6%82%E4%BD%95%E9%87%8D%E6%96%B0%E6%89%BE%E5%9B%9E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%86%B1%E6%83%85/" class="h5 d-block my-3">如何重新找回自己的工作熱情?</a>
+        <a href="https://ellielife.github.io/blog/2024%E5%B9%B4/2024.05.13%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%982024%E5%B9%B4%E5%BA%A6%E4%BC%81%E5%8A%83%E8%A1%A8/" class="h4 d-block my-3">2024年 年度企劃表</a>
         <div class="mb-3 post-meta">
-            <span>By Ellie(梅)</span>
+            <span>By Ellie｜艾莉✨</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2024-02-03</span>
+            <span>2024-05-13</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
             
@@ -269,9 +494,11 @@
             
         </div>
         <p class="card-text"></p>
-        <a href="https://ellielife.github.io/blog/post6-%E5%A6%82%E4%BD%95%E9%87%8D%E6%96%B0%E6%89%BE%E5%9B%9E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%86%B1%E6%83%85/" class="btn btn-outline-primary">閱讀更多</a>
+        <a href="https://ellielife.github.io/blog/2024%E5%B9%B4/2024.05.13%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%982024%E5%B9%B4%E5%BA%A6%E4%BC%81%E5%8A%83%E8%A1%A8/" class="btn btn-outline-primary">閱讀更多</a>
         </div>
         <hr>
+
+
     </article>
 </div>
           
@@ -280,46 +507,83 @@
       
       <div class="col-lg-4">
     <div class="widgets">
+
+       
+       
       
       <div class="widget">
         
         <h4 class="widget-title">關於我</h4>
         
-        <img src="https://ellielife.github.io/images/post/May000.jpg" alt=""
+        <img src="https://ellielife.github.io/images/May%E9%9D%88%E9%AD%82%E5%BD%A2%E8%B1%A1/ellie8888-removebg-preview.png" alt=""
           class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
         
-        <p>Hi，我是Ellie(梅)，也可以叫我May，這裡是我紀錄生活日誌的地方，目前只想活在自己熱愛生活裡，活出我的不正常人生。</p>
+        <p>Hi，我是Ellie(艾莉)✨，喜好自我探索、自我學習和閱讀，我為自己開始寫日記，期許自己每天進步一點點，目前只想活在自己熱愛的小太陽裡，依『心』而活。</p> 
         <a href="https://ellielife.github.io/about/" class="btn btn-outline-primary">閱讀更多</a>
         
       </div>
+
+
+
       
       <div class="widget">
         <h4 class="widget-title">文章分類</h4>
         <ul class="list-unstyled">
           <li><a
+              href="/categories/%e4%be%86%e9%bb%9e%e5%a5%bd%e7%8e%a9%e7%9a%84/">來點好玩的</a>
+          </li>
+          <li><a
+              href="/categories/%e5%a1%94%e7%be%85%e6%97%a5%e8%a8%98/">塔羅日記</a>
+          </li>
+          <li><a
+              href="/categories/%e5%b7%a5%e7%a8%8b%e7%ad%86%e8%a8%98/">工程筆記</a>
+          </li>
+          <li><a
+              href="/categories/%e6%88%91%e7%9a%84%e9%9d%88%e7%95%b0%e6%95%85%e4%ba%8b%e5%88%86%e4%ba%ab/">我的靈異故事分享</a>
+          </li>
+          <li><a
+              href="/categories/%e6%97%a5%e5%b8%b8%e7%94%9f%e6%b4%bb/">日常生活</a>
+          </li>
+          <li><a
+              href="/categories/%e6%97%a5%e5%b8%b8%e9%9a%a8%e7%ad%86/">日常隨筆</a>
+          </li>
+          <li><a
               href="/categories/%e7%94%9f%e6%b4%bb%e6%97%a5%e8%a8%98/">生活日記</a>
           </li>
           <li><a
-              href="/categories/%e8%ae%80%e6%9b%b8%e5%bf%83%e5%be%97/">讀書心得</a>
+              href="/categories/%e7%94%a8%e6%96%b0%e7%9a%84%e8%a6%96%e9%87%8e%e8%a8%b4%e8%aa%aa%e5%85%a8%e6%96%b0%e7%9a%84%e6%95%85%e4%ba%8b/">用新的視野訴說全新的故事</a>
           </li>
           <li><a
-              href="/categories/%e9%9d%88%e5%ad%b8%e9%9a%a8%e7%ad%86/">靈學隨筆</a>
+              href="/categories/%e7%99%82%e7%99%92%e6%97%a5%e8%a8%98/">療癒日記</a>
+          </li>
+          <li><a
+              href="/categories/%e7%a8%8b%e5%bc%8f%e8%aa%9e%e8%a8%80/">程式語言</a>
+          </li>
+          <li><a
+              href="/categories/%e9%96%b1%e8%ae%80%e7%ad%86%e8%a8%98/">閱讀筆記</a>
+          </li>
+          <li><a
+              href="/categories/%e9%9b%bb%e5%bd%b1%e5%bf%83%e5%be%97/">電影心得</a>
           </li>
           <li><a
               href="/categories/%e9%9d%88%e6%80%a7%e6%96%87%e7%ab%a0%e5%92%8c%e5%bd%b1%e7%89%87%e5%88%86%e4%ba%ab/">靈性文章和影片分享</a>
+          </li>
+          <li><a
+              href="/categories/%e9%9d%88%e6%80%a7%e6%9b%b8%e5%af%ab%e5%82%b3%e8%a8%8a/">靈性書寫傳訊</a>
           </li>
         </ul>
       </div>
       
       
       <div class="widget">
-        <h4 class="widget-title">社群</h4>
+        <h4 class="widget-title">追蹤</h4>
         <ul class="list-inline social-links">
           
-          <li class="list-inline-item"><a href="https://www.youtube.com/@Ellie.Tarot1118"><i class="ti-youtube"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.instagram.com/may_daily0509?igsh=ZDQ4ZWc5bzc2aWJz&amp;utm_source=qr"><i class="ti-instagram"></i></a></li>
           
         </ul>
       </div>
+
       
     </div>
   </div>
@@ -341,17 +605,17 @@
       <li class="page-item active">
         <a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
       </li>
-      <li class="page-item">
-        <a href="/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%98/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
       </li>
-      <li class="page-item">
-        <a href="/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%98/page/3/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%A8%98/page/3/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
       </div>
+
+      
+
     </div>
   </div>
 </section>
@@ -359,6 +623,13 @@
 
 
 
+
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2024  <a href="https://ellielife.github.io/">Ellie&rsquo;s journal｜新世代女巫的自我成長日記</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 <script>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>Ellie&#39;s daily｜用新的視野訴說全新的故事</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Ellie&#39;s journal｜新世代女巫的自我成長日記">
+  <meta name="author" content="Ellie｜艾莉✨">
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+  
+  <meta name="generator" content="Hugo 0.138.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ellielife.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://ellielife.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://ellielife.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+
+
+
+
+
+  
+   
+
+  
+   
+  
+
+
+
+
+
+<!-- navigation 導航列-->
+
+<header class="navigation"> 
+  <div class="container-fluid">
+    
+    
+    
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
+      
+      <a class="navbar-brand" href="https://ellielife.github.io/">
+      <span class="text-body">Ellie's journal｜新世代女巫的自我成長日記</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+        <i class="ti-menu"></i>
+      </button>
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
+<script type="text/javascript">
+  const ap = new APlayer({
+    container: document.getElementById('aplayera'),
+        fixed: true,
+        lrcType: 3,
+        order: 'random',
+    audio: [{
+      name: 'Return to Innocence 反璞歸真',
+        artist: '台灣原住民+Enigma',
+        url: '/images/Music/Return_to_Innocence.wmv.mp3',
+        cover: '/images/Music/Return to Innocence.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Sasha_Alex_Sloan_-_Older',
+        artist: 'Sasha_Alex_Sloan',
+        url: '/images/Music/Sasha_Alex_Sloan_-_Older.mp3',
+        cover: '/images/Music/Sasha_Alex_Sloan-Older.jpg',
+        lrc: ''
+    },
+    {
+      name: 'god is a girl',
+        artist: 'Groove Coverage',
+        url: '/images/Music/god is a girl.m4a',
+        cover: '/images/Music/god is a gril.jpg',
+        lrc: ''
+    },
+    {
+      name: 'Wherever you are',
+        artist: 'ONE OK ROCK',
+        url: '/images/Music/ONE OK ROCK - Wherever you are.m4a',
+        cover: '/images/Music/Wherever you are .png',
+        lrc: ''
+    },
+    {
+      name: 'ソラゴト - 明透ASU',
+        artist: '明透',
+        url: '/images/Music/ソラゴト - 明透ASU.m4a',
+        cover: '/images/Music/路透.png',
+        lrc: ''
+    },
+    {
+      name: 'Before You Break My Heart',
+        artist: 'Stevie Hoang',
+        url: '/images/Music/Before You Break My Heart.m4a',
+        cover: '/images/Music/Before You Break My Heart.jpg',
+        lrc: ''
+    },
+    {
+      name: 'CRY FOR ME （feat）愛海',
+        artist: 'MICHITA & 愛海',
+        url: '/images/Music/MICHITA - CRY FOR ME （feat）爱海.mp3',
+        cover: '/images/Music/MICHITA - CRY FOR ME.png',
+        lrc: ''
+    },
+    {
+      name: 'Call of Silence（Remix）',
+        artist: '不明',
+        url: '/images/Music/Call of Silence（Remix）.webm',
+        cover: '/images/Music/Call of Silence.png',
+        lrc: ''
+    },
+    {
+      name: 'Fight Song《戰歌》',
+        artist: 'Rachel Platten',
+        url: '/images/Music/Fight Song《戰歌》 - Rachel Platten.m4a',
+        cover: '/images/Music/Fight Song《戰歌》 - Rachel Platten.jpg',
+        lrc: ''
+    },
+    ]
+});
+
+        ready();
+    
+    isRecover = false;
+    function ready(){
+        ap.on('canplay', function () {
+            if(!isRecover){
+                if(localStorage.getItem("musicIndex") != null){
+                    musicIndex = localStorage.getItem("musicIndex");
+                    musicTime = localStorage.getItem("musicTime");
+                    if(ap.list.index != musicIndex){
+                        ap.list.switch(musicIndex);
+                    }else{
+                        ap.seek(musicTime);
+                        ap.play();
+                        localStorage.clear();
+                        ap.setAttribute(muted,'');
+                        ap.setAttribute(playsinline,'');
+                        isRecover = true;
+                    }
+                }else{
+                    isRecover = true;
+                }
+            }
+        });
+    }
+
+    window.onbeforeunload = function(event) {
+        if(!ap.audio.paused){
+            musicIndex = ap.list.index;
+            musicTime = ap.audio.currentTime;
+            localStorage.setItem("musicIndex",musicIndex);
+            localStorage.setItem("musicTime",musicTime);
+        }
+    };
+
+
+
+var element = document.getElementsByClassName("aplayer-title")[0];  
+$(element).wrap("<a href='/radio/pick/'></a>");
+</script>
+
+
+
+
+
+<style type="text/css">
+    .aplayer-title, .aplayer-list-light {
+        color:#000000cc;
+    }
+    .aplayer-list{
+        color:#717070bf;
+    }
+</style>
+
+
+
+
+      <div class="navbar-collapse text-center collapse" id="navigation" style>
+        <ul class="navbar-nav ml-auto"> 
+          <li><a class="nav-link" href="https://ellielife.github.io/">首頁</a></li>
+           
+          <li><a class="nav-link" href="https://ellielife.github.io/">生活日記</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">自我成長</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">塔羅牌相關</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">身心靈相關</h6></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 我的靈異故事分享</a></li>
+              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 靈性文章和影片分享</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">療癒日記</a></li>
+              <li><a class="dropdown-item" href="#">自省回顧</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">閱讀心得</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">人際關係</a></li>
+              <li><a class="dropdown-item" href="#">個人成長</a></li>
+              <li><a class="dropdown-item" href="#">影劇動漫</a></li>
+              <li><a class="dropdown-item" href="#">投資理財</a></li>
+              <li><a class="dropdown-item" href="#">職場技能</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><h6 class="dropdown-header">程式語言</h6></li>
+              <li><a class="dropdown-item" href="#">前端標記語言</a></li>
+              <li><a class="dropdown-item" href="#">Boostrap5 RWD框架</a></li>
+            </ul>
+
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">關於我</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="https://ellielife.github.io/about/">關於我</a></li>
+              <li><a class="dropdown-item" href="#">作品集</a></li>
+            </ul>
+
+          </li>
+        </ul>
+
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://ellielife.github.io//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+  
+  
+
+      
+
+    
+
+
+  
+  
+
+  <script>
+    (function(){
+        if(''){
+            if (prompt('請輸入文章密碼') !== ''){
+                alert('密碼錯誤！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h3 class="text-center">代表愚人的川普，我同靈魂信任你會為這世界帶來好的轉變。</h3>  
+        
+        <div class="mb-3 text-center">  
+          <span>By Ellie｜艾莉✨</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>2024-11-13</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          
+          <a href="/categories/%e7%94%9f%e6%b4%bb%e6%97%a5%e8%a8%98">
+            <span class="text-primary">生活日記</span>
+          </a>
+          
+        </div>
+        
+        <img src="https://ellielife.github.io/images/post/%E5%B7%9D%E6%99%AE%E8%B4%8F%E5%BE%972024%E7%BE%8E%E5%9C%8B%E7%B8%BD%E7%B5%B1%E5%A4%A7%E9%81%B8%E3%80%82.jpg" class="img-fluid w-100 mb-4" alt="代表愚人的川普，我同靈魂信任你會為這世界帶來好的轉變。">
+        
+
+      
+
+
+        <div class="content mb-5">
+          <h4 id="我信任我的靈魂交給我的資訊就像祂信任川普會為世界帶來更好的轉變">我信任我的靈魂交給我的資訊，就像祂信任川普會為世界帶來更好的轉變。</h4>
+<p>我知道很多人都很反對川普，也知道川普當選會帶來很多的不確定性，但不知道為什麼我的靈魂交給我的資訊都是比較偏向川普好的一面，或許在更高的意識層級上，真的只有川普能為世界帶來更大的變革，而且這個變革是往好的方向發展，即使&quot;看起來&quot;是在往壞的方向發展，<strong>不管如何，我信任我的靈魂。</strong></p>
+<p>為什麼我信任我的靈魂?因為有關於我的一切，都是自身靈魂給我的教導，若沒有祂的引導，我可能跟一同跟我長大的兄弟姊妹一個樣。而且我也知道有時我的靈感來自靈魂的提示，就像這篇文章一樣<a href="https://ellielife.github.io/blog/2023.12.27%E6%84%9B%E7%94%9F%E6%B4%BB2024%E5%B9%B4%E8%88%87%E9%81%8E%E5%8E%BB%E7%9A%84%E8%87%AA%E5%B7%B1%E8%AA%AA%E5%86%8D%E8%A6%8B/">2024年，與過去的自己說再見。</a></p>
+<p><strong>其實發這篇文章的時候，我並不知道2024年會是眾多國家總統大選的一年。</strong><br>
+<strong>所以經過文章的紀錄，我可以知道自己的靈感蠻準確的，所以我信任我的靈感和靈魂。</strong></p>
+<p>還記得，小時候不知道累積多少痛苦的感受，難過到有自殺的念頭時，某天晚上睡覺時有個陌生女子出現在我的夢中，沒有說話帶著一抹微笑，看見祂有如充電一般給我滿滿的溫暖，祂蹲下身子捧著我的雙手並微笑說：『親愛的，不要難過，其實你比想像中的還要勇敢，還要堅韌，不要放棄，我和你還有任務沒有完成(我是不知道什麼啦)呢，不過你放心，有我在身邊你不有事的，你很幸運能看見自身靈魂真正的模樣，若你用心感受應該就能明白了吧。』這是我第一次看見祂的靈魂形象，祂擁有一頭很漂亮且熱情的紅棕色長髮和一雙很搭配祂頭髮的紅棕色眼睛，還是少女的模樣，目測大概是17或是18歲的樣子，這是我意想不到的驚喜，從沒想過自己的靈魂形象居然是這樣，重點還是這頭紅棕色頭髮，真的是千千萬萬想不到(突然想起大學有一年，聽從髮型師的建議也把自己染成那時很流行的紅棕色頭髮，大家評價普遍說好看！)此時默默在心裏OS：性格和形象跟人類的我也差太多了吧，哀，我認輸了，現在我能感受到就算不用握住手，隔著距離，也能感受到祂那熱情又火熱的飽滿能量，但祂的能量卻不像火焰般四處亂串，反而像山一樣，穩穩地安住在祂的內心，是個很安定的內在力量，就像一顆小太陽一樣，照亮自己也照亮別人，這就是我的靈魂之光，然後，祂自稱自己是小獅子，哈哈哈，聽到當下真的是笑死我了XD。</p>
+<p>(好像是真的，從小我的好朋友就是獅子座的，常帶著我冒險做傻事、做事也大膽、很有自己的風格，不過讓我意外地是她能接受別人對她負面的批評，同時也會自我反省和改進，跟我相比，我比較低調，不喜歡引人注目，小時候多虧她的福，我也成為焦點人物的一員，我和好朋友簡直就是冰與火的結合，那時看星座書籍上說金牛跟獅子很不合，但我跟我的獅子好友卻意外很合，或許這可以解釋為什麼我能接受跟我個性很不一樣的原因吧，因為在我的內心裡住著一位小獅子，但若真的要比較的話，我的好朋友比較像是幼稚版的獅子，而我的靈魂是經過淬鍊版的。)</p>
+<p>我現在明白祂所說的，其實你比想像中的還要勇敢這句話，因為一旦是祂決定要去做的事情，祂會毫無畏懼前進，因為祂明白所有的經歷，不管好的還是壞的，都是一種收穫，在祂的眼裡沒有失敗這個詞，失敗是人類賦予的詞，實際上並沒有失敗，有的只有中場休息和放棄，而中場休息是暫時的，放棄才是真的失敗，只要你不放棄，成功是必然的，就像祂接受挑戰來到地球洗禮一樣，地球在祂的眼中是一顆很美麗的行星，不只如此地球也是祂自身靈魂進化最重要的一環，而現在正是時候，我講這句話時，我感受到一股能量在我內心發熱。</p>
+<p>好啦，廢話不多說，以上我所說的話，一樣請擷取與自己內心共鳴的部分，信就信，不信就不信，我主要是想表達：<strong>我相信且信任我的靈魂教給我的資訊，並同祂信任川普一樣，會為世界帶來好的轉變。</strong></p>
+<p><strong>至於川普會為我們來什麼轉變呢?</strong><br>
+老實說，我也不知道耶，哈哈。<br>
+讓我們拭目以待吧，同時也見證我的直覺和這份來自靈魂的信任感是否是對的。</p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ellielife1118" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2024  <a href="https://ellielife.github.io/">Ellie&rsquo;s journal｜新世代女巫的自我成長日記</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  var indexURL = "https://ellielife.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://ellielife.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/mark.js"></script>
+
+<script src="https://ellielife.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://ellielife.github.io/js/script.min.js"></script>
+
+
+
+</body>
+</html>
