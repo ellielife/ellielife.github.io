@@ -89,132 +89,6 @@
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
         <i class="ti-menu"></i>
       </button>
-    
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-
-<div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
-<script type="text/javascript">
-  const ap = new APlayer({
-    container: document.getElementById('aplayera'),
-        fixed: true,
-        lrcType: 3,
-        order: 'random',
-    audio: [{
-      name: 'Return to Innocence 反璞歸真',
-        artist: '台灣原住民+Enigma',
-        url: '/images/Music/Return_to_Innocence.wmv.mp3',
-        cover: '/images/Music/Return to Innocence.jpg',
-        lrc: ''
-    },
-    {
-      name: 'Sasha_Alex_Sloan_-_Older',
-        artist: 'Sasha_Alex_Sloan',
-        url: '/images/Music/Sasha_Alex_Sloan_-_Older.mp3',
-        cover: '/images/Music/Sasha_Alex_Sloan-Older.jpg',
-        lrc: ''
-    },
-    {
-      name: 'Twinkle Twinkle',
-        artist: 'Peder Elias',
-        url: '/images/Music/Peder Elias - Twinkle Twinkle (Lyrics).mp3',
-        cover: '/images/Music/Peder Elias .小星星.jpg',
-        lrc: ''
-    },
-    {
-      name: 'Wherever you are',
-        artist: 'ONE OK ROCK',
-        url: '/images/Music/ONE OK ROCK - Wherever you are.m4a',
-        cover: '/images/Music/Wherever you are .png',
-        lrc: ''
-    },
-    {
-      name: 'ソラゴト - 明透ASU',
-        artist: '明透',
-        url: '/images/Music/ソラゴト - 明透ASU.m4a',
-        cover: '/images/Music/路透.png',
-        lrc: ''
-    },
-    {
-      name: 'Before You Break My Heart',
-        artist: 'Stevie Hoang',
-        url: '/images/Music/Before You Break My Heart.m4a',
-        cover: '/images/Music/Before You Break My Heart.jpg',
-        lrc: ''
-    },
-    {
-      name: 'Call of Silence（Remix）',
-        artist: '不明',
-        url: '/images/Music/Call of Silence（Remix）.webm',
-        cover: '/images/Music/Call of Silence.png',
-        lrc: ''
-    },
-    {
-      name: 'Fight Song《戰歌》',
-        artist: 'Rachel Platten',
-        url: '/images/Music/Fight Song《戰歌》 - Rachel Platten.m4a',
-        cover: '/images/Music/Fight Song《戰歌》 - Rachel Platten.jpg',
-        lrc: ''
-    },
-    ]
-});
-
-        ready();
-    
-    isRecover = false;
-    function ready(){
-        ap.on('canplay', function () {
-            if(!isRecover){
-                if(localStorage.getItem("musicIndex") != null){
-                    musicIndex = localStorage.getItem("musicIndex");
-                    musicTime = localStorage.getItem("musicTime");
-                    if(ap.list.index != musicIndex){
-                        ap.list.switch(musicIndex);
-                    }else{
-                        ap.seek(musicTime);
-                        ap.play();
-                        localStorage.clear();
-                        ap.setAttribute(muted,'');
-                        ap.setAttribute(playsinline,'');
-                        isRecover = true;
-                    }
-                }else{
-                    isRecover = true;
-                }
-            }
-        });
-    }
-
-    window.onbeforeunload = function(event) {
-        if(!ap.audio.paused){
-            musicIndex = ap.list.index;
-            musicTime = ap.audio.currentTime;
-            localStorage.setItem("musicIndex",musicIndex);
-            localStorage.setItem("musicTime",musicTime);
-        }
-    };
-
-
-
-var element = document.getElementsByClassName("aplayer-title")[0];  
-$(element).wrap("<a href='/radio/pick/'></a>");
-</script>
-
-
-
-
-
-<style type="text/css">
-    .aplayer-title, .aplayer-list-light {
-        color:#000000cc;
-    }
-    .aplayer-list{
-        color:#717070bf;
-    }
-</style>
-
-
 
 
       <div class="navbar-collapse text-center collapse" id="navigation" style>
@@ -353,10 +227,11 @@ $(element).wrap("<a href='/radio/pick/'></a>");
 <p>這是第一次，有男生用自己的方式鼓勵我，他沒有選擇探究我內心深處受過什麼傷，而是以朋友聊天的方式有意無意的鼓勵我，要我找回自己，去做自己，他真心接受我原本的樣子跟我交朋友，在他的鼓舞之下，我開始慢慢去接受自己皮膚黑的事情，我不再相信那些對我不好的人，因為我知道有些人別有用意！</p>
 <p>這就是我開始學會愛自己的第一步，其實我還蠻感謝他的。</p>
 <hr>
-<h4 id="與其去尋求外界的認同不如向內探索自己的價值">與其去尋求外界的認同，不如向內探索自己的價值。</h4>
-<p>我的Boss給我的靈性第一課：愛自己。 <br>
-你不需要別人或是任何人的認可和任何人的肯定，吾心自有光明月!<br>
-唯有先愛自己，你才能在黑暗中激發出自己的力量，讓你身處黑暗卻不懼怕。</p>
+<h4 id="與其去尋求外界的認同不如向內探索並肯定自己的價值">與其去尋求外界的認同，不如向內探索並肯定自己的價值。</h4>
+<p>Boss給我的靈性第一課：學習愛自己。<br>
+不要害怕與眾不同，也不要害怕去成為自己，放心地去做你自己，去學習愛自己，去學習與真實的自己對齊，你會發現自己所創造出來的能量場(人體周圍的能量場)，它所散發出來的頻率會成為你天然的屏障，天然的過濾網，它會自動幫你篩選和吸引那些對你有幫助和友好的人，至於那些不喜歡你的人就讓他們去吧！</p>
+<p>另外，也要學習避免外界或是環境對我們產生不好的影響，就像在生活中，老師會藉由我們的成績來衡量我們的價值，老闆會藉由我們的工作績效來衡量我們的價值，而這些衡量標準都是由外部來源所決定的，並不能真正判定你真實的價值，事實上你的內在價值是無價的，若真要有個價值衡量的話，只有你自己內心最清楚！</p>
+<p>唯有當你先愛自己並清楚認知到自己的內在價值時，你會明白自己根本就不需要任何人的認可和肯定，那麼外在的力量就無法對你產生影響。<strong>去學習成為自己的太陽。</strong></p>
 <hr>
 <h4 id="蛇年新目標">蛇年新目標</h4>
 <ul>
