@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ellielife.github.io/docs/getting-started/</loc>
+    <lastmod>2022-01-24T14:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/docs/customization/</loc>
+    <lastmod>2022-01-24T14:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/docs/faq/</loc>
+    <lastmod>2022-01-24T14:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://ellielife.github.io/blog/</loc>
     <lastmod>2025-01-29T16:33:10+08:00</lastmod>
   </url><url>
@@ -200,14 +209,66 @@
     <loc>https://ellielife.github.io/blog/2024%E5%B9%B4/2023.12.27%E7%99%82%E7%99%92%E6%97%A5%E8%A8%982024%E5%B9%B4%E8%88%87%E9%81%8E%E5%8E%BB%E7%9A%84%E8%87%AA%E5%B7%B1%E8%AA%AA%E5%86%8D%E8%A6%8B/</loc>
     <lastmod>2023-12-27T10:45:47+08:00</lastmod>
   </url><url>
+    <loc>https://ellielife.github.io/docs/</loc>
+    <lastmod>2022-01-24T14:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/tags/installation/</loc>
+    <lastmod>2022-01-24T14:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/tags/</loc>
+    <lastmod>2022-01-24T14:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://ellielife.github.io/blog/2024%E5%B9%B4/contact/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
     <loc>https://ellielife.github.io/search/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
-    <loc>https://ellielife.github.io/blog/2024%E5%B9%B4/%E8%8D%89iher%E4%BF%9D%E5%81%A5%E5%93%81%E6%8E%A8%E8%96%A6%E8%A6%AA%E8%BA%AB%E5%AF%A6%E9%A9%97/</loc>
+    <loc>https://ellielife.github.io/tags/basic-elements/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ellielife.github.io/tags/</loc>
+    <loc>https://ellielife.github.io/post/basic-elements/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/tags/css/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/categories/development/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/tags/html/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/post/</loc>
+    <lastmod>2018-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/post/hugo-template-primer/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/tags/development/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/post/getting-started-with-hugo/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/tags/go/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/tags/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/categories/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/tags/hugo/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/tags/templates/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/tags/themes/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ellielife.github.io/blog/2024%E5%B9%B4/%E8%8D%89iher%E4%BF%9D%E5%81%A5%E5%93%81%E6%8E%A8%E8%96%A6%E8%A6%AA%E8%BA%AB%E5%AF%A6%E9%A9%97/</loc>
   </url>
 </urlset>
