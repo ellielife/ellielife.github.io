@@ -89,14 +89,147 @@
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
           <i class="ti-menu"></i>
         </button>
-  
-  
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    
+      <div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
+      
+      <script type="text/javascript">
+      const ap = new APlayer({
+        container: document.getElementById('aplayera'),
+        fixed: true,
+        lrcType: 3,
+        order: 'random',
+        audio: [{
+        name: '《僅供試聽，喜歡支持正版喔》Jason Mraz - I'm yours',
+        artist: 'Jason Mraz',
+        url: '/images/Music/[中英字幕] Jason Mraz - I'm yours.mp3',
+        cover: '/images/Music/Return to Innocence.jpg',
+        lrc: ''
+    },
+        {
+        name: '《僅供試聽，喜歡支持正版喔》John Legend - All Of Me',
+        artist: 'John Legend',
+        url: '/images/Music/John Legend - All Of Me.m4a',
+        cover: '/images/Music/John Legend - All Of Me.png',
+        lrc: ''
+    },
+    {
+        name: '《僅供試聽，喜歡支持正版喔》Ed Sheeran & Andrea Bocelli - Perfect Symphony',
+        artist: 'Ed Sheeran & Andrea Bocelli',
+        url: '/images/Music/Ed Sheeran & Andrea Bocelli - Perfect Symphony.m4a',
+        cover: '/images/Music/Ed Sheeran 紅髮艾德 - Perfect 完美無比.png',
+        lrc: ''
+    },
+    {
+        name: '《僅供試聽，喜歡支持正版喔》Imagine Dragons - Bad Liar',
+        artist: 'Imagine Dragons',
+        url: '/images/Music/Imagine Dragons - Bad Liar.mp3',
+        cover: '/images/Music/Imagine Dragons-Bad liar.png',
+        lrc: ''
+    },
+    {
+        name: '《僅供試聽，喜歡支持正版喔》Peder Elias - Twinkle Twinkle',
+        artist: 'Peder Elias',
+        url: '/images/Music/Peder Elias - Twinkle Twinkle (Lyrics).mp3',
+        cover: '/images/Music/Peder Elias .小星星.jpg',
+        lrc: ''
+    },
+    {
+        name: '《僅供試聽，喜歡支持正版喔》Fight Song - Rachel Platten',
+        artist: 'Rachel Platten',
+        url: '/images/Music/Fight Song《戰歌》 - Rachel Platten.m4a',
+        cover: '/images/Music/Fight Song《戰歌》 - Rachel Platten.jpg',
+        lrc: ''
+    },
+    {
+        name: '《僅供試聽，喜歡支持正版喔》ソラゴト - 明透ASU',
+        artist: '明透',
+        url: '/images/Music/ソラゴト - 明透ASU.m4a',
+        cover: '/images/Music/路透.png',
+        lrc: ''
+    },
+    {
+        name: '《僅供試聽，喜歡支持正版喔》24kGoldn - Mood Remix',
+        artist: '24kGoldn',
+        url: 'static/images/Music/24kGoldn - Mood Remix (Lyrics) ft. Justin Bieber, J Balvin, Iann Dior.mp3',
+        cover: '/images/Music/24kGoldn - Mood Remix (Lyrics) ft. Justin Bieber, J Balvin, Iann Dior.jpg',
+        lrc: ''
+    },
+    ]
+  });
+
+    ready();
+    
+    isRecover = false;
+    function ready(){
+        ap.on('canplay', function () {
+            if(!isRecover){
+                if(localStorage.getItem("musicIndex") != null){
+                    musicIndex = localStorage.getItem("musicIndex");
+                    musicTime = localStorage.getItem("musicTime");
+                    if(ap.list.index != musicIndex){
+                        ap.list.switch(musicIndex);
+                    }else{
+                        ap.seek(musicTime);
+                        ap.play();
+                        localStorage.clear();
+                        ap.setAttribute(muted,'');
+                        ap.setAttribute(playsinline,'');
+                        isRecover = true;
+                    }
+                }else{
+                    isRecover = true;
+                }
+            }
+        });
+    }
+
+    window.onbeforeunload = function(event) {
+        if(!ap.audio.paused){
+            musicIndex = ap.list.index;
+            musicTime = ap.audio.currentTime;
+            localStorage.setItem("musicIndex",musicIndex);
+            localStorage.setItem("musicTime",musicTime);
+        }
+    };
+
+
+
+var element = document.getElementsByClassName("aplayer-title")[0];  
+$(element).wrap("<a href='/radio/pick/'></a>");
+</script>
+
+
+
+
+
+<style type="text/css">
+    .aplayer-title, .aplayer-list-light {
+        color:#000000cc;
+    }
+    .aplayer-list{
+        color:#717070bf;
+    }
+</style>
+
+
+
 
       <div class="navbar-collapse text-center collapse" id="navigation" style>
         <ul class="navbar-nav ml-auto"> 
           <li><a class="nav-link" href="https://ellielife.github.io/">首頁</a></li>
            
-          <li><a class="nav-link" href="https://ellielife.github.io/categories/生活日記/">生活日記</a></li>
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">生活日記</a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
+              <li><a class="dropdown-item" href="#">─ 罵醒你系列</a></li>
+              <li><a class="dropdown-item" href="#">─ 旅遊系列</a></li>
+            </ul>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">自我成長</a>
@@ -107,26 +240,19 @@
               <li><h6 class="dropdown-header">身心靈相關</h6></li>
               <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 我的靈異故事分享</a></li>
               <li><a class="dropdown-item" href="https://ellielife.github.io/categories/影片文章分享/">─ 影片文章分享</a></li>
-            </ul>
-
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">閱讀心得</a>
-
-            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
-              <li><a class="dropdown-item" href="#">人際關係</a></li>
-              <li><a class="dropdown-item" href="#">個人成長</a></li>
-              <li><a class="dropdown-item" href="#">影劇動漫</a></li>
-              <li><a class="dropdown-item" href="#">投資理財</a></li>
-              <li><a class="dropdown-item" href="#">職場技能</a></li>
               <li><hr class="dropdown-divider"></li>
+              
               <li><h6 class="dropdown-header">程式語言</h6></li>
-              <li><a class="dropdown-item" href="#">前端標記語言</a></li>
-              <li><a class="dropdown-item" href="#">Boostrap5 RWD框架</a></li>
+              <li><a class="dropdown-item" href="#">─ 前端標記語言</a></li>
+              <li><a class="dropdown-item" href="#">─ Boostrap5 RWD框架</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">艾莉的圖書館</a></li>
             </ul>
 
-          </li>
+            <li>
+              <a class="nav-link" href="https://ellielife.github.io/categories/生活日記/">聽音樂學英文</a>
+            </li>
+
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">關於我</a>
@@ -376,7 +502,7 @@
         
         <h4 class="widget-title">關於我</h4>
         
-        <img src="https://ellielife.github.io/images/May%E9%9D%88%E9%AD%82%E5%BD%A2%E8%B1%A1/ellie8888.jpg" alt=""
+        <img src="https://ellielife.github.io/images/May%E9%9D%88%E9%AD%82%E5%BD%A2%E8%B1%A1/%E6%90%9E%E7%AC%91%E7%9A%84ellie0.jpg" alt=""
           class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
         
         <p>Hi，大家好，我是Ellie艾莉，屬INFP-A人格，擁有敏銳的心靈，喜歡自我探索、自我學習和身心靈療癒，對生命保有熱情，喜歡用不同的角度看待事物，2025年，請多多指教囉😁</p> 
