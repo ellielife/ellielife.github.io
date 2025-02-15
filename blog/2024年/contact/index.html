@@ -95,14 +95,20 @@
 <div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
 <script type="text/javascript">
   const ap = new APlayer({
-    container: document.getElementById('aplayera'),
-        fixed: true,
-        lrcType: 3,
-        order: 'random',
+      container: document.getElementById('aplayera'),
+      fixed: true, 
+      autoplay: false, 
+      theme: "#FADFA3", 
+      lrcType: 3,
+      order: 'random', 
+      listFolded: true, 
+      listMaxHeight: "200px",
+
     audio: [{
         name: 'Imagine Dragons - Bad Liar《僅供試聽，喜歡支持正版喔》',
         artist: 'Imagine Dragons',
         url: '/images/Music/Imagine Dragons - Bad Liar (Lyrics).mp3',
+        
         cover: '/images/Music/Imagine Dragons-Bad liar.png',
         lrc: ''
     },
