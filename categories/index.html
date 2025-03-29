@@ -5,8 +5,8 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Ellie&#39;s Note｜艾莉自我成長筆記">
-  <meta name="author" content="喜歡閱讀的Ellie✨">
+  <meta name="description" content="光種 LightSeed">
+  <meta name="author" content="星辰的旅人✨">
     
   
   <meta name="theme-name" content="liva-hugo" />
@@ -74,11 +74,7 @@
 
 <!-- navigation 導航列-->
 
-<div class="row">
-  <div class="container-fluid">
-    <img src="/images/Ellie’s Note｜艾利自我成長筆記.png" width="100%">
-  </div>
-</div>
+
 
 <header class="navigation"> 
   <div class="container-fluid">
@@ -90,142 +86,24 @@
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
       
       <a class="navbar-brand" href="https://ellielife.github.io/">
-        <span class="text-body">Ellie's Note｜艾莉自我成長筆記</span>
+        <span class="text-body">光種 LightSeed</span>
         </a>
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
           <i class="ti-menu"></i>
         </button>
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-<div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
-<script type="text/javascript">
-  const ap = new APlayer({
-      container: document.getElementById('aplayera'),
-      fixed: true, 
-      autoplay: false, 
-      theme: "#FADFA3", 
-      lrcType: 3,
-      order: 'random', 
-      listFolded: true, 
-      listMaxHeight: "200px",
-      audio: [{
-        name: 'KOMOREBI警笛版［M-TAKU］《僅供試聽，喜歡支持正版喔》',
-        artist: '［M-TAKU］',
-        url: '/images/Music/KOMOREBI警笛版［M-TAKU］｜抖音神曲.m4a',
-        
-        cover: '/images/Music/KOMOREBI警笛版［M-TAKU］｜抖音神曲.jpg',
-        lrc: ''
-    },
-    {
-        name: 'Grow stronger day by day Theme of Sawamura《僅供試聽，喜歡支持正版喔》',
-        artist: 'Ace of Diamond OST',
-        url: '/images/Music/Ace of Diamond OST ： Grow stronger day by day Theme of Sawamura.m4a',
-        
-        cover: '/images/Music/Ace of Diamond.png',
-        lrc: ''
-    },
-    {
-        name: '這いつくばって強くなる《僅供試聽，喜歡支持正版喔》',
-        artist: 'Ace of Diamond OST',
-        url: '/images/Music/這いつくばって強くなる (It will grow stronger.m4a',
-        
-        cover: '/images/Music/Ace of Diamond.png',
-        lrc: ''
-    }
-   
-    ]
-  });
-
-        ready();
-    
-    isRecover = false;
-    function ready(){
-        ap.on('canplay', function () {
-            if(!isRecover){
-                if(localStorage.getItem("musicIndex") != null){
-                    musicIndex = localStorage.getItem("musicIndex");
-                    musicTime = localStorage.getItem("musicTime");
-                    if(ap.list.index != musicIndex){
-                        ap.list.switch(musicIndex);
-                    }else{
-                        ap.seek(musicTime);
-                        ap.play();
-                        localStorage.clear();
-                        ap.setAttribute(muted,'');
-                        ap.setAttribute(playsinline,'');
-                        isRecover = true;
-                    }
-                }else{
-                    isRecover = true;
-                }
-            }
-        });
-    }
-
-    window.onbeforeunload = function(event) {
-        if(!ap.audio.paused){
-            musicIndex = ap.list.index;
-            musicTime = ap.audio.currentTime;
-            localStorage.setItem("musicIndex",musicIndex);
-            localStorage.setItem("musicTime",musicTime);
-        }
-    };
-
-
-
-var element = document.getElementsByClassName("aplayer-title")[0];  
-$(element).wrap("<a href='/radio/pick/'></a>");
-</script>
-
-
-
-
-
-<style type="text/css">
-    .aplayer-title, .aplayer-list-light {
-        color:#000000cc;
-    }
-    .aplayer-list{
-        color:#717070bf;
-    }
-</style>
-
-
 
       <div class="navbar-collapse text-center collapse" id="navigation" style>
         <ul class="navbar-nav ml-auto"> 
           <li><a class="nav-link" href="https://ellielife.github.io/">首頁</a></li>
            
            <li>
-            <a class="nav-link" href="https://ellielife.github.io/categories/生活日誌/">生活日誌</a>
+            <a class="nav-link" href="https://ellielife.github.io/categories/所有文章/">所有文章</a>
           </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">身心靈療癒</a>
-
-            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
-              <li><a class="dropdown-item" href="#">塔羅牌相關</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><h6 class="dropdown-header">身心靈相關</h6></li>
-              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 我的靈異故事分享</a></li>
-              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/影片文章分享/">─ 影片文章分享</a></li>
-            </ul>
-
-            <li>
-              <a class="nav-link" href="https://ellielife.github.io/categories/生活日記/">閱讀筆記</a>
-            </li>
-
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">關於我</a>
-
-            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
-              <li><a class="dropdown-item" href="https://ellielife.github.io/about/">關於我</a></li>
-              <li><a class="dropdown-item" href="#">作品集</a></li>
-            </ul>
-
+          <li>
+            <a class="nav-link" href="https://ellielife.github.io/categories/生活日誌/">關於我</a>
           </li>
+          
+          
         </ul>
 
 
@@ -245,31 +123,9 @@ $(element).wrap("<a href='/radio/pick/'></a>");
         
       </div>
     </nav>
-  </div>
+  </div> 
   
   
-  
-  
-
-      
-
-    
-
-
-  
-  
-
-  <script>
-    (function(){
-        if(''){
-            if (prompt('請輸入文章密碼') !== ''){
-                alert('密碼錯誤！');
-                history.back();
-            }
-        }
-    })();
-</script>
-
 
 </header>
 <!-- /navigation -->
@@ -281,150 +137,6 @@ $(element).wrap("<a href='/radio/pick/'></a>");
       <div class="col-lg-8 mb-5 mb-lg-0">
         <div class="row">
           
-          
-          <div class="col-md-8 mb-4">
-    <article class="card">
-        
-        
-        <div class="card-body px-0">
-        <a href="https://ellielife.github.io/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C/" class="h4 d-block my-3">生活日誌</a>
-        <div class="mb-3 post-meta">
-            <span>By 喜歡閱讀的Ellie✨</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2025-03-24</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://ellielife.github.io/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C/" class="btn btn-outline-primary">閱讀更多</a>
-        </div>
-        <hr>
-
-
-    </article>
-</div>
-          
-          <div class="col-md-8 mb-4">
-    <article class="card">
-        
-        
-        <div class="card-body px-0">
-        <a href="https://ellielife.github.io/categories/%E6%95%99%E8%82%B2%E5%BD%B1%E7%89%87%E5%88%86%E4%BA%AB/" class="h4 d-block my-3">教育影片分享</a>
-        <div class="mb-3 post-meta">
-            <span>By 喜歡閱讀的Ellie✨</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2025-03-21</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://ellielife.github.io/categories/%E6%95%99%E8%82%B2%E5%BD%B1%E7%89%87%E5%88%86%E4%BA%AB/" class="btn btn-outline-primary">閱讀更多</a>
-        </div>
-        <hr>
-
-
-    </article>
-</div>
-          
-          <div class="col-md-8 mb-4">
-    <article class="card">
-        
-        
-        <div class="card-body px-0">
-        <a href="https://ellielife.github.io/categories/%E9%9D%88%E6%80%A7%E8%A8%8A%E6%81%AF%E6%8C%87%E5%BC%95/" class="h4 d-block my-3">靈性訊息指引</a>
-        <div class="mb-3 post-meta">
-            <span>By 喜歡閱讀的Ellie✨</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2025-03-14</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://ellielife.github.io/categories/%E9%9D%88%E6%80%A7%E8%A8%8A%E6%81%AF%E6%8C%87%E5%BC%95/" class="btn btn-outline-primary">閱讀更多</a>
-        </div>
-        <hr>
-
-
-    </article>
-</div>
-          
-          <div class="col-md-8 mb-4">
-    <article class="card">
-        
-        
-        <div class="card-body px-0">
-        <a href="https://ellielife.github.io/categories/%E5%BD%B1%E7%89%87%E6%96%87%E7%AB%A0%E5%88%86%E4%BA%AB/" class="h4 d-block my-3">影片文章分享</a>
-        <div class="mb-3 post-meta">
-            <span>By 喜歡閱讀的Ellie✨</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2025-02-16</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://ellielife.github.io/categories/%E5%BD%B1%E7%89%87%E6%96%87%E7%AB%A0%E5%88%86%E4%BA%AB/" class="btn btn-outline-primary">閱讀更多</a>
-        </div>
-        <hr>
-
-
-    </article>
-</div>
-          
-          <div class="col-md-8 mb-4">
-    <article class="card">
-        
-        
-        <div class="card-body px-0">
-        <a href="https://ellielife.github.io/categories/%E6%88%91%E7%9A%84%E9%9D%88%E7%95%B0%E6%95%85%E4%BA%8B%E5%88%86%E4%BA%AB/" class="h4 d-block my-3">我的靈異故事分享</a>
-        <div class="mb-3 post-meta">
-            <span>By 喜歡閱讀的Ellie✨</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2024-10-31</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://ellielife.github.io/categories/%E6%88%91%E7%9A%84%E9%9D%88%E7%95%B0%E6%95%85%E4%BA%8B%E5%88%86%E4%BA%AB/" class="btn btn-outline-primary">閱讀更多</a>
-        </div>
-        <hr>
-
-
-    </article>
-</div>
-          
-          <div class="col-md-8 mb-4">
-    <article class="card">
-        
-        
-        <div class="card-body px-0">
-        <a href="https://ellielife.github.io/categories/%E9%9B%BB%E5%BD%B1%E5%BF%83%E5%BE%97/" class="h4 d-block my-3">電影心得</a>
-        <div class="mb-3 post-meta">
-            <span>By 喜歡閱讀的Ellie✨</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2024-10-02</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://ellielife.github.io/categories/%E9%9B%BB%E5%BD%B1%E5%BF%83%E5%BE%97/" class="btn btn-outline-primary">閱讀更多</a>
-        </div>
-        <hr>
-
-
-    </article>
-</div>
           
         </div>
       </div>
@@ -439,10 +151,10 @@ $(element).wrap("<a href='/radio/pick/'></a>");
         
         <h4 class="widget-title">關於我</h4>
         
-        <img src="https://ellielife.github.io/images/May%E9%9D%88%E9%AD%82%E5%BD%A2%E8%B1%A1/ELLIE897.jpg" alt=""
+        <img src="https://ellielife.github.io/images/LightSeed1.jpg" alt=""
           class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
         
-        <p>Ellie艾莉，擁有敏銳的心靈，喜歡自我探索、自我成長和身心靈療癒，對生命保有熱情，喜歡用不同的角度看待事物，是個終生成長者，只想在自己有限的生命裡創造點有趣又有用的事情，當個好玩的築夢者✨</p> 
+        <p>星辰的引路人｜光種LightSeed</p> 
         <a href="https://ellielife.github.io/about/" class="btn btn-outline-primary">閱讀更多</a>
         
       </div>
@@ -452,29 +164,6 @@ $(element).wrap("<a href='/radio/pick/'></a>");
       
       <div class="widget">
         <h4 class="widget-title">文章分類</h4>
-        <ul class="list-unstyled">
-          <li><a
-              href="/categories/%e5%bd%b1%e7%89%87%e6%96%87%e7%ab%a0%e5%88%86%e4%ba%ab/">影片文章分享</a>
-          </li>
-          <li><a
-              href="/categories/%e6%88%91%e7%9a%84%e9%9d%88%e7%95%b0%e6%95%85%e4%ba%8b%e5%88%86%e4%ba%ab/">我的靈異故事分享</a>
-          </li>
-          <li><a
-              href="/categories/%e6%95%99%e8%82%b2%e5%bd%b1%e7%89%87%e5%88%86%e4%ba%ab/">教育影片分享</a>
-          </li>
-          <li><a
-              href="/categories/%e7%94%9f%e6%b4%bb%e6%97%a5%e8%aa%8c/">生活日誌</a>
-          </li>
-          <li><a
-              href="/categories/%e9%96%b1%e8%ae%80%e7%ad%86%e8%a8%98/">閱讀筆記</a>
-          </li>
-          <li><a
-              href="/categories/%e9%9b%bb%e5%bd%b1%e5%bf%83%e5%be%97/">電影心得</a>
-          </li>
-          <li><a
-              href="/categories/%e9%9d%88%e6%80%a7%e8%a8%8a%e6%81%af%e6%8c%87%e5%bc%95/">靈性訊息指引</a>
-          </li>
-        </ul>
       </div>
       
       
@@ -482,11 +171,7 @@ $(element).wrap("<a href='/radio/pick/'></a>");
         <h4 class="widget-title">追蹤</h4>
         <ul class="list-inline social-links">
           
-          <li class="list-inline-item"><a href="https://www.youtube.com/@Ellietarot%e6%98%9f%e6%98%9f%e7%9b%b8%e7%b9%ab"><i class="ti-youtube"></i></a></li>
-          
-          <li class="list-inline-item"><a href="https://www.instagram.com/ellienote0509?igsh=MXhuNWtxbzRtdjU1eA%3D%3D&amp;utm_source=qr"><i class="ti-instagram"></i></a></li>
-          
-          <li class="list-inline-item"><a href="https://github.com/ellielife"><i class="ti-github"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.youtube.com/@%E5%85%89%E7%A8%AELightSeed"><i class="ti-youtube"></i></a></li>
           
         </ul>
       </div>
@@ -499,26 +184,6 @@ $(element).wrap("<a href='/radio/pick/'></a>");
       
       <div class="col-12 mt-5">
         
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
       </div>
 
       
@@ -532,7 +197,7 @@ $(element).wrap("<a href='/radio/pick/'></a>");
 
 
       <div class="col-12 border-top py-4 text-center">
-        | copyright © 2024 <a href="https://ellielife.github.io/">Ellie&rsquo;s Note｜艾莉自我成長筆記</a> All Rights Reserved |
+        | copyright © 2024 <a href="https://ellielife.github.io/">光種 LightSeed</a> All Rights Reserved |
       </div>
     </div>
   </div>

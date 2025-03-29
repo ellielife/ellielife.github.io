@@ -6,7 +6,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="this is meta description">
-  <meta name="author" content="喜歡閱讀的Ellie✨">
+  <meta name="author" content="星辰的旅人✨">
     
   
   <meta name="theme-name" content="liva-hugo" />
@@ -74,11 +74,7 @@
 
 <!-- navigation 導航列-->
 
-<div class="row">
-  <div class="container-fluid">
-    <img src="/images/Ellie’s Note｜艾利自我成長筆記.png" width="100%">
-  </div>
-</div>
+
 
 <header class="navigation"> 
   <div class="container-fluid">
@@ -90,142 +86,24 @@
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
       
       <a class="navbar-brand" href="https://ellielife.github.io/">
-        <span class="text-body">Ellie's Note｜艾莉自我成長筆記</span>
+        <span class="text-body">光種 LightSeed</span>
         </a>
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
           <i class="ti-menu"></i>
         </button>
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-<div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
-<script type="text/javascript">
-  const ap = new APlayer({
-      container: document.getElementById('aplayera'),
-      fixed: true, 
-      autoplay: false, 
-      theme: "#FADFA3", 
-      lrcType: 3,
-      order: 'random', 
-      listFolded: true, 
-      listMaxHeight: "200px",
-      audio: [{
-        name: 'KOMOREBI警笛版［M-TAKU］《僅供試聽，喜歡支持正版喔》',
-        artist: '［M-TAKU］',
-        url: '/images/Music/KOMOREBI警笛版［M-TAKU］｜抖音神曲.m4a',
-        
-        cover: '/images/Music/KOMOREBI警笛版［M-TAKU］｜抖音神曲.jpg',
-        lrc: ''
-    },
-    {
-        name: 'Grow stronger day by day Theme of Sawamura《僅供試聽，喜歡支持正版喔》',
-        artist: 'Ace of Diamond OST',
-        url: '/images/Music/Ace of Diamond OST ： Grow stronger day by day Theme of Sawamura.m4a',
-        
-        cover: '/images/Music/Ace of Diamond.png',
-        lrc: ''
-    },
-    {
-        name: '這いつくばって強くなる《僅供試聽，喜歡支持正版喔》',
-        artist: 'Ace of Diamond OST',
-        url: '/images/Music/這いつくばって強くなる (It will grow stronger.m4a',
-        
-        cover: '/images/Music/Ace of Diamond.png',
-        lrc: ''
-    }
-   
-    ]
-  });
-
-        ready();
-    
-    isRecover = false;
-    function ready(){
-        ap.on('canplay', function () {
-            if(!isRecover){
-                if(localStorage.getItem("musicIndex") != null){
-                    musicIndex = localStorage.getItem("musicIndex");
-                    musicTime = localStorage.getItem("musicTime");
-                    if(ap.list.index != musicIndex){
-                        ap.list.switch(musicIndex);
-                    }else{
-                        ap.seek(musicTime);
-                        ap.play();
-                        localStorage.clear();
-                        ap.setAttribute(muted,'');
-                        ap.setAttribute(playsinline,'');
-                        isRecover = true;
-                    }
-                }else{
-                    isRecover = true;
-                }
-            }
-        });
-    }
-
-    window.onbeforeunload = function(event) {
-        if(!ap.audio.paused){
-            musicIndex = ap.list.index;
-            musicTime = ap.audio.currentTime;
-            localStorage.setItem("musicIndex",musicIndex);
-            localStorage.setItem("musicTime",musicTime);
-        }
-    };
-
-
-
-var element = document.getElementsByClassName("aplayer-title")[0];  
-$(element).wrap("<a href='/radio/pick/'></a>");
-</script>
-
-
-
-
-
-<style type="text/css">
-    .aplayer-title, .aplayer-list-light {
-        color:#000000cc;
-    }
-    .aplayer-list{
-        color:#717070bf;
-    }
-</style>
-
-
 
       <div class="navbar-collapse text-center collapse" id="navigation" style>
         <ul class="navbar-nav ml-auto"> 
           <li><a class="nav-link" href="https://ellielife.github.io/">首頁</a></li>
            
            <li>
-            <a class="nav-link" href="https://ellielife.github.io/categories/生活日誌/">生活日誌</a>
+            <a class="nav-link" href="https://ellielife.github.io/categories/所有文章/">所有文章</a>
           </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">身心靈療癒</a>
-
-            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
-              <li><a class="dropdown-item" href="#">塔羅牌相關</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><h6 class="dropdown-header">身心靈相關</h6></li>
-              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 我的靈異故事分享</a></li>
-              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/影片文章分享/">─ 影片文章分享</a></li>
-            </ul>
-
-            <li>
-              <a class="nav-link" href="https://ellielife.github.io/categories/生活日記/">閱讀筆記</a>
-            </li>
-
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">關於我</a>
-
-            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
-              <li><a class="dropdown-item" href="https://ellielife.github.io/about/">關於我</a></li>
-              <li><a class="dropdown-item" href="#">作品集</a></li>
-            </ul>
-
+          <li>
+            <a class="nav-link" href="https://ellielife.github.io/categories/生活日誌/">關於我</a>
           </li>
+          
+          
         </ul>
 
 
@@ -245,31 +123,9 @@ $(element).wrap("<a href='/radio/pick/'></a>");
         
       </div>
     </nav>
-  </div>
+  </div> 
   
   
-  
-  
-
-      
-
-    
-
-
-  
-  
-
-  <script>
-    (function(){
-        if(''){
-            if (prompt('請輸入文章密碼') !== ''){
-                alert('密碼錯誤！');
-                history.back();
-            }
-        }
-    })();
-</script>
-
 
 </header>
 <!-- /navigation -->
@@ -296,7 +152,7 @@ $(element).wrap("<a href='/radio/pick/'></a>");
 
 
       <div class="col-12 border-top py-4 text-center">
-        | copyright © 2024 <a href="https://ellielife.github.io/">Ellie&rsquo;s Note｜艾莉自我成長筆記</a> All Rights Reserved |
+        | copyright © 2024 <a href="https://ellielife.github.io/">光種 LightSeed</a> All Rights Reserved |
       </div>
     </div>
   </div>
