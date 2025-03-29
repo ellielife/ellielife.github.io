@@ -92,6 +92,86 @@
           <i class="ti-menu"></i>
         </button>
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+        <div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
+        <script type="text/javascript">
+          const ap = new APlayer({
+              container: document.getElementById('aplayera'),
+              fixed: true, 
+              autoplay: false, 
+              theme: "#FADFA3", 
+              lrcType: 3,
+              order: 'random', 
+              listFolded: true, 
+              listMaxHeight: "200px",
+              audio: [{
+                name: '所念皆星河',
+                artist: '房東的貓',
+                url: '/images/Music/所念皆星河.m4a',
+                
+                cover: '/images/Music/所念皆星河.png',
+                lrc: ''
+            },
+            ]
+          });
+        
+                ready();
+            
+            isRecover = false;
+            function ready(){
+                ap.on('canplay', function () {
+                    if(!isRecover){
+                        if(localStorage.getItem("musicIndex") != null){
+                            musicIndex = localStorage.getItem("musicIndex");
+                            musicTime = localStorage.getItem("musicTime");
+                            if(ap.list.index != musicIndex){
+                                ap.list.switch(musicIndex);
+                            }else{
+                                ap.seek(musicTime);
+                                ap.play();
+                                localStorage.clear();
+                                ap.setAttribute(muted,'');
+                                ap.setAttribute(playsinline,'');
+                                isRecover = true;
+                            }
+                        }else{
+                            isRecover = true;
+                        }
+                    }
+                });
+            }
+        
+            window.onbeforeunload = function(event) {
+                if(!ap.audio.paused){
+                    musicIndex = ap.list.index;
+                    musicTime = ap.audio.currentTime;
+                    localStorage.setItem("musicIndex",musicIndex);
+                    localStorage.setItem("musicTime",musicTime);
+                }
+            };
+        
+        
+        
+        var element = document.getElementsByClassName("aplayer-title")[0];  
+        $(element).wrap("<a href='/radio/pick/'></a>");
+        </script>
+        
+        
+        
+        
+        
+        <style type="text/css">
+            .aplayer-title, .aplayer-list-light {
+                color:#000000cc;
+            }
+            .aplayer-list{
+                color:#717070bf;
+            }
+        </style>
+
+
+
       <div class="navbar-collapse text-center collapse" id="navigation" style>
         <ul class="navbar-nav ml-auto"> 
           <li><a class="nav-link" href="https://ellielife.github.io/">首頁</a></li>
@@ -178,7 +258,7 @@
         <img src="https://ellielife.github.io/images/LightSeed1.jpg" alt=""
           class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
         
-        <p>星辰的引路人｜光種LightSeed</p> 
+        <p>光種LightSeed</p> 
         <a href="https://ellielife.github.io/about/" class="btn btn-outline-primary">閱讀更多</a>
         
       </div>
