@@ -5,8 +5,8 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="光種 LightSeed">
-  <meta name="author" content="星辰的旅人✨">
+  <meta name="description" content="Ellie&#39;s Note｜艾莉自我成長筆記">
+  <meta name="author" content="喜歡閱讀的Ellie✨">
     
   
   <meta name="theme-name" content="liva-hugo" />
@@ -86,106 +86,136 @@
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent">
       
       <a class="navbar-brand" href="https://ellielife.github.io/">
-        <span class="text-body">光種 LightSpecies</span>
+        <span class="text-body">Ellie's Note｜艾莉自我成長筆記</span>
         </a>
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
           <i class="ti-menu"></i>
         </button>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-<div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
-<script type="text/javascript">
-  const ap = new APlayer({
-      container: document.getElementById('aplayera'),
-      fixed: true, 
-      autoplay: false, 
-      theme: "#FADFA3", 
-      lrcType: 3,
-      order: 'random', 
-      listFolded: true, 
-      listMaxHeight: "200px",
-      audio: [{
-        name: 'KOMOREBI警笛版［M-TAKU］《僅供試聽，喜歡支持正版喔》',
-        artist: '［M-TAKU］',
-        url: '/images/Music/KOMOREBI警笛版［M-TAKU］｜抖音神曲.m4a',
+        <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+        <div id="aplayera" style="opacity:0.8;color: var(--tw-prose-headings);"></div>
+        <script type="text/javascript">
+          const ap = new APlayer({
+              container: document.getElementById('aplayera'),
+              fixed: true, 
+              autoplay: false, 
+              theme: "#FADFA3", 
+              lrcType: 3,
+              order: 'random', 
+              listFolded: true, 
+              listMaxHeight: "200px",
+              audio: [{
+                name: '所念皆星河',
+                artist: '房東的貓',
+                url: '/images/Music/所念皆星河.m4a',
+                
+                cover: '/images/Music/所念皆星河.png',
+                lrc: ''
+            },
+            {
+                name: 'ボクらの冒險',
+                artist: 'Kids Alive - 日本搖滾樂團',
+                url: '/images/Music/棋靈王.mp3',
+                
+                cover: '/images/Music/sai.jpg',
+                lrc: ''
+            },
+            {
+                name: '棋靈王最終回配樂',
+                artist: '不明',
+                url: '/images/Music/棋靈王最終回配樂.webm',
+                
+                cover: '/images/Music/sai1.png',
+                lrc: ''
+            },
+            {
+                name: 'Tropical Therapy 熱帶療癒時光',
+                artist: 'ONE OK ROCK',
+                url: '/images/Music/ONE OK ROCK - Tropical Therapy.webm',
+                
+                cover: '/images/Music/ONE OK ROCK - Tropical Therapy.png',
+                lrc: ''
+            },
+            {
+                name: 'blue',
+                artist: 'keshi凱西',
+                url: '/images/Music/keshi - blue.mp3',
+                
+                cover: '/images/Music/keshi - blue.png',
+                lrc: ''
+            },
+            {
+                name: '最靠近太陽的地方',
+                artist: '舞炯恩',
+                url: '/images/Music/舞炯恩 - 最靠近太陽的地方.m4a',
+                
+                cover: '/images/Music/最靠近太陽的地方.png',
+                lrc: ''
+            },{
+                name: 'Wherever you are',
+                artist: 'ONE OK ROCK',
+                url: '/images/Music/ONE OK ROCK - Wherever you are.m4a',
+                
+                cover: '/images/Music/Wherever you are .png',
+                lrc: ''
+            },
+            ]
+          });
         
-        cover: '/images/Music/KOMOREBI警笛版［M-TAKU］｜抖音神曲.jpg',
-        lrc: ''
-    },
-    {
-        name: 'Grow stronger day by day Theme of Sawamura《僅供試聽，喜歡支持正版喔》',
-        artist: 'Ace of Diamond OST',
-        url: '/images/Music/Ace of Diamond OST ： Grow stronger day by day Theme of Sawamura.m4a',
-        
-        cover: '/images/Music/Ace of Diamond.png',
-        lrc: ''
-    },
-    {
-        name: '這いつくばって強くなる《僅供試聽，喜歡支持正版喔》',
-        artist: 'Ace of Diamond OST',
-        url: '/images/Music/這いつくばって強くなる (It will grow stronger.m4a',
-        
-        cover: '/images/Music/Ace of Diamond.png',
-        lrc: ''
-    }
-   
-    ]
-  });
-
-        ready();
-    
-    isRecover = false;
-    function ready(){
-        ap.on('canplay', function () {
-            if(!isRecover){
-                if(localStorage.getItem("musicIndex") != null){
-                    musicIndex = localStorage.getItem("musicIndex");
-                    musicTime = localStorage.getItem("musicTime");
-                    if(ap.list.index != musicIndex){
-                        ap.list.switch(musicIndex);
-                    }else{
-                        ap.seek(musicTime);
-                        ap.play();
-                        localStorage.clear();
-                        ap.setAttribute(muted,'');
-                        ap.setAttribute(playsinline,'');
-                        isRecover = true;
+                ready();
+            
+            isRecover = false;
+            function ready(){
+                ap.on('canplay', function () {
+                    if(!isRecover){
+                        if(localStorage.getItem("musicIndex") != null){
+                            musicIndex = localStorage.getItem("musicIndex");
+                            musicTime = localStorage.getItem("musicTime");
+                            if(ap.list.index != musicIndex){
+                                ap.list.switch(musicIndex);
+                            }else{
+                                ap.seek(musicTime);
+                                ap.play();
+                                localStorage.clear();
+                                ap.setAttribute(muted,'');
+                                ap.setAttribute(playsinline,'');
+                                isRecover = true;
+                            }
+                        }else{
+                            isRecover = true;
+                        }
                     }
-                }else{
-                    isRecover = true;
-                }
+                });
             }
-        });
-    }
-
-    window.onbeforeunload = function(event) {
-        if(!ap.audio.paused){
-            musicIndex = ap.list.index;
-            musicTime = ap.audio.currentTime;
-            localStorage.setItem("musicIndex",musicIndex);
-            localStorage.setItem("musicTime",musicTime);
-        }
-    };
-
-
-
-var element = document.getElementsByClassName("aplayer-title")[0];  
-$(element).wrap("<a href='/radio/pick/'></a>");
-</script>
-
-
-
-
-
-<style type="text/css">
-    .aplayer-title, .aplayer-list-light {
-        color:#000000cc;
-    }
-    .aplayer-list{
-        color:#717070bf;
-    }
-</style>
+        
+            window.onbeforeunload = function(event) {
+                if(!ap.audio.paused){
+                    musicIndex = ap.list.index;
+                    musicTime = ap.audio.currentTime;
+                    localStorage.setItem("musicIndex",musicIndex);
+                    localStorage.setItem("musicTime",musicTime);
+                }
+            };
+        
+        
+        
+        var element = document.getElementsByClassName("aplayer-title")[0];  
+        $(element).wrap("<a href='/radio/pick/'></a>");
+        </script>
+        
+        
+        
+        
+        
+        <style type="text/css">
+            .aplayer-title, .aplayer-list-light {
+                color:#000000cc;
+            }
+            .aplayer-list{
+                color:#717070bf;
+            }
+        </style>
 
 
 
@@ -194,34 +224,13 @@ $(element).wrap("<a href='/radio/pick/'></a>");
           <li><a class="nav-link" href="https://ellielife.github.io/">首頁</a></li>
            
            <li>
-            <a class="nav-link" href="https://ellielife.github.io/categories/生活日誌/">生活日誌</a>
+            <a class="nav-link" href="https://ellielife.github.io/categories/所有文章/">所有文章</a>
           </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">身心靈療癒</a>
-
-            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
-              <li><a class="dropdown-item" href="#">塔羅牌相關</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><h6 class="dropdown-header">身心靈相關</h6></li>
-              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/我的靈異故事分享/">─ 我的靈異故事分享</a></li>
-              <li><a class="dropdown-item" href="https://ellielife.github.io/categories/影片文章分享/">─ 影片文章分享</a></li>
-            </ul>
-
-            <li>
-              <a class="nav-link" href="https://ellielife.github.io/categories/生活日記/">閱讀筆記</a>
-            </li>
-
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarscrollingdropdown" role="button" data-toggle="dropdown" aria-expanded="false">關於我</a>
-
-            <ul class="dropdown-menu" aria-labelledby="navbarscrollingdropdown">
-              <li><a class="dropdown-item" href="https://ellielife.github.io/about/">關於我</a></li>
-              <li><a class="dropdown-item" href="#">作品集</a></li>
-            </ul>
-
+          <li>
+            <a class="nav-link" href="https://ellielife.github.io/categories/生活日誌/">關於我</a>
           </li>
+          
+          
         </ul>
 
 
@@ -241,31 +250,9 @@ $(element).wrap("<a href='/radio/pick/'></a>");
         
       </div>
     </nav>
-  </div>
+  </div> 
   
   
-  
-  
-
-      
-
-    
-
-
-  
-  
-
-  <script>
-    (function(){
-        if(''){
-            if (prompt('請輸入文章密碼') !== ''){
-                alert('密碼錯誤！');
-                history.back();
-            }
-        }
-    })();
-</script>
-
 
 </header>
 <!-- /navigation -->
@@ -281,13 +268,13 @@ $(element).wrap("<a href='/radio/pick/'></a>");
           <div class="col-md-8 mb-4">
     <article class="card">
         
-        <img src="http://localhost:1313/images/post/2025/GOD1.jpg" class="card-img-top" alt="至高無上的神──是&rsquo;真實&rsquo;存在的">
+        <img src="http://localhost:1313/images/post/2025/GOD1.jpg" class="card-img-top" alt="中台戰爭，真的很有可能發生！">
         
         
         <div class="card-body px-0">
-        <a href="http://localhost:1313/blog/2025%E5%B9%B4/2025.03.24.%E4%BC%8A%E8%A5%BF%E6%96%AF%E5%A5%B3%E7%A5%9E/" class="h4 d-block my-3">至高無上的神──是&rsquo;真實&rsquo;存在的</a>
+        <a href="http://localhost:1313/blog/2025%E5%B9%B4/2025.04.04./" class="h4 d-block my-3">中台戰爭，真的很有可能發生！</a>
         <div class="mb-3 post-meta">
-            <span>By 星辰的旅人✨</span>
+            <span>By 喜歡閱讀的Ellie✨</span>
             
             <span class="border-bottom border-primary px-2 mx-1"></span>
             <span>2025-03-24</span>
@@ -298,153 +285,8 @@ $(element).wrap("<a href='/radio/pick/'></a>");
             class="text-primary">生活日誌</a>
             
         </div>
-        <p class="card-text">與神對話就是與自己對話，相信我，神會回應你。</p>
-        <a href="http://localhost:1313/blog/2025%E5%B9%B4/2025.03.24.%E4%BC%8A%E8%A5%BF%E6%96%AF%E5%A5%B3%E7%A5%9E/" class="btn btn-outline-primary">閱讀更多</a>
-        </div>
-        <hr>
-
-
-    </article>
-</div>
-          
-          <div class="col-md-8 mb-4">
-    <article class="card">
-        
-        <img src="http://localhost:1313/images/post/2025/%E7%9C%9F%E6%AD%A3%E7%9A%84%E6%84%9F%E6%83%85%E4%B8%8D%E6%98%AF%E9%9D%A0%E8%80%83%E9%A9%97%E5%BE%97%E7%9F%A5%E7%9A%84%EF%BC%8C%E8%80%8C%E6%98%AF%E7%94%A8%E4%BE%86%E4%BA%A4%E6%B5%81%E7%9A%84%E3%80%82.png" class="card-img-top" alt="真正的感情不是靠考驗得知的，而是用來交流的。">
-        
-        
-        <div class="card-body px-0">
-        <a href="http://localhost:1313/blog/2025%E5%B9%B4/2025.03.09%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C%E7%9C%9F%E6%AD%A3%E7%9A%84%E6%84%9F%E6%83%85%E4%B8%8D%E6%98%AF%E9%9D%A0%E8%80%83%E9%A9%97%E5%BE%97%E4%BE%86%E7%9A%84%E8%80%8C%E6%98%AF%E7%94%A8%E4%BE%86%E4%BA%A4%E6%B5%81%E7%9A%84/" class="h4 d-block my-3">真正的感情不是靠考驗得知的，而是用來交流的。</a>
-        <div class="mb-3 post-meta">
-            <span>By 星辰的旅人✨</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2025-03-09</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            
-            <a href="/categories/%e7%94%9f%e6%b4%bb%e6%97%a5%e8%aa%8c"
-            class="text-primary">生活日誌</a>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="http://localhost:1313/blog/2025%E5%B9%B4/2025.03.09%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C%E7%9C%9F%E6%AD%A3%E7%9A%84%E6%84%9F%E6%83%85%E4%B8%8D%E6%98%AF%E9%9D%A0%E8%80%83%E9%A9%97%E5%BE%97%E4%BE%86%E7%9A%84%E8%80%8C%E6%98%AF%E7%94%A8%E4%BE%86%E4%BA%A4%E6%B5%81%E7%9A%84/" class="btn btn-outline-primary">閱讀更多</a>
-        </div>
-        <hr>
-
-
-    </article>
-</div>
-          
-          <div class="col-md-8 mb-4">
-    <article class="card">
-        
-        <img src="http://localhost:1313/images/post/2025/%E6%80%9D%E6%83%B3%E6%AF%92%E5%93%81%EF%BC%8C%E6%88%91%E4%BB%80%E9%BA%BC%E6%99%82%E5%80%99%E6%89%8D%E8%83%BD%E6%88%92%E6%8E%89%E4%BD%A0%E3%80%82%20%282%29.png" class="card-img-top" alt="思想毒品，我什麼時候才能戒掉你。">
-        
-        
-        <div class="card-body px-0">
-        <a href="http://localhost:1313/blog/2025%E5%B9%B4/2025.03.02%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C%E6%80%9D%E6%83%B3%E6%AF%92%E5%93%81%E6%88%91%E4%BB%80%E9%BA%BC%E6%99%82%E5%80%99%E6%89%8D%E8%83%BD%E6%88%92%E6%8E%89%E4%BD%A0/" class="h4 d-block my-3">思想毒品，我什麼時候才能戒掉你。</a>
-        <div class="mb-3 post-meta">
-            <span>By 星辰的旅人✨</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2025-03-02</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            
-            <a href="/categories/%e7%94%9f%e6%b4%bb%e6%97%a5%e8%aa%8c"
-            class="text-primary">生活日誌</a>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="http://localhost:1313/blog/2025%E5%B9%B4/2025.03.02%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C%E6%80%9D%E6%83%B3%E6%AF%92%E5%93%81%E6%88%91%E4%BB%80%E9%BA%BC%E6%99%82%E5%80%99%E6%89%8D%E8%83%BD%E6%88%92%E6%8E%89%E4%BD%A0/" class="btn btn-outline-primary">閱讀更多</a>
-        </div>
-        <hr>
-
-
-    </article>
-</div>
-          
-          <div class="col-md-8 mb-4">
-    <article class="card">
-        
-        <img src="http://localhost:1313/images/post/2025/%E7%BE%8E%E5%9C%8B%E5%8A%A0%E5%B7%9E%E5%A4%A7%E7%81%AB.jpg" class="card-img-top" alt="關於美國加州大火，這是一個警訊，蓋亞正在做大清理">
-        
-        
-        <div class="card-body px-0">
-        <a href="http://localhost:1313/blog/2025%E5%B9%B4/2025.01.12%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C0%E9%97%9C%E6%96%BC%E7%BE%8E%E5%9C%8B%E5%8A%A0%E5%B7%9E%E5%A4%A7%E7%81%AB%E9%80%99%E6%98%AF%E4%B8%80%E5%80%8B%E8%AD%A6%E8%A8%8A%E8%93%8B%E4%BA%9E%E6%AD%A3%E5%9C%A8%E5%81%9A%E5%A4%A7%E6%B8%85%E7%90%86/" class="h4 d-block my-3">關於美國加州大火，這是一個警訊，蓋亞正在做大清理</a>
-        <div class="mb-3 post-meta">
-            <span>By 星辰的旅人✨</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2025-01-12</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            
-            <a href="/categories/%e7%94%9f%e6%b4%bb%e6%97%a5%e8%aa%8c"
-            class="text-primary">生活日誌</a>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="http://localhost:1313/blog/2025%E5%B9%B4/2025.01.12%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C0%E9%97%9C%E6%96%BC%E7%BE%8E%E5%9C%8B%E5%8A%A0%E5%B7%9E%E5%A4%A7%E7%81%AB%E9%80%99%E6%98%AF%E4%B8%80%E5%80%8B%E8%AD%A6%E8%A8%8A%E8%93%8B%E4%BA%9E%E6%AD%A3%E5%9C%A8%E5%81%9A%E5%A4%A7%E6%B8%85%E7%90%86/" class="btn btn-outline-primary">閱讀更多</a>
-        </div>
-        <hr>
-
-
-    </article>
-</div>
-          
-          <div class="col-md-8 mb-4">
-    <article class="card">
-        
-        <img src="http://localhost:1313/images/post/%E6%93%81%E6%8A%B1%E4%B8%8D%E7%A2%BA%E5%AE%9A.jpg" class="card-img-top" alt="2025年，在破壞中重生。">
-        
-        
-        <div class="card-body px-0">
-        <a href="http://localhost:1313/blog/2024%E5%B9%B4/2024.12.25%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C2025%E5%B9%B4%E5%9C%A8%E7%A0%B4%E5%A3%9E%E4%B8%AD%E9%87%8D%E7%94%9F/" class="h4 d-block my-3">2025年，在破壞中重生。</a>
-        <div class="mb-3 post-meta">
-            <span>By 星辰的旅人✨</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2024-12-25</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            
-            <a href="/categories/%e7%94%9f%e6%b4%bb%e6%97%a5%e8%aa%8c"
-            class="text-primary">生活日誌</a>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="http://localhost:1313/blog/2024%E5%B9%B4/2024.12.25%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C2025%E5%B9%B4%E5%9C%A8%E7%A0%B4%E5%A3%9E%E4%B8%AD%E9%87%8D%E7%94%9F/" class="btn btn-outline-primary">閱讀更多</a>
-        </div>
-        <hr>
-
-
-    </article>
-</div>
-          
-          <div class="col-md-8 mb-4">
-    <article class="card">
-        
-        <img src="http://localhost:1313/images/post/%E6%93%81%E6%8A%B1%E4%B8%8D%E7%A2%BA%E5%AE%9A.png" class="card-img-top" alt="擁抱不確定，自由職業是未來的趨勢">
-        
-        
-        <div class="card-body px-0">
-        <a href="http://localhost:1313/blog/2024%E5%B9%B4/2024.12.15%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C%E6%93%81%E6%8A%B1%E4%B8%8D%E7%A2%BA%E5%AE%9A%E8%87%AA%E7%94%B1%E8%81%B7%E6%A5%AD%E6%98%AF%E6%9C%AA%E4%BE%86%E7%9A%84%E8%B6%A8%E5%8B%A2/" class="h4 d-block my-3">擁抱不確定，自由職業是未來的趨勢</a>
-        <div class="mb-3 post-meta">
-            <span>By 星辰的旅人✨</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2024-12-15</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            
-            <a href="/categories/%e7%94%9f%e6%b4%bb%e6%97%a5%e8%aa%8c"
-            class="text-primary">生活日誌</a>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="http://localhost:1313/blog/2024%E5%B9%B4/2024.12.15%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C%E6%93%81%E6%8A%B1%E4%B8%8D%E7%A2%BA%E5%AE%9A%E8%87%AA%E7%94%B1%E8%81%B7%E6%A5%AD%E6%98%AF%E6%9C%AA%E4%BE%86%E7%9A%84%E8%B6%A8%E5%8B%A2/" class="btn btn-outline-primary">閱讀更多</a>
+        <p class="card-text">不太想嚇大家，但覺得喚醒大家的覺醒一是很重要。</p>
+        <a href="http://localhost:1313/blog/2025%E5%B9%B4/2025.04.04./" class="btn btn-outline-primary">閱讀更多</a>
         </div>
         <hr>
 
@@ -465,10 +307,10 @@ $(element).wrap("<a href='/radio/pick/'></a>");
         
         <h4 class="widget-title">關於我</h4>
         
-        <img src="http://localhost:1313/images/May%E9%9D%88%E9%AD%82%E5%BD%A2%E8%B1%A1/ELLIE897.jpg" alt=""
+        <img src="http://localhost:1313/images/Ellie1111.jpg" alt=""
           class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
         
-        <p>Ellie艾莉，擁有敏銳的心靈，喜歡自我探索、自我成長和身心靈療癒，對生命保有熱情，喜歡用不同的角度看待事物，是個終生成長者，只想在自己有限的生命裡創造點有趣又有用的事情，當個好玩的築夢者✨</p> 
+        <p>Hi,我是艾莉(Ellie)，這裡是我日常寫作和靈感的匯集之地。</p> 
         <a href="http://localhost:1313/about/" class="btn btn-outline-primary">閱讀更多</a>
         
       </div>
@@ -480,25 +322,7 @@ $(element).wrap("<a href='/radio/pick/'></a>");
         <h4 class="widget-title">文章分類</h4>
         <ul class="list-unstyled">
           <li><a
-              href="/categories/%e5%bd%b1%e7%89%87%e6%96%87%e7%ab%a0%e5%88%86%e4%ba%ab/">影片文章分享</a>
-          </li>
-          <li><a
-              href="/categories/%e6%88%91%e7%9a%84%e9%9d%88%e7%95%b0%e6%95%85%e4%ba%8b%e5%88%86%e4%ba%ab/">我的靈異故事分享</a>
-          </li>
-          <li><a
-              href="/categories/%e6%95%99%e8%82%b2%e5%bd%b1%e7%89%87%e5%88%86%e4%ba%ab/">教育影片分享</a>
-          </li>
-          <li><a
               href="/categories/%e7%94%9f%e6%b4%bb%e6%97%a5%e8%aa%8c/">生活日誌</a>
-          </li>
-          <li><a
-              href="/categories/%e9%96%b1%e8%ae%80%e7%ad%86%e8%a8%98/">閱讀筆記</a>
-          </li>
-          <li><a
-              href="/categories/%e9%9b%bb%e5%bd%b1%e5%bf%83%e5%be%97/">電影心得</a>
-          </li>
-          <li><a
-              href="/categories/%e9%9d%88%e6%80%a7%e8%a8%8a%e6%81%af%e6%8c%87%e5%bc%95/">靈性訊息指引</a>
           </li>
         </ul>
       </div>
@@ -508,7 +332,7 @@ $(element).wrap("<a href='/radio/pick/'></a>");
         <h4 class="widget-title">追蹤</h4>
         <ul class="list-inline social-links">
           
-          <li class="list-inline-item"><a href="https://www.youtube.com/@Ellietarot%e6%98%9f%e6%98%9f%e7%9b%b8%e7%b9%ab"><i class="ti-youtube"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.youtube.com/@ElliesNote1118"><i class="ti-youtube"></i></a></li>
           
         </ul>
       </div>
@@ -521,35 +345,6 @@ $(element).wrap("<a href='/radio/pick/'></a>");
       
       <div class="col-12 mt-5">
         
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/%E7%94%9F%E6%B4%BB%E6%97%A5%E8%AA%8C/page/5/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
       </div>
 
       
@@ -563,7 +358,7 @@ $(element).wrap("<a href='/radio/pick/'></a>");
 
 
       <div class="col-12 border-top py-4 text-center">
-        | copyright © 2024 <a href="https://ellielife.github.io/">光種 LightSeed</a> All Rights Reserved |
+        | copyright © 2024 <a href="https://ellielife.github.io/">Ellie&rsquo;s Note｜艾莉自我成長筆記</a> All Rights Reserved |
       </div>
     </div>
   </div>
